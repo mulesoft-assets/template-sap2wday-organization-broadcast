@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Mule Anypoint Template
+
+    Copyright (c) MuleSoft, Inc.  All rights reserved.  http://www.mulesoft.com
+
+-->
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MATMAS01" type="MATMAS01Type"/>
+  <xs:complexType name="EDI_DC40Type">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TABNAM"/>
+      <xs:element type="xs:short" name="MANDT"/>
+      <xs:element type="xs:int" name="DOCNUM"/>
+      <xs:element type="xs:short" name="DOCREL"/>
+      <xs:element type="xs:byte" name="STATUS"/>
+      <xs:element type="xs:byte" name="DIRECT"/>
+      <xs:element type="xs:byte" name="OUTMOD"/>
+      <xs:element type="xs:string" name="IDOCTYP"/>
+      <xs:element type="xs:string" name="MESTYP"/>
+      <xs:element type="xs:string" name="SNDPOR"/>
+      <xs:element type="xs:string" name="SNDPRT"/>
+      <xs:element type="xs:string" name="SNDPRN"/>
+      <xs:element type="xs:string" name="RCVPOR"/>
+      <xs:element type="xs:string" name="RCVPRT"/>
+      <xs:element type="xs:string" name="RCVPRN"/>
+      <xs:element type="xs:int" name="CREDAT"/>
+      <xs:element type="xs:short" name="CRETIM"/>
+      <xs:element type="xs:long" name="SERIAL"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT"/>
+  </xs:complexType>
+  <xs:complexType name="E1MAKTMType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="MSGFN"/>
+      <xs:element type="xs:string" name="SPRAS"/>
+      <xs:element name="MAKTX">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Zr Acetate"/>
+            <xs:enumeration value="Zr-Oktoat"/>
+            <xs:enumeration value="Zr"/>
+            <xs:enumeration value="Zr 酢酸塩"/>
+            <xs:enumeration value="Zr-octano"/>
+            <xs:enumeration value="Ацетат Zr"/>
+            <xs:enumeration value="Octoato Zr"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="SPRAS_ISO"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="E1MARDMType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="MSGFN"/>
+      <xs:element type="xs:byte" name="LGORT"/>
+      <xs:element name="PSTAT">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="DLZ"/>
+            <xs:enumeration value="DL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="LVORM"/>
+      <xs:element type="xs:float" name="LMINB"/>
+      <xs:element type="xs:float" name="LBSTF"/>
+      <xs:element type="xs:float" name="BSKRF"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="E1MARCMType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="MSGFN"/>
+      <xs:element name="WERKS">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="1100"/>
+            <xs:enumeration value="3100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="PSTAT"/>
+      <xs:element type="xs:string" name="LVORM"/>
+      <xs:element type="xs:byte" name="EKGRP"/>
+      <xs:element type="xs:string" name="DISPR"/>
+      <xs:element type="xs:string" name="DISMM"/>
+      <xs:element type="xs:byte" name="DISPO"/>
+      <xs:element type="xs:byte" name="PLIFZ"/>
+      <xs:element type="xs:byte" name="WEBAZ"/>
+      <xs:element type="xs:string" name="PERKZ"/>
+      <xs:element type="xs:float" name="AUSSS"/>
+      <xs:element type="xs:string" name="DISLS"/>
+      <xs:element type="xs:string" name="BESKZ"/>
+      <xs:element type="xs:float" name="MINBE"/>
+      <xs:element type="xs:float" name="EISBE"/>
+      <xs:element type="xs:float" name="BSTMI"/>
+      <xs:element type="xs:float" name="BSTMA"/>
+      <xs:element type="xs:float" name="BSTFE"/>
+      <xs:element type="xs:float" name="BSTRF"/>
+      <xs:element type="xs:float" name="MABST"/>
+      <xs:element type="xs:byte" name="LOSFX"/>
+      <xs:element type="xs:byte" name="AUSDT"/>
+      <xs:element type="xs:byte" name="FHORI"/>
+      <xs:element type="xs:float" name="BEARZ"/>
+      <xs:element type="xs:float" name="RUEZT"/>
+      <xs:element type="xs:float" name="TRANZ"/>
+      <xs:element type="xs:float" name="BASMG"/>
+      <xs:element type="xs:byte" name="DZEIT"/>
+      <xs:element type="xs:byte" name="MAXLZ"/>
+      <xs:element type="xs:float" name="UEETO"/>
+      <xs:element type="xs:float" name="UNETO"/>
+      <xs:element type="xs:byte" name="WZEIT"/>
+      <xs:element type="xs:float" name="VZUSL"/>
+      <xs:element type="xs:float" name="UMLMC"/>
+      <xs:element type="xs:float" name="LGRAD"/>
+      <xs:element type="xs:byte" name="OBJID"/>
+      <xs:element type="xs:byte" name="MTVFP"/>
+      <xs:element type="xs:float" name="VRVEZ"/>
+      <xs:element type="xs:float" name="VBAMG"/>
+      <xs:element type="xs:float" name="VBEAZ"/>
+      <xs:element name="PRCTR">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="0000001100"/>
+            <xs:enumeration value="0000003100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:float" name="TRAME"/>
+      <xs:element type="xs:byte" name="FXHOR"/>
+      <xs:element type="xs:byte" name="VINT1"/>
+      <xs:element type="xs:byte" name="VINT2"/>
+      <xs:element type="xs:float" name="LOSGR"/>
+      <xs:element type="xs:byte" name="LGPRO"/>
+      <xs:element type="xs:byte" name="DISGR"/>
+      <xs:element type="xs:float" name="KAUSF"/>
+      <xs:element type="xs:byte" name="TAKZT"/>
+      <xs:element type="xs:string" name="ABCIN" minOccurs="0"/>
+      <xs:element type="xs:float" name="VRBFK"/>
+      <xs:element type="xs:byte" name="PRENO"/>
+      <xs:element type="xs:byte" name="PRFRQ"/>
+      <xs:element type="xs:byte" name="SHZET"/>
+      <xs:element type="xs:byte" name="MMSTD"/>
+      <xs:element type="xs:byte" name="DPLHO"/>
+      <xs:element type="xs:float" name="MINLS"/>
+      <xs:element type="xs:float" name="MAXLS"/>
+      <xs:element type="xs:float" name="FIXLS"/>
+      <xs:element type="xs:float" name="LTINC"/>
+      <xs:element type="xs:byte" name="COMPL"/>
+      <xs:element type="xs:float" name="EISLO"/>
+      <xs:element type="E1MARDMType" name="E1MARDM"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="E1MBEWMType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="MSGFN"/>
+      <xs:element name="BWKEY">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="1100"/>
+            <xs:enumeration value="3100"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="LVORM"/>
+      <xs:element type="xs:string" name="VPRSV"/>
+      <xs:element name="VERPR">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="STPRS">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="PEINH"/>
+      <xs:element type="xs:short" name="BKLAS"/>
+      <xs:element type="xs:string" name="VMVPR"/>
+      <xs:element name="VMVER">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="VMSTP">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="VMPEI"/>
+      <xs:element type="xs:short" name="VMBKL"/>
+      <xs:element type="xs:string" name="VJVPR"/>
+      <xs:element name="VJVER">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="VJSTP">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:short" name="LFGJA"/>
+      <xs:element type="xs:byte" name="LFMON"/>
+      <xs:element type="xs:byte" name="ZKPRS"/>
+      <xs:element type="xs:byte" name="ZKDAT"/>
+      <xs:element type="xs:byte" name="BWPRS"/>
+      <xs:element type="xs:byte" name="BWPRH"/>
+      <xs:element type="xs:byte" name="VJBWS"/>
+      <xs:element type="xs:byte" name="VJBWH"/>
+      <xs:element type="xs:float" name="VVJLB"/>
+      <xs:element type="xs:float" name="VVMLB"/>
+      <xs:element type="xs:byte" name="VVSAL"/>
+      <xs:element type="xs:byte" name="ZPLPR"/>
+      <xs:element type="xs:byte" name="ZPLP1"/>
+      <xs:element type="xs:byte" name="ZPLP2"/>
+      <xs:element type="xs:byte" name="ZPLP3"/>
+      <xs:element type="xs:byte" name="ZPLD1"/>
+      <xs:element type="xs:byte" name="ZPLD2"/>
+      <xs:element type="xs:byte" name="ZPLD3"/>
+      <xs:element type="xs:string" name="KALKL"/>
+      <xs:element type="xs:byte" name="BWPH1"/>
+      <xs:element type="xs:byte" name="BWPS1"/>
+      <xs:element type="xs:byte" name="ABWKZ"/>
+      <xs:element type="xs:string" name="PSTAT"/>
+      <xs:element name="KALN1">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="000100000328"/>
+            <xs:enumeration value="000100000468"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="KALNR">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:enumeration value="000100000329"/>
+            <xs:enumeration value="000100000469"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="BWVA2"/>
+      <xs:element type="xs:byte" name="BWVA3" minOccurs="0"/>
+      <xs:element type="xs:byte" name="VERS1"/>
+      <xs:element type="xs:byte" name="VERS2"/>
+      <xs:element name="VERS3">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+            <xs:enumeration value="01"/>
+            <xs:enumeration value="00"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="PPRDZ"/>
+      <xs:element name="PPRDL">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+            <xs:enumeration value="012"/>
+            <xs:enumeration value="003"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PPRDV">
+        <xs:simpleType>
+          <xs:restriction base="xs:byte">
+            <xs:enumeration value="003"/>
+            <xs:enumeration value="000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:byte" name="PDATZ"/>
+      <xs:element type="xs:short" name="PDATL"/>
+      <xs:element name="PDATV">
+        <xs:simpleType>
+          <xs:restriction base="xs:short">
+            <xs:enumeration value="1996"/>
+            <xs:enumeration value="0000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="EKALR"/>
+      <xs:element name="VPLPR">
+        <xs:simpleType>
+          <xs:restriction base="xs:float">
+            <xs:enumeration value="0.51"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:short" name="VJBKL"/>
+      <xs:element type="xs:byte" name="VJPEI"/>
+      <xs:element type="xs:string" name="HKMAT"/>
+      <xs:element type="xs:byte" name="BWPEI"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="E1MARAMType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="MSGFN"/>
+      <xs:element type="xs:string" name="MATNR"/>
+      <xs:element type="xs:int" name="ERSDA"/>
+      <xs:element type="xs:string" name="ERNAM"/>
+      <xs:element type="xs:int" name="LAEDA"/>
+      <xs:element type="xs:string" name="AENAM"/>
+      <xs:element type="xs:string" name="PSTAT"/>
+      <xs:element type="xs:string" name="LVORM"/>
+      <xs:element type="xs:string" name="MTART"/>
+      <xs:element type="xs:string" name="MBRSH"/>
+      <xs:element type="xs:byte" name="MATKL"/>
+      <xs:element type="xs:string" name="MEINS"/>
+      <xs:element type="xs:byte" name="BLANZ"/>
+      <xs:element type="xs:byte" name="EKWSL"/>
+      <xs:element type="xs:float" name="BRGEW"/>
+      <xs:element type="xs:float" name="NTGEW"/>
+      <xs:element type="xs:float" name="VOLUM"/>
+      <xs:element type="xs:string" name="BEHVO"/>
+      <xs:element type="xs:byte" name="RAUBE"/>
+      <xs:element type="xs:byte" name="TEMPB"/>
+      <xs:element type="xs:byte" name="SPART"/>
+      <xs:element type="xs:float" name="WESCH"/>
+      <xs:element type="xs:float" name="LAENG"/>
+      <xs:element type="xs:float" name="BREIT"/>
+      <xs:element type="xs:float" name="HOEHE"/>
+      <xs:element type="xs:float" name="ERGEW"/>
+      <xs:element type="xs:float" name="ERVOL"/>
+      <xs:element type="xs:float" name="GEWTO"/>
+      <xs:element type="xs:float" name="VOLTO"/>
+      <xs:element type="xs:byte" name="FUELG"/>
+      <xs:element type="xs:byte" name="STFAK"/>
+      <xs:element type="xs:byte" name="MHDRZ"/>
+      <xs:element type="xs:byte" name="MHDHB"/>
+      <xs:element type="xs:byte" name="MHDLP"/>
+      <xs:element type="xs:string" name="VPSTA"/>
+      <xs:element type="xs:byte" name="COMPL"/>
+      <xs:element type="xs:float" name="GEWTO_NEW"/>
+      <xs:element type="xs:float" name="VOLTO_NEW"/>
+      <xs:element type="E1MAKTMType" name="E1MAKTM" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="E1MARCMType" name="E1MARCM" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="E1MBEWMType" name="E1MBEWM" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="SEGMENT"/>
+  </xs:complexType>
+  <xs:complexType name="IDOCType">
+    <xs:sequence>
+      <xs:element type="EDI_DC40Type" name="EDI_DC40"/>
+      <xs:element type="E1MARAMType" name="E1MARAM"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="BEGIN"/>
+  </xs:complexType>
+  <xs:complexType name="MATMAS01Type">
+    <xs:sequence>
+      <xs:element type="IDOCType" name="IDOC"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

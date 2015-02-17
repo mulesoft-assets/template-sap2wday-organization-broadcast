@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+<xsd:element name="BAPI_PDOTYPES_GETDETAILEDLIST">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="import" minOccurs="0" maxOccurs="1">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ENDDATE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="LANGUAGE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Language</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="LANGUAGEISO" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Language (ISO 639)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="OBJECTTYPE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="PLANNINGSTATUS" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="PLANVERSION" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="STARTDATE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element></xsd:all></xsd:complexType></xsd:element>
+<xsd:element name="export" minOccurs="0" maxOccurs="1">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="RETURN" minOccurs="0" maxOccurs="1">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="TYPE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message type: S Success, E Error, W Warning, I Info, A Abort</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="ID" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Class</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="NUMBER" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Number</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="MESSAGE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Text</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="LOG_NO" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Application log: log number</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="LOG_MSG_NO" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Application log: Internal message serial number</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="MESSAGE_V1" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Variable</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="MESSAGE_V2" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Variable</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="MESSAGE_V3" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Variable</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="MESSAGE_V4" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Message Variable</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="PARAMETER" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Parameter Name</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="ROW" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Lines in parameter</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="FIELD" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Field in parameter</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="SYSTEM" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Logical system from which message originates</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element></xsd:all></xsd:complexType></xsd:element></xsd:all></xsd:complexType></xsd:element>
+<xsd:element name="tables" minOccurs="0" maxOccurs="1">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="OBJECTS" minOccurs="0" maxOccurs="1">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="row" minOccurs="0" maxOccurs="unbounded">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PLAN_VERS" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="OBJECTTYPE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="OBJECT_ID" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="START_DATE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="END_DATE" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="PLAN_STAT" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="HISTO_FLAG" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="SHORT_TEXT" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Object Abbreviation</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="LONG_TEXT" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Object Name</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element>
+<xsd:element name="EXT_OBJ_ID" minOccurs="0" maxOccurs="1"><xsd:annotation><xsd:documentation>Extended Object ID</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:simpleContent>
+<xsd:extension base="xsd:string"/></xsd:simpleContent></xsd:complexType></xsd:element></xsd:sequence></xsd:complexType></xsd:element></xsd:sequence></xsd:complexType></xsd:element></xsd:all></xsd:complexType></xsd:element></xsd:sequence></xsd:complexType></xsd:element>
+</xsd:schema>

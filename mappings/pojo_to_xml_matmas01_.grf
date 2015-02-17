@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Admin" created="Mon Feb 16 08:00:16 CET 2015" description="Pojo To Xml&lt;MATMAS01&gt;" guiVersion="3.4.4.P" id="1424078696759" licenseCode="Unlicensed" licenseType="Unknown" modified="Mon Feb 16 08:00:16 CET 2015" modifiedBy="Admin" name="Pojo_To_Xml_MATMAS01_" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="1" __referenceCounter="0" __sourcePath="{}/object/organizationData/containerOrganizationReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="62923422-8d61-4128-b4fd-a6ed2951139c" _parent_id="__parent_id" _type="Input" id="a3d40345-05f7-4484-8142-f2e33d87097e">
+<Record fieldDelimiter="," name="containerOrganizationReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="1" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="2" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+<Field __index="3" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="57" __referenceCounter="0" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="9b7239b5-48b0-477c-9969-f03a489d4272" _parent_id="__parent_id" _type="Output" id="aaeabed1-3449-441c-8bfe-53bf1d636d18">
+<Record fieldDelimiter="," name="E1MAKTM" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="57" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM/MSGFN" containerType="SINGLE" label="MSGFN" name="MSGFN" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="58" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM/SPRAS" containerType="SINGLE" label="SPRAS" name="SPRAS" type="string"/>
+<Field __implementationClass="java.lang.String" __index="59" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM/MAKTX" containerType="SINGLE" label="MAKTX" name="MAKTX" type="string"/>
+<Field __implementationClass="java.lang.String" __index="60" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM/SPRAS_ISO" containerType="SINGLE" label="SPRAS_ISO" name="SPRAS_ISO" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="61" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MAKTM/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="62" __referenceCounter="0" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="9b7239b5-48b0-477c-9969-f03a489d4272" _parent_id="__parent_id" _type="Output" id="dc38a3f0-1848-469d-ba16-b2863fe9e364">
+<Record fieldDelimiter="," name="E1MARCM" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="62" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MSGFN" containerType="SINGLE" label="MSGFN" name="MSGFN" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="63" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/WERKS" containerType="SINGLE" label="WERKS" name="WERKS" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="64" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PSTAT" containerType="SINGLE" label="PSTAT" name="PSTAT" type="string"/>
+<Field __implementationClass="java.lang.String" __index="65" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LVORM" containerType="SINGLE" label="LVORM" name="LVORM" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="66" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/EKGRP" containerType="SINGLE" label="EKGRP" name="EKGRP" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="67" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DISPR" containerType="SINGLE" label="DISPR" name="DISPR" type="string"/>
+<Field __implementationClass="java.lang.String" __index="68" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DISMM" containerType="SINGLE" label="DISMM" name="DISMM" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="69" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DISPO" containerType="SINGLE" label="DISPO" name="DISPO" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="70" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PLIFZ" containerType="SINGLE" label="PLIFZ" name="PLIFZ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="71" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/WEBAZ" containerType="SINGLE" label="WEBAZ" name="WEBAZ" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="72" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PERKZ" containerType="SINGLE" label="PERKZ" name="PERKZ" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="73" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/AUSSS" containerType="SINGLE" label="AUSSS" name="AUSSS" type="number"/>
+<Field __implementationClass="java.lang.String" __index="74" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DISLS" containerType="SINGLE" label="DISLS" name="DISLS" type="string"/>
+<Field __implementationClass="java.lang.String" __index="75" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BESKZ" containerType="SINGLE" label="BESKZ" name="BESKZ" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="76" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MINBE" containerType="SINGLE" label="MINBE" name="MINBE" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="77" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/EISBE" containerType="SINGLE" label="EISBE" name="EISBE" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="78" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BSTMI" containerType="SINGLE" label="BSTMI" name="BSTMI" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="79" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BSTMA" containerType="SINGLE" label="BSTMA" name="BSTMA" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="80" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BSTFE" containerType="SINGLE" label="BSTFE" name="BSTFE" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="81" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BSTRF" containerType="SINGLE" label="BSTRF" name="BSTRF" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="82" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MABST" containerType="SINGLE" label="MABST" name="MABST" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="83" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LOSFX" containerType="SINGLE" label="LOSFX" name="LOSFX" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="84" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/AUSDT" containerType="SINGLE" label="AUSDT" name="AUSDT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="85" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/FHORI" containerType="SINGLE" label="FHORI" name="FHORI" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="86" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BEARZ" containerType="SINGLE" label="BEARZ" name="BEARZ" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="87" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/RUEZT" containerType="SINGLE" label="RUEZT" name="RUEZT" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="88" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/TRANZ" containerType="SINGLE" label="TRANZ" name="TRANZ" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="89" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/BASMG" containerType="SINGLE" label="BASMG" name="BASMG" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="90" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DZEIT" containerType="SINGLE" label="DZEIT" name="DZEIT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="91" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MAXLZ" containerType="SINGLE" label="MAXLZ" name="MAXLZ" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="92" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/UEETO" containerType="SINGLE" label="UEETO" name="UEETO" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="93" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/UNETO" containerType="SINGLE" label="UNETO" name="UNETO" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="94" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/WZEIT" containerType="SINGLE" label="WZEIT" name="WZEIT" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="95" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VZUSL" containerType="SINGLE" label="VZUSL" name="VZUSL" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="96" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/UMLMC" containerType="SINGLE" label="UMLMC" name="UMLMC" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="97" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LGRAD" containerType="SINGLE" label="LGRAD" name="LGRAD" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="98" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="99" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MTVFP" containerType="SINGLE" label="MTVFP" name="MTVFP" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="100" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VRVEZ" containerType="SINGLE" label="VRVEZ" name="VRVEZ" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="101" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VBAMG" containerType="SINGLE" label="VBAMG" name="VBAMG" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="102" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VBEAZ" containerType="SINGLE" label="VBEAZ" name="VBEAZ" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="103" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PRCTR" containerType="SINGLE" label="PRCTR" name="PRCTR" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="104" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/TRAME" containerType="SINGLE" label="TRAME" name="TRAME" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="105" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/FXHOR" containerType="SINGLE" label="FXHOR" name="FXHOR" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="106" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VINT1" containerType="SINGLE" label="VINT1" name="VINT1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="107" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VINT2" containerType="SINGLE" label="VINT2" name="VINT2" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="108" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LOSGR" containerType="SINGLE" label="LOSGR" name="LOSGR" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="109" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LGPRO" containerType="SINGLE" label="LGPRO" name="LGPRO" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="110" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DISGR" containerType="SINGLE" label="DISGR" name="DISGR" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="111" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/KAUSF" containerType="SINGLE" label="KAUSF" name="KAUSF" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="112" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/TAKZT" containerType="SINGLE" label="TAKZT" name="TAKZT" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="113" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/ABCIN" containerType="SINGLE" label="ABCIN" name="ABCIN" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="114" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/VRBFK" containerType="SINGLE" label="VRBFK" name="VRBFK" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="115" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PRENO" containerType="SINGLE" label="PRENO" name="PRENO" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="116" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/PRFRQ" containerType="SINGLE" label="PRFRQ" name="PRFRQ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="117" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/SHZET" containerType="SINGLE" label="SHZET" name="SHZET" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="118" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MMSTD" containerType="SINGLE" label="MMSTD" name="MMSTD" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="119" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/DPLHO" containerType="SINGLE" label="DPLHO" name="DPLHO" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="120" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MINLS" containerType="SINGLE" label="MINLS" name="MINLS" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="121" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/MAXLS" containerType="SINGLE" label="MAXLS" name="MAXLS" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="122" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/FIXLS" containerType="SINGLE" label="FIXLS" name="FIXLS" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="123" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/LTINC" containerType="SINGLE" label="LTINC" name="LTINC" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="124" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/COMPL" containerType="SINGLE" label="COMPL" name="COMPL" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="125" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/EISLO" containerType="SINGLE" label="EISLO" name="EISLO" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="126" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/MSGFN" containerType="SINGLE" label="MSGFN" name="MSGFN_1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="127" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/LGORT" containerType="SINGLE" label="LGORT" name="LGORT" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="128" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/PSTAT" containerType="SINGLE" label="PSTAT" name="PSTAT_1" type="string"/>
+<Field __implementationClass="java.lang.String" __index="129" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/LVORM" containerType="SINGLE" label="LVORM" name="LVORM_1" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="130" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/LMINB" containerType="SINGLE" label="LMINB" name="LMINB" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="131" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/LBSTF" containerType="SINGLE" label="LBSTF" name="LBSTF" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="132" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/BSKRF" containerType="SINGLE" label="BSKRF" name="BSKRF" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="133" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/E1MARDM/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="134" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MARCM/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT_1" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="135" __referenceCounter="0" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="9b7239b5-48b0-477c-9969-f03a489d4272" _parent_id="__parent_id" _type="Output" id="5c87bfc5-e2eb-4e4e-8902-1030c173813a">
+<Record fieldDelimiter="," name="E1MBEWM" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="135" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/MSGFN" containerType="SINGLE" label="MSGFN" name="MSGFN" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="136" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWKEY" containerType="SINGLE" label="BWKEY" name="BWKEY" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="137" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/LVORM" containerType="SINGLE" label="LVORM" name="LVORM" type="string"/>
+<Field __implementationClass="java.lang.String" __index="138" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VPRSV" containerType="SINGLE" label="VPRSV" name="VPRSV" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="139" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VERPR" containerType="SINGLE" label="VERPR" name="VERPR" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="140" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/STPRS" containerType="SINGLE" label="STPRS" name="STPRS" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="141" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PEINH" containerType="SINGLE" label="PEINH" name="PEINH" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="142" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BKLAS" containerType="SINGLE" label="BKLAS" name="BKLAS" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="143" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VMVPR" containerType="SINGLE" label="VMVPR" name="VMVPR" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="144" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VMVER" containerType="SINGLE" label="VMVER" name="VMVER" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="145" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VMSTP" containerType="SINGLE" label="VMSTP" name="VMSTP" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="146" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VMPEI" containerType="SINGLE" label="VMPEI" name="VMPEI" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="147" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VMBKL" containerType="SINGLE" label="VMBKL" name="VMBKL" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="148" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJVPR" containerType="SINGLE" label="VJVPR" name="VJVPR" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="149" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJVER" containerType="SINGLE" label="VJVER" name="VJVER" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="150" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJSTP" containerType="SINGLE" label="VJSTP" name="VJSTP" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="151" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/LFGJA" containerType="SINGLE" label="LFGJA" name="LFGJA" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="152" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/LFMON" containerType="SINGLE" label="LFMON" name="LFMON" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="153" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZKPRS" containerType="SINGLE" label="ZKPRS" name="ZKPRS" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="154" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZKDAT" containerType="SINGLE" label="ZKDAT" name="ZKDAT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="155" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWPRS" containerType="SINGLE" label="BWPRS" name="BWPRS" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="156" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWPRH" containerType="SINGLE" label="BWPRH" name="BWPRH" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="157" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJBWS" containerType="SINGLE" label="VJBWS" name="VJBWS" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="158" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJBWH" containerType="SINGLE" label="VJBWH" name="VJBWH" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="159" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VVJLB" containerType="SINGLE" label="VVJLB" name="VVJLB" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="160" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VVMLB" containerType="SINGLE" label="VVMLB" name="VVMLB" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="161" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VVSAL" containerType="SINGLE" label="VVSAL" name="VVSAL" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="162" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLPR" containerType="SINGLE" label="ZPLPR" name="ZPLPR" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="163" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLP1" containerType="SINGLE" label="ZPLP1" name="ZPLP1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="164" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLP2" containerType="SINGLE" label="ZPLP2" name="ZPLP2" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="165" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLP3" containerType="SINGLE" label="ZPLP3" name="ZPLP3" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="166" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLD1" containerType="SINGLE" label="ZPLD1" name="ZPLD1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="167" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLD2" containerType="SINGLE" label="ZPLD2" name="ZPLD2" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="168" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ZPLD3" containerType="SINGLE" label="ZPLD3" name="ZPLD3" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="169" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/KALKL" containerType="SINGLE" label="KALKL" name="KALKL" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="170" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWPH1" containerType="SINGLE" label="BWPH1" name="BWPH1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="171" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWPS1" containerType="SINGLE" label="BWPS1" name="BWPS1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="172" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/ABWKZ" containerType="SINGLE" label="ABWKZ" name="ABWKZ" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="173" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PSTAT" containerType="SINGLE" label="PSTAT" name="PSTAT" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="174" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/KALN1" containerType="SINGLE" label="KALN1" name="KALN1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="175" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/KALNR" containerType="SINGLE" label="KALNR" name="KALNR" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="176" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWVA2" containerType="SINGLE" label="BWVA2" name="BWVA2" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="177" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWVA3" containerType="SINGLE" label="BWVA3" name="BWVA3" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="178" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VERS1" containerType="SINGLE" label="VERS1" name="VERS1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="179" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VERS2" containerType="SINGLE" label="VERS2" name="VERS2" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="180" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VERS3" containerType="SINGLE" label="VERS3" name="VERS3" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="181" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PPRDZ" containerType="SINGLE" label="PPRDZ" name="PPRDZ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="182" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PPRDL" containerType="SINGLE" label="PPRDL" name="PPRDL" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="183" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PPRDV" containerType="SINGLE" label="PPRDV" name="PPRDV" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="184" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PDATZ" containerType="SINGLE" label="PDATZ" name="PDATZ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="185" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PDATL" containerType="SINGLE" label="PDATL" name="PDATL" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="186" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/PDATV" containerType="SINGLE" label="PDATV" name="PDATV" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="187" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/EKALR" containerType="SINGLE" label="EKALR" name="EKALR" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="188" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VPLPR" containerType="SINGLE" label="VPLPR" name="VPLPR" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="189" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJBKL" containerType="SINGLE" label="VJBKL" name="VJBKL" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="190" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/VJPEI" containerType="SINGLE" label="VJPEI" name="VJPEI" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="191" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/HKMAT" containerType="SINGLE" label="HKMAT" name="HKMAT" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="192" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/BWPEI" containerType="SINGLE" label="BWPEI" name="BWPEI" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="193" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/E1MBEWM/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="10" __referenceCounter="0" __sourcePath="{}/object/organizationData/integrationIDData/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="62923422-8d61-4128-b4fd-a6ed2951139c" _parent_id="__parent_id" _type="Input" id="8653e7e9-3a4a-4536-ae0e-4d0711bebbbb">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="10" __sourcePath="{}/object/organizationData/integrationIDData/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="11" __sourcePath="{}/object/organizationData/integrationIDData/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/MATMAS01" _dataStructure="OBJECT" _id="__id" _type="Output" id="9b7239b5-48b0-477c-9969-f03a489d4272">
+<Record fieldDelimiter="," name="MATMAS01" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="0" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/TABNAM" containerType="SINGLE" label="TABNAM" name="TABNAM" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="1" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="2" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/DOCNUM" containerType="SINGLE" label="DOCNUM" name="DOCNUM" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="3" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/DOCREL" containerType="SINGLE" label="DOCREL" name="DOCREL" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="4" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/STATUS" containerType="SINGLE" label="STATUS" name="STATUS" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="5" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/DIRECT" containerType="SINGLE" label="DIRECT" name="DIRECT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="6" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/OUTMOD" containerType="SINGLE" label="OUTMOD" name="OUTMOD" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="7" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/IDOCTYP" containerType="SINGLE" label="IDOCTYP" name="IDOCTYP" type="string"/>
+<Field __implementationClass="java.lang.String" __index="8" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/MESTYP" containerType="SINGLE" label="MESTYP" name="MESTYP" type="string"/>
+<Field __implementationClass="java.lang.String" __index="9" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/SNDPOR" containerType="SINGLE" label="SNDPOR" name="SNDPOR" type="string"/>
+<Field __implementationClass="java.lang.String" __index="10" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/SNDPRT" containerType="SINGLE" label="SNDPRT" name="SNDPRT" type="string"/>
+<Field __implementationClass="java.lang.String" __index="11" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/SNDPRN" containerType="SINGLE" label="SNDPRN" name="SNDPRN" type="string"/>
+<Field __implementationClass="java.lang.String" __index="12" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/RCVPOR" containerType="SINGLE" label="RCVPOR" name="RCVPOR" type="string"/>
+<Field __implementationClass="java.lang.String" __index="13" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/RCVPRT" containerType="SINGLE" label="RCVPRT" name="RCVPRT" type="string"/>
+<Field __implementationClass="java.lang.String" __index="14" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/RCVPRN" containerType="SINGLE" label="RCVPRN" name="RCVPRN" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="15" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/CREDAT" containerType="SINGLE" label="CREDAT" name="CREDAT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="16" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/CRETIM" containerType="SINGLE" label="CRETIM" name="CRETIM" type="integer"/>
+<Field __implementationClass="java.lang.Long" __index="17" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/SERIAL" containerType="SINGLE" label="SERIAL" name="SERIAL" type="long"/>
+<Field __implementationClass="java.lang.Integer" __index="18" __sourcePath="{}/MATMAS01/IDOC/EDI_DC40/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="19" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MSGFN" containerType="SINGLE" label="MSGFN" name="MSGFN" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="20" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MATNR" containerType="SINGLE" label="MATNR" name="MATNR" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="21" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/ERSDA" containerType="SINGLE" label="ERSDA" name="ERSDA" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="22" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/ERNAM" containerType="SINGLE" label="ERNAM" name="ERNAM" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="23" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/LAEDA" containerType="SINGLE" label="LAEDA" name="LAEDA" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="24" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/AENAM" containerType="SINGLE" label="AENAM" name="AENAM" type="string"/>
+<Field __implementationClass="java.lang.String" __index="25" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/PSTAT" containerType="SINGLE" label="PSTAT" name="PSTAT" type="string"/>
+<Field __implementationClass="java.lang.String" __index="26" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/LVORM" containerType="SINGLE" label="LVORM" name="LVORM" type="string"/>
+<Field __implementationClass="java.lang.String" __index="27" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MTART" containerType="SINGLE" label="MTART" name="MTART" type="string"/>
+<Field __implementationClass="java.lang.String" __index="28" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MBRSH" containerType="SINGLE" label="MBRSH" name="MBRSH" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="29" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MATKL" containerType="SINGLE" label="MATKL" name="MATKL" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="30" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MEINS" containerType="SINGLE" label="MEINS" name="MEINS" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="31" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/BLANZ" containerType="SINGLE" label="BLANZ" name="BLANZ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="32" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/EKWSL" containerType="SINGLE" label="EKWSL" name="EKWSL" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="33" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/BRGEW" containerType="SINGLE" label="BRGEW" name="BRGEW" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="34" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/NTGEW" containerType="SINGLE" label="NTGEW" name="NTGEW" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="35" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/VOLUM" containerType="SINGLE" label="VOLUM" name="VOLUM" type="number"/>
+<Field __implementationClass="java.lang.String" __index="36" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/BEHVO" containerType="SINGLE" label="BEHVO" name="BEHVO" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="37" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/RAUBE" containerType="SINGLE" label="RAUBE" name="RAUBE" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="38" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/TEMPB" containerType="SINGLE" label="TEMPB" name="TEMPB" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="39" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/SPART" containerType="SINGLE" label="SPART" name="SPART" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="40" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/WESCH" containerType="SINGLE" label="WESCH" name="WESCH" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="41" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/LAENG" containerType="SINGLE" label="LAENG" name="LAENG" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="42" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/BREIT" containerType="SINGLE" label="BREIT" name="BREIT" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="43" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/HOEHE" containerType="SINGLE" label="HOEHE" name="HOEHE" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="44" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/ERGEW" containerType="SINGLE" label="ERGEW" name="ERGEW" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="45" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/ERVOL" containerType="SINGLE" label="ERVOL" name="ERVOL" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="46" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/GEWTO" containerType="SINGLE" label="GEWTO" name="GEWTO" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="47" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/VOLTO" containerType="SINGLE" label="VOLTO" name="VOLTO" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="48" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/FUELG" containerType="SINGLE" label="FUELG" name="FUELG" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="49" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/STFAK" containerType="SINGLE" label="STFAK" name="STFAK" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="50" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MHDRZ" containerType="SINGLE" label="MHDRZ" name="MHDRZ" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="51" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MHDHB" containerType="SINGLE" label="MHDHB" name="MHDHB" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="52" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/MHDLP" containerType="SINGLE" label="MHDLP" name="MHDLP" type="integer"/>
+<Field __implementationClass="java.lang.String" __index="53" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/VPSTA" containerType="SINGLE" label="VPSTA" name="VPSTA" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="54" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/COMPL" containerType="SINGLE" label="COMPL" name="COMPL" type="integer"/>
+<Field __implementationClass="java.lang.Double" __index="55" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/GEWTO_NEW" containerType="SINGLE" label="GEWTO_NEW" name="GEWTO_NEW" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="56" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/VOLTO_NEW" containerType="SINGLE" label="VOLTO_NEW" name="VOLTO_NEW" type="number"/>
+<Field __implementationClass="java.lang.Integer" __index="194" __sourcePath="{}/MATMAS01/IDOC/E1MARAM/SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT_1" type="integer"/>
+<Field __implementationClass="java.lang.Integer" __index="195" __sourcePath="{}/MATMAS01/IDOC/BEGIN" containerType="SINGLE" label="BEGIN" name="BEGIN" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Input" id="62923422-8d61-4128-b4fd-a6ed2951139c">
+<Record fieldDelimiter="," name="OrganizationAddUpdateType" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __dmType="Calendar" __index="0" __sourcePath="{}/object/organizationData/availabilityDate" containerType="SINGLE" label="availabilityDate" name="availabilityDate" type="string"/>
+<Field __dmType="Calendar" __index="4" __sourcePath="{}/object/organizationData/effectiveDate" containerType="SINGLE" label="effectiveDate" name="effectiveDate" type="string"/>
+<Field __index="5" __sourcePath="{}/object/organizationData/frozenStatus" containerType="SINGLE" label="frozenStatus" name="frozenStatus" type="boolean"/>
+<Field __index="6" __sourcePath="{}/object/organizationData/headcountManagementEnabled" containerType="SINGLE" label="headcountManagementEnabled" name="headcountManagementEnabled" type="boolean"/>
+<Field __index="7" __sourcePath="{}/object/organizationData/includeLeaderInName" containerType="SINGLE" label="includeLeaderInName" name="includeLeaderInName" type="boolean"/>
+<Field __index="8" __sourcePath="{}/object/organizationData/includeOrganizationCodeInName" containerType="SINGLE" label="includeOrganizationCodeInName" name="includeOrganizationCodeInName" type="boolean"/>
+<Field __index="9" __sourcePath="{}/object/organizationData/includeOrganizationIDInName" containerType="SINGLE" label="includeOrganizationIDInName" name="includeOrganizationIDInName" type="boolean"/>
+<Field __index="12" __sourcePath="{}/object/organizationData/jobManagementEnabled" containerType="SINGLE" label="jobManagementEnabled" name="jobManagementEnabled" type="boolean"/>
+<Field __index="13" __sourcePath="{}/object/organizationData/organizationCode" containerType="SINGLE" label="organizationCode" name="organizationCode" type="string"/>
+<Field __index="14" __sourcePath="{}/object/organizationData/organizationName" containerType="SINGLE" label="organizationName" name="organizationName" type="string"/>
+<Field __index="15" __sourcePath="{}/object/organizationData/organizationReferenceID" containerType="SINGLE" label="organizationReferenceID" name="organizationReferenceID" type="string"/>
+<Field __index="16" __sourcePath="{}/object/organizationData/organizationSubtypeReference/organizationSubtypeName" containerType="SINGLE" label="organizationSubtypeName" name="organizationSubtypeName" type="string"/>
+<Field __index="17" __sourcePath="{}/object/organizationData/organizationTypeReference/organizationTypeName" containerType="SINGLE" label="organizationTypeName" name="organizationTypeName" type="string"/>
+<Field __index="18" __sourcePath="{}/object/organizationData/organizationVisibilityReference/organizationVisibilityName" containerType="SINGLE" label="organizationVisibilityName" name="organizationVisibilityName" type="string"/>
+<Field __index="19" __sourcePath="{}/object/organizationData/positionManagementEnabled" containerType="SINGLE" label="positionManagementEnabled" name="positionManagementEnabled" type="boolean"/>
+<Field __index="20" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="21" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+<Field __index="22" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+<Field __index="23" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID_1" type="string"/>
+<Field __index="24" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value_1" type="string"/>
+<Field __index="25" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor_1" type="string"/>
+<Field __index="26" __sourcePath="{}/object/version" containerType="SINGLE" label="version" name="version" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiName="Pojo READER" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="availabilityDate" trim="true" xpath="organizationData/availabilityDate"/>
+  <Mapping cloverField="effectiveDate" trim="true" xpath="organizationData/effectiveDate"/>
+  <Mapping cloverField="frozenStatus" trim="true" xpath="organizationData/frozenStatus"/>
+  <Mapping cloverField="headcountManagementEnabled" trim="true" xpath="organizationData/headcountManagementEnabled"/>
+  <Mapping cloverField="includeLeaderInName" trim="true" xpath="organizationData/includeLeaderInName"/>
+  <Mapping cloverField="includeOrganizationCodeInName" trim="true" xpath="organizationData/includeOrganizationCodeInName"/>
+  <Mapping cloverField="includeOrganizationIDInName" trim="true" xpath="organizationData/includeOrganizationIDInName"/>
+  <Mapping cloverField="jobManagementEnabled" trim="true" xpath="organizationData/jobManagementEnabled"/>
+  <Mapping cloverField="organizationCode" trim="true" xpath="organizationData/organizationCode"/>
+  <Mapping cloverField="organizationName" trim="true" xpath="organizationData/organizationName"/>
+  <Mapping cloverField="organizationReferenceID" trim="true" xpath="organizationData/organizationReferenceID"/>
+  <Mapping cloverField="organizationSubtypeName" trim="true" xpath="organizationData/organizationSubtypeReference/organizationSubtypeName"/>
+  <Mapping cloverField="organizationTypeName" trim="true" xpath="organizationData/organizationTypeReference/organizationTypeName"/>
+  <Mapping cloverField="organizationVisibilityName" trim="true" xpath="organizationData/organizationVisibilityReference/organizationVisibilityName"/>
+  <Mapping cloverField="positionManagementEnabled" trim="true" xpath="organizationData/positionManagementEnabled"/>
+  <Mapping cloverField="systemID" trim="true" xpath="organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/systemID"/>
+  <Mapping cloverField="value" trim="true" xpath="organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/value"/>
+  <Mapping cloverField="descriptor" trim="true" xpath="organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/descriptor"/>
+  <Mapping cloverField="systemID_1" trim="true" xpath="organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/systemID"/>
+  <Mapping cloverField="value_1" trim="true" xpath="organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/value"/>
+  <Mapping cloverField="descriptor_1" trim="true" xpath="organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/descriptor"/>
+  <Mapping cloverField="version" trim="true" xpath="version"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <typed-object-ref type-ref="com.workday.hr.OrganizationAddUpdateType"/>
+  <typed-object type="com.workday.hr.ExternalIntegrationIDDataType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.IDType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationVisibilityReferenceDataType">
+    <typed-object-ref name="organizationVisibilityName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationSubtypeReferenceDataType">
+    <typed-object-ref name="organizationSubtypeName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.BusinessSiteReferenceDataType">
+    <typed-object-ref name="integrationIDReference" type-ref="com.workday.hr.ExternalIntegrationIDReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationAddUpdateType">
+    <typed-object-ref name="organizationData" type-ref="com.workday.hr.OrganizationDataType"/>
+    <typed-object-ref name="version" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="javax.xml.datatype.XMLGregorianCalendar"/>
+  <typed-object type="com.workday.hr.IDType">
+    <typed-object-ref name="systemID" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationTypeReferenceDataType">
+    <typed-object-ref name="organizationTypeName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ExternalIntegrationIDReferenceDataType">
+    <typed-object-ref name="ID" type-ref="com.workday.hr.IDType"/>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationReferenceType">
+    <typed-object-ref name="integrationIDReference" type-ref="com.workday.hr.ExternalIntegrationIDReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.PrimaryBusinessSiteReferenceDataType">
+    <typed-object-ref name="businessSiteReference" type-ref="com.workday.hr.BusinessSiteReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationDataType">
+    <typed-object-ref name="availabilityDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <schema-collection name="containerOrganizationReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.ContainerOrganizationReferenceDataType"/>
+    </schema-collection>
+    <typed-object-ref name="effectiveDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="frozenStatus" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="headcountManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeLeaderInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeOrganizationCodeInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeOrganizationIDInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="integrationIDData" type-ref="com.workday.hr.ExternalIntegrationIDDataType"/>
+    <typed-object-ref name="jobManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="organizationCode" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationName" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationReferenceID" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationSubtypeReference" type-ref="com.workday.hr.OrganizationSubtypeReferenceDataType"/>
+    <typed-object-ref name="organizationTypeReference" type-ref="com.workday.hr.OrganizationTypeReferenceDataType"/>
+    <typed-object-ref name="organizationVisibilityReference" type-ref="com.workday.hr.OrganizationVisibilityReferenceDataType"/>
+    <typed-object-ref name="positionManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="primaryBusinessSiteReference" type-ref="com.workday.hr.PrimaryBusinessSiteReferenceDataType"/>
+    <typed-object-ref name="superiorOrganizationReference" type-ref="com.workday.hr.SuperiorOrganizationReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ContainerOrganizationReferenceDataType">
+    <typed-object-ref name="organizationReference" type-ref="com.workday.hr.OrganizationReferenceType"/>
+  </typed-object>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="com.workday.hr.SuperiorOrganizationReferenceDataType">
+    <typed-object-ref name="organizationReference" type-ref="com.workday.hr.OrganizationReferenceType"/>
+  </typed-object>
+  <typed-object type="java.lang.String"/>
+</schema-object>
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<MATMAS01 xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <IDOC>
+    <clover:element clover:name="EDI_DC40">
+      <TABNAM>$0.TABNAM</TABNAM>
+      <MANDT>$0.MANDT</MANDT>
+      <DOCNUM>$0.DOCNUM</DOCNUM>
+      <DOCREL>$0.DOCREL</DOCREL>
+      <STATUS>$0.STATUS</STATUS>
+      <DIRECT>$0.DIRECT</DIRECT>
+      <OUTMOD>$0.OUTMOD</OUTMOD>
+      <IDOCTYP>$0.IDOCTYP</IDOCTYP>
+      <MESTYP>$0.MESTYP</MESTYP>
+      <SNDPOR>$0.SNDPOR</SNDPOR>
+      <SNDPRT>$0.SNDPRT</SNDPRT>
+      <SNDPRN>$0.SNDPRN</SNDPRN>
+      <RCVPOR>$0.RCVPOR</RCVPOR>
+      <RCVPRT>$0.RCVPRT</RCVPRT>
+      <RCVPRN>$0.RCVPRN</RCVPRN>
+      <CREDAT>$0.CREDAT</CREDAT>
+      <CRETIM>$0.CRETIM</CRETIM>
+      <SERIAL>$0.SERIAL</SERIAL>
+      <SEGMENT>$0.SEGMENT</SEGMENT>
+    </clover:element>
+    <E1MARAM>
+      <MSGFN>$0.MSGFN</MSGFN>
+      <MATNR>$0.MATNR</MATNR>
+      <ERSDA>$0.ERSDA</ERSDA>
+      <ERNAM>$0.ERNAM</ERNAM>
+      <LAEDA>$0.LAEDA</LAEDA>
+      <AENAM>$0.AENAM</AENAM>
+      <PSTAT>$0.PSTAT</PSTAT>
+      <LVORM>$0.LVORM</LVORM>
+      <MTART>$0.MTART</MTART>
+      <MBRSH>$0.MBRSH</MBRSH>
+      <MATKL>$0.MATKL</MATKL>
+      <MEINS>$0.MEINS</MEINS>
+      <BLANZ>$0.BLANZ</BLANZ>
+      <EKWSL>$0.EKWSL</EKWSL>
+      <BRGEW>$0.BRGEW</BRGEW>
+      <NTGEW>$0.NTGEW</NTGEW>
+      <VOLUM>$0.VOLUM</VOLUM>
+      <BEHVO>$0.BEHVO</BEHVO>
+      <RAUBE>$0.RAUBE</RAUBE>
+      <TEMPB>$0.TEMPB</TEMPB>
+      <SPART>$0.SPART</SPART>
+      <WESCH>$0.WESCH</WESCH>
+      <LAENG>$0.LAENG</LAENG>
+      <BREIT>$0.BREIT</BREIT>
+      <HOEHE>$0.HOEHE</HOEHE>
+      <ERGEW>$0.ERGEW</ERGEW>
+      <ERVOL>$0.ERVOL</ERVOL>
+      <GEWTO>$0.GEWTO</GEWTO>
+      <VOLTO>$0.VOLTO</VOLTO>
+      <FUELG>$0.FUELG</FUELG>
+      <STFAK>$0.STFAK</STFAK>
+      <MHDRZ>$0.MHDRZ</MHDRZ>
+      <MHDHB>$0.MHDHB</MHDHB>
+      <MHDLP>$0.MHDLP</MHDLP>
+      <VPSTA>$0.VPSTA</VPSTA>
+      <COMPL>$0.COMPL</COMPL>
+      <clover:element clover:name="GEWTO_NEW">$0.GEWTO_NEW</clover:element>
+      <clover:element clover:name="VOLTO_NEW">$0.VOLTO_NEW</clover:element>
+      <SEGMENT>$0.SEGMENT_1</SEGMENT>
+    </E1MARAM>
+    <BEGIN>$0.BEGIN</BEGIN>
+  </IDOC>
+</MATMAS01>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'object' -&gt; 'MATMAS01'" guiX="460" guiY="20" id="FOREACH_OBJECT_MATMAS01" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="62923422-8d61-4128-b4fd-a6ed2951139c" outPort="Port 0 (out)" toNode="FOREACH_OBJECT_MATMAS01:0"/>
+<Edge debugMode="true" fromNode="FOREACH_OBJECT_MATMAS01:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="9b7239b5-48b0-477c-9969-f03a489d4272" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+</Phase>
+</Graph>

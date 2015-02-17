@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Admin" created="Mon Feb 16 08:00:16 CET 2015" description="XML To Pojo" guiVersion="3.4.4.P" id="1424078747279" licenseCode="Unlicensed" licenseType="Unknown" modified="Mon Feb 16 08:00:16 CET 2015" modifiedBy="Admin" name="XML_To_Pojo" preview-file="${Project_Home}/src/main/resources/BAPI_PDOTYPES_GETDETAILEDLIST.xsd" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __filteredMetadata="false" __index="0" __referenceCounter="1" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST" _dataStructure="OBJECT" _id="__id" _type="Input" id="c9f73a5f-a37e-4127-8e31-7af0f280e1a2">
+<Record fieldDelimiter="," name="BAPI_PDOTYPES_GETDETAILEDLIST" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/ENDDATE" containerType="SINGLE" label="ENDDATE" name="ENDDATE" type="string"/>
+<Field __index="1" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/LANGUAGE" containerType="SINGLE" label="LANGUAGE" name="LANGUAGE" type="string"/>
+<Field __index="2" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/LANGUAGEISO" containerType="SINGLE" label="LANGUAGEISO" name="LANGUAGEISO" type="string"/>
+<Field __index="3" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/OBJECTTYPE" containerType="SINGLE" label="OBJECTTYPE" name="OBJECTTYPE" type="string"/>
+<Field __index="4" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/PLANNINGSTATUS" containerType="SINGLE" label="PLANNINGSTATUS" name="PLANNINGSTATUS" type="string"/>
+<Field __index="5" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/PLANVERSION" containerType="SINGLE" label="PLANVERSION" name="PLANVERSION" type="string"/>
+<Field __index="6" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/import/STARTDATE" containerType="SINGLE" label="STARTDATE" name="STARTDATE" type="string"/>
+<Field __index="7" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/TYPE" containerType="SINGLE" label="TYPE" name="TYPE" type="string"/>
+<Field __index="8" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/ID" containerType="SINGLE" label="ID" name="ID" type="string"/>
+<Field __index="9" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/NUMBER" containerType="SINGLE" label="NUMBER" name="NUMBER" type="string"/>
+<Field __index="10" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/MESSAGE" containerType="SINGLE" label="MESSAGE" name="MESSAGE" type="string"/>
+<Field __index="11" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/LOG_NO" containerType="SINGLE" label="LOG_NO" name="LOG_NO" type="string"/>
+<Field __index="12" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/LOG_MSG_NO" containerType="SINGLE" label="LOG_MSG_NO" name="LOG_MSG_NO" type="string"/>
+<Field __index="13" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/MESSAGE_V1" containerType="SINGLE" label="MESSAGE_V1" name="MESSAGE_V1" type="string"/>
+<Field __index="14" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/MESSAGE_V2" containerType="SINGLE" label="MESSAGE_V2" name="MESSAGE_V2" type="string"/>
+<Field __index="15" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/MESSAGE_V3" containerType="SINGLE" label="MESSAGE_V3" name="MESSAGE_V3" type="string"/>
+<Field __index="16" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/MESSAGE_V4" containerType="SINGLE" label="MESSAGE_V4" name="MESSAGE_V4" type="string"/>
+<Field __index="17" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/PARAMETER" containerType="SINGLE" label="PARAMETER" name="PARAMETER" type="string"/>
+<Field __index="18" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/ROW" containerType="SINGLE" label="ROW" name="ROW" type="string"/>
+<Field __index="19" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/FIELD" containerType="SINGLE" label="FIELD" name="FIELD" type="string"/>
+<Field __index="20" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/export/RETURN/SYSTEM" containerType="SINGLE" label="SYSTEM" name="SYSTEM" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="1" __referenceCounter="0" __sourcePath="{}/object/organizationData/containerOrganizationReference" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="20e368b5-bb99-489b-9ee2-9cd0bfe632dc" _parent_id="__parent_id" _type="Output" id="23b1ec5b-aa7c-4507-8f0b-05ad42050c91">
+<Record fieldDelimiter="," name="containerOrganizationReference" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="1" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="2" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+<Field __index="3" __sourcePath="{}/object/organizationData/containerOrganizationReference/organizationReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="10" __referenceCounter="0" __sourcePath="{}/object/organizationData/integrationIDData/ID" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="20e368b5-bb99-489b-9ee2-9cd0bfe632dc" _parent_id="__parent_id" _type="Output" id="5d6e44a5-9fc2-4799-83ee-30ea4ac1c31a">
+<Record fieldDelimiter="," name="ID" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="10" __sourcePath="{}/object/organizationData/integrationIDData/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="11" __sourcePath="{}/object/organizationData/integrationIDData/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Output" id="20e368b5-bb99-489b-9ee2-9cd0bfe632dc">
+<Record fieldDelimiter="," name="OrganizationAddUpdateType" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __dmType="Calendar" __index="0" __sourcePath="{}/object/organizationData/availabilityDate" containerType="SINGLE" label="availabilityDate" name="availabilityDate" type="string"/>
+<Field __dmType="Calendar" __index="4" __sourcePath="{}/object/organizationData/effectiveDate" containerType="SINGLE" label="effectiveDate" name="effectiveDate" type="string"/>
+<Field __index="5" __sourcePath="{}/object/organizationData/frozenStatus" containerType="SINGLE" label="frozenStatus" name="frozenStatus" type="boolean"/>
+<Field __index="6" __sourcePath="{}/object/organizationData/headcountManagementEnabled" containerType="SINGLE" label="headcountManagementEnabled" name="headcountManagementEnabled" type="boolean"/>
+<Field __index="7" __sourcePath="{}/object/organizationData/includeLeaderInName" containerType="SINGLE" label="includeLeaderInName" name="includeLeaderInName" type="boolean"/>
+<Field __index="8" __sourcePath="{}/object/organizationData/includeOrganizationCodeInName" containerType="SINGLE" label="includeOrganizationCodeInName" name="includeOrganizationCodeInName" type="boolean"/>
+<Field __index="9" __sourcePath="{}/object/organizationData/includeOrganizationIDInName" containerType="SINGLE" label="includeOrganizationIDInName" name="includeOrganizationIDInName" type="boolean"/>
+<Field __index="12" __sourcePath="{}/object/organizationData/jobManagementEnabled" containerType="SINGLE" label="jobManagementEnabled" name="jobManagementEnabled" type="boolean"/>
+<Field __index="13" __sourcePath="{}/object/organizationData/organizationCode" containerType="SINGLE" label="organizationCode" name="organizationCode" type="string"/>
+<Field __index="14" __sourcePath="{}/object/organizationData/organizationName" containerType="SINGLE" label="organizationName" name="organizationName" type="string"/>
+<Field __index="15" __sourcePath="{}/object/organizationData/organizationReferenceID" containerType="SINGLE" label="organizationReferenceID" name="organizationReferenceID" type="string"/>
+<Field __index="16" __sourcePath="{}/object/organizationData/organizationSubtypeReference/organizationSubtypeName" containerType="SINGLE" label="organizationSubtypeName" name="organizationSubtypeName" type="string"/>
+<Field __index="17" __sourcePath="{}/object/organizationData/organizationTypeReference/organizationTypeName" containerType="SINGLE" label="organizationTypeName" name="organizationTypeName" type="string"/>
+<Field __index="18" __sourcePath="{}/object/organizationData/organizationVisibilityReference/organizationVisibilityName" containerType="SINGLE" label="organizationVisibilityName" name="organizationVisibilityName" type="string"/>
+<Field __index="19" __sourcePath="{}/object/organizationData/positionManagementEnabled" containerType="SINGLE" label="positionManagementEnabled" name="positionManagementEnabled" type="boolean"/>
+<Field __index="20" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID" type="string"/>
+<Field __index="21" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value" type="string"/>
+<Field __index="22" __sourcePath="{}/object/organizationData/primaryBusinessSiteReference/businessSiteReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor" type="string"/>
+<Field __index="23" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/systemID" containerType="SINGLE" label="systemID" name="systemID_1" type="string"/>
+<Field __index="24" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/ID/value" containerType="SINGLE" label="value" name="value_1" type="string"/>
+<Field __index="25" __sourcePath="{}/object/organizationData/superiorOrganizationReference/organizationReference/integrationIDReference/descriptor" containerType="SINGLE" label="descriptor" name="descriptor_1" type="string"/>
+<Field __index="26" __sourcePath="{}/object/version" containerType="SINGLE" label="version" name="version" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="21" __referenceCounter="0" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="c9f73a5f-a37e-4127-8e31-7af0f280e1a2" _parent_id="__parent_id" _type="Input" id="6f296fc2-dce3-4dad-a6ec-1767347ac178">
+<Record fieldDelimiter="," name="row" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="21" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/PLAN_VERS" containerType="SINGLE" label="PLAN_VERS" name="PLAN_VERS" type="string"/>
+<Field __index="22" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/OBJECTTYPE" containerType="SINGLE" label="OBJECTTYPE" name="OBJECTTYPE" type="string"/>
+<Field __index="23" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/OBJECT_ID" containerType="SINGLE" label="OBJECT_ID" name="OBJECT_ID" type="string"/>
+<Field __index="24" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/START_DATE" containerType="SINGLE" label="START_DATE" name="START_DATE" type="string"/>
+<Field __index="25" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/END_DATE" containerType="SINGLE" label="END_DATE" name="END_DATE" type="string"/>
+<Field __index="26" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/PLAN_STAT" containerType="SINGLE" label="PLAN_STAT" name="PLAN_STAT" type="string"/>
+<Field __index="27" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/HISTO_FLAG" containerType="SINGLE" label="HISTO_FLAG" name="HISTO_FLAG" type="string"/>
+<Field __index="28" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/SHORT_TEXT" containerType="SINGLE" label="SHORT_TEXT" name="SHORT_TEXT" type="string"/>
+<Field __index="29" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/LONG_TEXT" containerType="SINGLE" label="LONG_TEXT" name="LONG_TEXT" type="string"/>
+<Field __index="30" __sourcePath="{}/BAPI_PDOTYPES_GETDETAILEDLIST/tables/OBJECTS/row/EXT_OBJ_ID" containerType="SINGLE" label="EXT_OBJ_ID" name="EXT_OBJ_ID" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Pojo WRITER" guiX="900" guiY="20" id="BEAN_WRITER0" type="BEAN_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<object xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <organizationData>
+    <availabilityDate>$0.availabilityDate</availabilityDate>
+    <effectiveDate>$0.effectiveDate</effectiveDate>
+    <frozenStatus>$0.frozenStatus</frozenStatus>
+    <headcountManagementEnabled>$0.headcountManagementEnabled</headcountManagementEnabled>
+    <includeLeaderInName>$0.includeLeaderInName</includeLeaderInName>
+    <includeOrganizationCodeInName>$0.includeOrganizationCodeInName</includeOrganizationCodeInName>
+    <includeOrganizationIDInName>$0.includeOrganizationIDInName</includeOrganizationIDInName>
+    <jobManagementEnabled>$0.jobManagementEnabled</jobManagementEnabled>
+    <organizationCode>$0.organizationCode</organizationCode>
+    <organizationName>$0.organizationName</organizationName>
+    <organizationReferenceID>$0.organizationReferenceID</organizationReferenceID>
+    <organizationSubtypeReference>
+      <organizationSubtypeName>$0.organizationSubtypeName</organizationSubtypeName>
+    </organizationSubtypeReference>
+    <organizationTypeReference>
+      <organizationTypeName>$0.organizationTypeName</organizationTypeName>
+    </organizationTypeReference>
+    <organizationVisibilityReference>
+      <organizationVisibilityName>$0.organizationVisibilityName</organizationVisibilityName>
+    </organizationVisibilityReference>
+    <positionManagementEnabled>$0.positionManagementEnabled</positionManagementEnabled>
+    <primaryBusinessSiteReference>
+      <businessSiteReference>
+        <integrationIDReference>
+          <ID>
+            <systemID>$0.systemID</systemID>
+            <value>$0.value</value>
+          </ID>
+          <descriptor>$0.descriptor</descriptor>
+        </integrationIDReference>
+      </businessSiteReference>
+    </primaryBusinessSiteReference>
+    <superiorOrganizationReference>
+      <organizationReference>
+        <integrationIDReference>
+          <ID>
+            <systemID>$0.systemID_1</systemID>
+            <value>$0.value_1</value>
+          </ID>
+          <descriptor>$0.descriptor_1</descriptor>
+        </integrationIDReference>
+      </organizationReference>
+    </superiorOrganizationReference>
+  </organizationData>
+  <version>$0.version</version>
+</object>]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <typed-object-ref type-ref="com.workday.hr.OrganizationAddUpdateType"/>
+  <typed-object type="com.workday.hr.ExternalIntegrationIDDataType">
+    <schema-collection name="ID" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.IDType"/>
+    </schema-collection>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationVisibilityReferenceDataType">
+    <typed-object-ref name="organizationVisibilityName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationSubtypeReferenceDataType">
+    <typed-object-ref name="organizationSubtypeName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.BusinessSiteReferenceDataType">
+    <typed-object-ref name="integrationIDReference" type-ref="com.workday.hr.ExternalIntegrationIDReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationAddUpdateType">
+    <typed-object-ref name="organizationData" type-ref="com.workday.hr.OrganizationDataType"/>
+    <typed-object-ref name="version" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="javax.xml.datatype.XMLGregorianCalendar"/>
+  <typed-object type="com.workday.hr.IDType">
+    <typed-object-ref name="systemID" type-ref="java.lang.String"/>
+    <typed-object-ref name="value" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationTypeReferenceDataType">
+    <typed-object-ref name="organizationTypeName" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ExternalIntegrationIDReferenceDataType">
+    <typed-object-ref name="ID" type-ref="com.workday.hr.IDType"/>
+    <typed-object-ref name="descriptor" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationReferenceType">
+    <typed-object-ref name="integrationIDReference" type-ref="com.workday.hr.ExternalIntegrationIDReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.PrimaryBusinessSiteReferenceDataType">
+    <typed-object-ref name="businessSiteReference" type-ref="com.workday.hr.BusinessSiteReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.OrganizationDataType">
+    <typed-object-ref name="availabilityDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <schema-collection name="containerOrganizationReference" type="java.util.List">
+      <typed-object-ref type-ref="com.workday.hr.ContainerOrganizationReferenceDataType"/>
+    </schema-collection>
+    <typed-object-ref name="effectiveDate" type-ref="javax.xml.datatype.XMLGregorianCalendar"/>
+    <typed-object-ref name="frozenStatus" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="headcountManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeLeaderInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeOrganizationCodeInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="includeOrganizationIDInName" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="integrationIDData" type-ref="com.workday.hr.ExternalIntegrationIDDataType"/>
+    <typed-object-ref name="jobManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="organizationCode" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationName" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationReferenceID" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizationSubtypeReference" type-ref="com.workday.hr.OrganizationSubtypeReferenceDataType"/>
+    <typed-object-ref name="organizationTypeReference" type-ref="com.workday.hr.OrganizationTypeReferenceDataType"/>
+    <typed-object-ref name="organizationVisibilityReference" type-ref="com.workday.hr.OrganizationVisibilityReferenceDataType"/>
+    <typed-object-ref name="positionManagementEnabled" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="primaryBusinessSiteReference" type-ref="com.workday.hr.PrimaryBusinessSiteReferenceDataType"/>
+    <typed-object-ref name="superiorOrganizationReference" type-ref="com.workday.hr.SuperiorOrganizationReferenceDataType"/>
+  </typed-object>
+  <typed-object type="com.workday.hr.ContainerOrganizationReferenceDataType">
+    <typed-object-ref name="organizationReference" type-ref="com.workday.hr.OrganizationReferenceType"/>
+  </typed-object>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="com.workday.hr.SuperiorOrganizationReferenceDataType">
+    <typed-object-ref name="organizationReference" type-ref="com.workday.hr.OrganizationReferenceType"/>
+  </typed-object>
+  <typed-object type="java.lang.String"/>
+</schema-object>
+]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'BAPI_PDOTYPES_GETDETAILEDLIST' -&gt; 'object'" guiX="460" guiY="20" id="FOREACH_BAPI_PDOTYPES_GETDETAILEDLIST_OBJECT" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="xmlSchemaURL"><![CDATA[./src/main/resources/BAPI_PDOTYPES_GETDETAILEDLIST.xsd]]></attr>
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath="/BAPI_PDOTYPES_GETDETAILEDLIST">
+  <Mapping cloverField="ENDDATE" trim="true" xpath="import/ENDDATE"/>
+  <Mapping cloverField="LANGUAGE" trim="true" xpath="import/LANGUAGE"/>
+  <Mapping cloverField="LANGUAGEISO" trim="true" xpath="import/LANGUAGEISO"/>
+  <Mapping cloverField="OBJECTTYPE" trim="true" xpath="import/OBJECTTYPE"/>
+  <Mapping cloverField="PLANNINGSTATUS" trim="true" xpath="import/PLANNINGSTATUS"/>
+  <Mapping cloverField="PLANVERSION" trim="true" xpath="import/PLANVERSION"/>
+  <Mapping cloverField="STARTDATE" trim="true" xpath="import/STARTDATE"/>
+  <Mapping cloverField="TYPE" trim="true" xpath="export/RETURN/TYPE"/>
+  <Mapping cloverField="ID" trim="true" xpath="export/RETURN/ID"/>
+  <Mapping cloverField="NUMBER" trim="true" xpath="export/RETURN/NUMBER"/>
+  <Mapping cloverField="MESSAGE" trim="true" xpath="export/RETURN/MESSAGE"/>
+  <Mapping cloverField="LOG_NO" trim="true" xpath="export/RETURN/LOG_NO"/>
+  <Mapping cloverField="LOG_MSG_NO" trim="true" xpath="export/RETURN/LOG_MSG_NO"/>
+  <Mapping cloverField="MESSAGE_V1" trim="true" xpath="export/RETURN/MESSAGE_V1"/>
+  <Mapping cloverField="MESSAGE_V2" trim="true" xpath="export/RETURN/MESSAGE_V2"/>
+  <Mapping cloverField="MESSAGE_V3" trim="true" xpath="export/RETURN/MESSAGE_V3"/>
+  <Mapping cloverField="MESSAGE_V4" trim="true" xpath="export/RETURN/MESSAGE_V4"/>
+  <Mapping cloverField="PARAMETER" trim="true" xpath="export/RETURN/PARAMETER"/>
+  <Mapping cloverField="ROW" trim="true" xpath="export/RETURN/ROW"/>
+  <Mapping cloverField="FIELD" trim="true" xpath="export/RETURN/FIELD"/>
+  <Mapping cloverField="SYSTEM" trim="true" xpath="export/RETURN/SYSTEM"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[BAPI_PDOTYPES_GETDETAILEDLIST]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_BAPI_PDOTYPES_GETDETAILEDLIST_OBJECT:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="20e368b5-bb99-489b-9ee2-9cd0bfe632dc" outPort="Port 0 (out)" toNode="BEAN_WRITER0:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="c9f73a5f-a37e-4127-8e31-7af0f280e1a2" outPort="Port 0 (out)" toNode="FOREACH_BAPI_PDOTYPES_GETDETAILEDLIST_OBJECT:0"/>
+</Phase>
+</Graph>
