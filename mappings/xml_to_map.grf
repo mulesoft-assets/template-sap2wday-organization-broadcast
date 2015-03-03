@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Admin" created="Thu Feb 26 11:59:21 CET 2015" description="XML To Map" guiVersion="3.4.4.P" id="1425042478780" licenseCode="Unlicensed" licenseType="Unknown" modified="Thu Feb 26 11:59:21 CET 2015" modifiedBy="Admin" name="XML_To_Map" preview-file="${Project_Home}/src/main/resources/HRMD_ABA01.xsd" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="61" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="402cdeb6-5ffa-48bb-89c6-c130778a4e5b">
+<Record fieldDelimiter="," name="E1P0000" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="61" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="62" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="63" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="64" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="65" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="66" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="67" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="68" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="69" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="70" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="71" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="72" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="73" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="74" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="75" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="76" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="77" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="78" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="79" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="80" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="81" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="82" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="83" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/MASSN" containerType="SINGLE" label="MASSN" name="MASSN" type="string"/>
+<Field __index="84" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/MASSG" containerType="SINGLE" label="MASSG" name="MASSG" type="string"/>
+<Field __index="85" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/STAT1" containerType="SINGLE" label="STAT1" name="STAT1" type="string"/>
+<Field __index="86" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/STAT2" containerType="SINGLE" label="STAT2" name="STAT2" type="string"/>
+<Field __index="87" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/STAT3" containerType="SINGLE" label="STAT3" name="STAT3" type="string"/>
+<Field __index="88" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="89" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0000/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="90" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="4cd4258d-d517-4915-a32c-58c28135d561">
+<Record fieldDelimiter="," name="E1P0001" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="90" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="91" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="92" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="93" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="94" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="95" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="96" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="97" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="98" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="99" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="100" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="101" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="102" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="103" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="104" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="105" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="106" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="107" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="108" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="109" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="110" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="111" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="112" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/BUKRS" containerType="SINGLE" label="BUKRS" name="BUKRS" type="string"/>
+<Field __index="113" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/WERKS" containerType="SINGLE" label="WERKS" name="WERKS" type="string"/>
+<Field __index="114" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/PERSG" containerType="SINGLE" label="PERSG" name="PERSG" type="string"/>
+<Field __index="115" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/PERSK" containerType="SINGLE" label="PERSK" name="PERSK" type="string"/>
+<Field __index="116" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/VDSK1" containerType="SINGLE" label="VDSK1" name="VDSK1" type="string"/>
+<Field __index="117" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/GSBER" containerType="SINGLE" label="GSBER" name="GSBER" type="string"/>
+<Field __index="118" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/BTRTL" containerType="SINGLE" label="BTRTL" name="BTRTL" type="string"/>
+<Field __index="119" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/JUPER" containerType="SINGLE" label="JUPER" name="JUPER" type="string"/>
+<Field __index="120" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ABKRS" containerType="SINGLE" label="ABKRS" name="ABKRS" type="string"/>
+<Field __index="121" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ANSVH" containerType="SINGLE" label="ANSVH" name="ANSVH" type="string"/>
+<Field __index="122" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/KOSTL" containerType="SINGLE" label="KOSTL" name="KOSTL" type="string"/>
+<Field __index="123" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ORGEH" containerType="SINGLE" label="ORGEH" name="ORGEH" type="string"/>
+<Field __index="124" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/PLANS" containerType="SINGLE" label="PLANS" name="PLANS" type="string"/>
+<Field __index="125" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/STELL" containerType="SINGLE" label="STELL" name="STELL" type="string"/>
+<Field __index="126" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/MSTBR" containerType="SINGLE" label="MSTBR" name="MSTBR" type="string"/>
+<Field __index="127" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SACHA" containerType="SINGLE" label="SACHA" name="SACHA" type="string"/>
+<Field __index="128" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SACHP" containerType="SINGLE" label="SACHP" name="SACHP" type="string"/>
+<Field __index="129" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SACHZ" containerType="SINGLE" label="SACHZ" name="SACHZ" type="string"/>
+<Field __index="130" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SNAME" containerType="SINGLE" label="SNAME" name="SNAME" type="string"/>
+<Field __index="131" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/ENAME" containerType="SINGLE" label="ENAME" name="ENAME" type="string"/>
+<Field __index="132" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="133" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SBMOD" containerType="SINGLE" label="SBMOD" name="SBMOD" type="string"/>
+<Field __index="134" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/KOKRS" containerType="SINGLE" label="KOKRS" name="KOKRS" type="string"/>
+<Field __index="135" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FISTL" containerType="SINGLE" label="FISTL" name="FISTL" type="string"/>
+<Field __index="136" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/GEBER" containerType="SINGLE" label="GEBER" name="GEBER" type="string"/>
+<Field __index="137" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/FKBER" containerType="SINGLE" label="FKBER" name="FKBER" type="string"/>
+<Field __index="138" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/GRANT_NBR" containerType="SINGLE" label="GRANT_NBR" name="GRANT_NBR" type="string"/>
+<Field __index="139" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="140" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/SGMNT" containerType="SINGLE" label="SGMNT" name="SGMNT" type="string"/>
+<Field __index="141" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0001/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="142" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="904531c6-5e57-4ca5-bd0b-9dfb6311966b">
+<Record fieldDelimiter="," name="E1P0002" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="142" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="143" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="144" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="145" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="146" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="147" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="148" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="149" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="150" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="151" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="152" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="153" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="154" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="155" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="156" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="157" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="158" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="159" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="160" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="161" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="162" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="163" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="164" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/INITS" containerType="SINGLE" label="INITS" name="INITS" type="string"/>
+<Field __index="165" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NACHN" containerType="SINGLE" label="NACHN" name="NACHN" type="string"/>
+<Field __index="166" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NAME2" containerType="SINGLE" label="NAME2" name="NAME2" type="string"/>
+<Field __index="167" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/VORNA" containerType="SINGLE" label="VORNA" name="VORNA" type="string"/>
+<Field __index="168" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/TITEL" containerType="SINGLE" label="TITEL" name="TITEL" type="string"/>
+<Field __index="169" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/TITL2" containerType="SINGLE" label="TITL2" name="TITL2" type="string"/>
+<Field __index="170" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NAMZU" containerType="SINGLE" label="NAMZU" name="NAMZU" type="string"/>
+<Field __index="171" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/VORSW" containerType="SINGLE" label="VORSW" name="VORSW" type="string"/>
+<Field __index="172" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/VORS2" containerType="SINGLE" label="VORS2" name="VORS2" type="string"/>
+<Field __index="173" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/RUFNM" containerType="SINGLE" label="RUFNM" name="RUFNM" type="string"/>
+<Field __index="174" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/KNZNM" containerType="SINGLE" label="KNZNM" name="KNZNM" type="string"/>
+<Field __index="175" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ANRED" containerType="SINGLE" label="ANRED" name="ANRED" type="string"/>
+<Field __index="176" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GESCH" containerType="SINGLE" label="GESCH" name="GESCH" type="string"/>
+<Field __index="177" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBDAT" containerType="SINGLE" label="GBDAT" name="GBDAT" type="string"/>
+<Field __index="178" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBLND" containerType="SINGLE" label="GBLND" name="GBLND" type="string"/>
+<Field __index="179" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBDEP" containerType="SINGLE" label="GBDEP" name="GBDEP" type="string"/>
+<Field __index="180" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBORT" containerType="SINGLE" label="GBORT" name="GBORT" type="string"/>
+<Field __index="181" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NATIO" containerType="SINGLE" label="NATIO" name="NATIO" type="string"/>
+<Field __index="182" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NATI2" containerType="SINGLE" label="NATI2" name="NATI2" type="string"/>
+<Field __index="183" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NATI3" containerType="SINGLE" label="NATI3" name="NATI3" type="string"/>
+<Field __index="184" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/SPRSL" containerType="SINGLE" label="SPRSL" name="SPRSL" type="string"/>
+<Field __index="185" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/KONFE" containerType="SINGLE" label="KONFE" name="KONFE" type="string"/>
+<Field __index="186" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FAMST" containerType="SINGLE" label="FAMST" name="FAMST" type="string"/>
+<Field __index="187" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FAMDT" containerType="SINGLE" label="FAMDT" name="FAMDT" type="string"/>
+<Field __index="188" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/ANZKD" containerType="SINGLE" label="ANZKD" name="ANZKD" type="string"/>
+<Field __index="189" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NACON" containerType="SINGLE" label="NACON" name="NACON" type="string"/>
+<Field __index="190" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/PERMO" containerType="SINGLE" label="PERMO" name="PERMO" type="string"/>
+<Field __index="191" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/PERID" containerType="SINGLE" label="PERID" name="PERID" type="string"/>
+<Field __index="192" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBPAS" containerType="SINGLE" label="GBPAS" name="GBPAS" type="string"/>
+<Field __index="193" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FNAMK" containerType="SINGLE" label="FNAMK" name="FNAMK" type="string"/>
+<Field __index="194" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/LNAMK" containerType="SINGLE" label="LNAMK" name="LNAMK" type="string"/>
+<Field __index="195" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/FNAMR" containerType="SINGLE" label="FNAMR" name="FNAMR" type="string"/>
+<Field __index="196" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/LNAMR" containerType="SINGLE" label="LNAMR" name="LNAMR" type="string"/>
+<Field __index="197" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NABIK" containerType="SINGLE" label="NABIK" name="NABIK" type="string"/>
+<Field __index="198" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NABIR" containerType="SINGLE" label="NABIR" name="NABIR" type="string"/>
+<Field __index="199" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NICKK" containerType="SINGLE" label="NICKK" name="NICKK" type="string"/>
+<Field __index="200" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NICKR" containerType="SINGLE" label="NICKR" name="NICKR" type="string"/>
+<Field __index="201" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBJHR" containerType="SINGLE" label="GBJHR" name="GBJHR" type="string"/>
+<Field __index="202" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBMON" containerType="SINGLE" label="GBMON" name="GBMON" type="string"/>
+<Field __index="203" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBTAG" containerType="SINGLE" label="GBTAG" name="GBTAG" type="string"/>
+<Field __index="204" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NCHMC" containerType="SINGLE" label="NCHMC" name="NCHMC" type="string"/>
+<Field __index="205" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/VNAMC" containerType="SINGLE" label="VNAMC" name="VNAMC" type="string"/>
+<Field __index="206" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/SPRSL_ISO" containerType="SINGLE" label="SPRSL_ISO" name="SPRSL_ISO" type="string"/>
+<Field __index="207" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NACHN_40" containerType="SINGLE" label="NACHN_40" name="NACHN_40" type="string"/>
+<Field __index="208" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NAME2_40" containerType="SINGLE" label="NAME2_40" name="NAME2_40" type="string"/>
+<Field __index="209" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/NACH2" containerType="SINGLE" label="NACH2" name="NACH2" type="string"/>
+<Field __index="210" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/VORNA_40" containerType="SINGLE" label="VORNA_40" name="VORNA_40" type="string"/>
+<Field __index="211" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/CNAME_40" containerType="SINGLE" label="CNAME_40" name="CNAME_40" type="string"/>
+<Field __index="212" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/RUFNM_40" containerType="SINGLE" label="RUFNM_40" name="RUFNM_40" type="string"/>
+<Field __index="213" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/MIDNM" containerType="SINGLE" label="MIDNM" name="MIDNM" type="string"/>
+<Field __index="214" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/GBORT_40" containerType="SINGLE" label="GBORT_40" name="GBORT_40" type="string"/>
+<Field __index="215" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/PERNR" containerType="SINGLE" label="PERNR" name="PERNR_1" type="string"/>
+<Field __index="216" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/INFTY" containerType="SINGLE" label="INFTY" name="INFTY_1" type="string"/>
+<Field __index="217" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY_1" type="string"/>
+<Field __index="218" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS_1" type="string"/>
+<Field __index="219" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS_1" type="string"/>
+<Field __index="220" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA_1" type="string"/>
+<Field __index="221" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA_1" type="string"/>
+<Field __index="222" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR_1" type="string"/>
+<Field __index="223" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/FNAMK_45" containerType="SINGLE" label="FNAMK_45" name="FNAMK_45" type="string"/>
+<Field __index="224" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/LNAMK_45" containerType="SINGLE" label="LNAMK_45" name="LNAMK_45" type="string"/>
+<Field __index="225" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/FNAMR_45" containerType="SINGLE" label="FNAMR_45" name="FNAMR_45" type="string"/>
+<Field __index="226" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/LNAMR_45" containerType="SINGLE" label="LNAMR_45" name="LNAMR_45" type="string"/>
+<Field __index="227" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/NABIK_45" containerType="SINGLE" label="NABIK_45" name="NABIK_45" type="string"/>
+<Field __index="228" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/NABIR_45" containerType="SINGLE" label="NABIR_45" name="NABIR_45" type="string"/>
+<Field __index="229" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/NICKK_45" containerType="SINGLE" label="NICKK_45" name="NICKK_45" type="string"/>
+<Field __index="230" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/NICKR_45" containerType="SINGLE" label="NICKR_45" name="NICKR_45" type="string"/>
+<Field __index="231" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/NAMZ2" containerType="SINGLE" label="NAMZ2" name="NAMZ2" type="string"/>
+<Field __index="232" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="233" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/E1Q0002/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+<Field __index="234" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0002/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT_1" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="235" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="3e1c4d26-21be-4605-820c-97b95aa08fee">
+<Record fieldDelimiter="," name="E1P0006" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="235" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="236" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="237" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="238" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="239" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="240" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="241" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="242" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="243" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="244" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="245" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="246" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="247" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="248" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="249" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="250" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="251" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="252" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="253" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="254" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="255" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="256" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="257" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ANSSA" containerType="SINGLE" label="ANSSA" name="ANSSA" type="string"/>
+<Field __index="258" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NAME2" containerType="SINGLE" label="NAME2" name="NAME2" type="string"/>
+<Field __index="259" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/STRAS" containerType="SINGLE" label="STRAS" name="STRAS" type="string"/>
+<Field __index="260" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ORT01" containerType="SINGLE" label="ORT01" name="ORT01" type="string"/>
+<Field __index="261" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ORT02" containerType="SINGLE" label="ORT02" name="ORT02" type="string"/>
+<Field __index="262" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/PSTLZ" containerType="SINGLE" label="PSTLZ" name="PSTLZ" type="string"/>
+<Field __index="263" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/LAND1" containerType="SINGLE" label="LAND1" name="LAND1" type="string"/>
+<Field __index="264" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/TELNR" containerType="SINGLE" label="TELNR" name="TELNR" type="string"/>
+<Field __index="265" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ENTKM" containerType="SINGLE" label="ENTKM" name="ENTKM" type="string"/>
+<Field __index="266" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/WKWNG" containerType="SINGLE" label="WKWNG" name="WKWNG" type="string"/>
+<Field __index="267" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/BUSRT" containerType="SINGLE" label="BUSRT" name="BUSRT" type="string"/>
+<Field __index="268" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/LOCAT" containerType="SINGLE" label="LOCAT" name="LOCAT" type="string"/>
+<Field __index="269" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/STATE" containerType="SINGLE" label="STATE" name="STATE" type="string"/>
+<Field __index="270" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/HSNMR" containerType="SINGLE" label="HSNMR" name="HSNMR" type="string"/>
+<Field __index="271" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/POSTA" containerType="SINGLE" label="POSTA" name="POSTA" type="string"/>
+<Field __index="272" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/STRDS" containerType="SINGLE" label="STRDS" name="STRDS" type="string"/>
+<Field __index="273" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ENTK2" containerType="SINGLE" label="ENTK2" name="ENTK2" type="string"/>
+<Field __index="274" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM01" containerType="SINGLE" label="COM01" name="COM01" type="string"/>
+<Field __index="275" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM01" containerType="SINGLE" label="NUM01" name="NUM01" type="string"/>
+<Field __index="276" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM02" containerType="SINGLE" label="COM02" name="COM02" type="string"/>
+<Field __index="277" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM02" containerType="SINGLE" label="NUM02" name="NUM02" type="string"/>
+<Field __index="278" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM03" containerType="SINGLE" label="COM03" name="COM03" type="string"/>
+<Field __index="279" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM03" containerType="SINGLE" label="NUM03" name="NUM03" type="string"/>
+<Field __index="280" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM04" containerType="SINGLE" label="COM04" name="COM04" type="string"/>
+<Field __index="281" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM04" containerType="SINGLE" label="NUM04" name="NUM04" type="string"/>
+<Field __index="282" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM05" containerType="SINGLE" label="COM05" name="COM05" type="string"/>
+<Field __index="283" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM05" containerType="SINGLE" label="NUM05" name="NUM05" type="string"/>
+<Field __index="284" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COM06" containerType="SINGLE" label="COM06" name="COM06" type="string"/>
+<Field __index="285" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NUM06" containerType="SINGLE" label="NUM06" name="NUM06" type="string"/>
+<Field __index="286" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/INDRL" containerType="SINGLE" label="INDRL" name="INDRL" type="string"/>
+<Field __index="287" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/COUNC" containerType="SINGLE" label="COUNC" name="COUNC" type="string"/>
+<Field __index="288" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/RCTVC" containerType="SINGLE" label="RCTVC" name="RCTVC" type="string"/>
+<Field __index="289" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/OR2KK" containerType="SINGLE" label="OR2KK" name="OR2KK" type="string"/>
+<Field __index="290" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/CONKK" containerType="SINGLE" label="CONKK" name="CONKK" type="string"/>
+<Field __index="291" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/OR1KK" containerType="SINGLE" label="OR1KK" name="OR1KK" type="string"/>
+<Field __index="292" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/RAILW" containerType="SINGLE" label="RAILW" name="RAILW" type="string"/>
+<Field __index="293" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/NAME2_40" containerType="SINGLE" label="NAME2_40" name="NAME2_40" type="string"/>
+<Field __index="294" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/STRAS_40" containerType="SINGLE" label="STRAS_40" name="STRAS_40" type="string"/>
+<Field __index="295" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ORT01_40" containerType="SINGLE" label="ORT01_40" name="ORT01_40" type="string"/>
+<Field __index="296" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ORT02_40" containerType="SINGLE" label="ORT02_40" name="ORT02_40" type="string"/>
+<Field __index="297" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/LOCAT_40" containerType="SINGLE" label="LOCAT_40" name="LOCAT_40" type="string"/>
+<Field __index="298" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ADR03" containerType="SINGLE" label="ADR03" name="ADR03" type="string"/>
+<Field __index="299" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/ADR04" containerType="SINGLE" label="ADR04" name="ADR04" type="string"/>
+<Field __index="300" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/HSNMR_40" containerType="SINGLE" label="HSNMR_40" name="HSNMR_40" type="string"/>
+<Field __index="301" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/POSTA_40" containerType="SINGLE" label="POSTA_40" name="POSTA_40" type="string"/>
+<Field __index="302" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/BLDNG" containerType="SINGLE" label="BLDNG" name="BLDNG" type="string"/>
+<Field __index="303" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/FLOOR" containerType="SINGLE" label="FLOOR" name="FLOOR" type="string"/>
+<Field __index="304" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/OR2KK_45" containerType="SINGLE" label="OR2KK_45" name="OR2KK_45" type="string"/>
+<Field __index="305" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/CONKK_45" containerType="SINGLE" label="CONKK_45" name="CONKK_45" type="string"/>
+<Field __index="306" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/OR1KK_45" containerType="SINGLE" label="OR1KK_45" name="OR1KK_45" type="string"/>
+<Field __index="307" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="308" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0006/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="309" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="6407bf9b-98ec-4ba7-b352-f8e7c5a45f9c">
+<Record fieldDelimiter="," name="E1P0009" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="309" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="310" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="311" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="312" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="313" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="314" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="315" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="316" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="317" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="318" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="319" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="320" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="321" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="322" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="323" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="324" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="325" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="326" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="327" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="328" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="329" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="330" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="331" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/OPKEN" containerType="SINGLE" label="OPKEN" name="OPKEN" type="string"/>
+<Field __index="332" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BETRG" containerType="SINGLE" label="BETRG" name="BETRG" type="string"/>
+<Field __index="333" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/WAERS" containerType="SINGLE" label="WAERS" name="WAERS" type="string"/>
+<Field __index="334" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ANZHL" containerType="SINGLE" label="ANZHL" name="ANZHL" type="string"/>
+<Field __index="335" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ZEINH" containerType="SINGLE" label="ZEINH" name="ZEINH" type="string"/>
+<Field __index="336" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BNKSA" containerType="SINGLE" label="BNKSA" name="BNKSA" type="string"/>
+<Field __index="337" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ZLSCH" containerType="SINGLE" label="ZLSCH" name="ZLSCH" type="string"/>
+<Field __index="338" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/EMFTX" containerType="SINGLE" label="EMFTX" name="EMFTX" type="string"/>
+<Field __index="339" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BKPLZ" containerType="SINGLE" label="BKPLZ" name="BKPLZ" type="string"/>
+<Field __index="340" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BKORT" containerType="SINGLE" label="BKORT" name="BKORT" type="string"/>
+<Field __index="341" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BANKS" containerType="SINGLE" label="BANKS" name="BANKS" type="string"/>
+<Field __index="342" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BANKL" containerType="SINGLE" label="BANKL" name="BANKL" type="string"/>
+<Field __index="343" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BANKN" containerType="SINGLE" label="BANKN" name="BANKN" type="string"/>
+<Field __index="344" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BANKP" containerType="SINGLE" label="BANKP" name="BANKP" type="string"/>
+<Field __index="345" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BKONT" containerType="SINGLE" label="BKONT" name="BKONT" type="string"/>
+<Field __index="346" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/SWIFT" containerType="SINGLE" label="SWIFT" name="SWIFT" type="string"/>
+<Field __index="347" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/DTAWS" containerType="SINGLE" label="DTAWS" name="DTAWS" type="string"/>
+<Field __index="348" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/DTAMS" containerType="SINGLE" label="DTAMS" name="DTAMS" type="string"/>
+<Field __index="349" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/STCD1" containerType="SINGLE" label="STCD1" name="STCD1" type="string"/>
+<Field __index="350" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/STCD2" containerType="SINGLE" label="STCD2" name="STCD2" type="string"/>
+<Field __index="351" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/PSKTO" containerType="SINGLE" label="PSKTO" name="PSKTO" type="string"/>
+<Field __index="352" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ESRNR" containerType="SINGLE" label="ESRNR" name="ESRNR" type="string"/>
+<Field __index="353" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ESRRE" containerType="SINGLE" label="ESRRE" name="ESRRE" type="string"/>
+<Field __index="354" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ESRPZ" containerType="SINGLE" label="ESRPZ" name="ESRPZ" type="string"/>
+<Field __index="355" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/EMFSL" containerType="SINGLE" label="EMFSL" name="EMFSL" type="string"/>
+<Field __index="356" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/ZWECK" containerType="SINGLE" label="ZWECK" name="ZWECK" type="string"/>
+<Field __index="357" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BTTYP" containerType="SINGLE" label="BTTYP" name="BTTYP" type="string"/>
+<Field __index="358" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BETRG_40" containerType="SINGLE" label="BETRG_40" name="BETRG_40" type="string"/>
+<Field __index="359" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/PAYTY" containerType="SINGLE" label="PAYTY" name="PAYTY" type="string"/>
+<Field __index="360" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/PAYID" containerType="SINGLE" label="PAYID" name="PAYID" type="string"/>
+<Field __index="361" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/OCRSN" containerType="SINGLE" label="OCRSN" name="OCRSN" type="string"/>
+<Field __index="362" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BONDT" containerType="SINGLE" label="BONDT" name="BONDT" type="string"/>
+<Field __index="363" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/BKREF" containerType="SINGLE" label="BKREF" name="BKREF" type="string"/>
+<Field __index="364" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/STRAS" containerType="SINGLE" label="STRAS" name="STRAS" type="string"/>
+<Field __index="365" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/STATE" containerType="SINGLE" label="STATE" name="STATE" type="string"/>
+<Field __index="366" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="367" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0009/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="368" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="3a8f6d32-d5bd-49c3-be14-da12af121e61">
+<Record fieldDelimiter="," name="E1P0105" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="368" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/PERNR" containerType="SINGLE" label="PERNR" name="PERNR" type="string"/>
+<Field __index="369" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="370" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="371" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/OBJPS" containerType="SINGLE" label="OBJPS" name="OBJPS" type="string"/>
+<Field __index="372" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/SPRPS" containerType="SINGLE" label="SPRPS" name="SPRPS" type="string"/>
+<Field __index="373" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="374" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="375" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="376" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="377" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="378" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="379" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/ITXEX" containerType="SINGLE" label="ITXEX" name="ITXEX" type="string"/>
+<Field __index="380" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/REFEX" containerType="SINGLE" label="REFEX" name="REFEX" type="string"/>
+<Field __index="381" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/ORDEX" containerType="SINGLE" label="ORDEX" name="ORDEX" type="string"/>
+<Field __index="382" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/ITBLD" containerType="SINGLE" label="ITBLD" name="ITBLD" type="string"/>
+<Field __index="383" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/PREAS" containerType="SINGLE" label="PREAS" name="PREAS" type="string"/>
+<Field __index="384" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/FLAG1" containerType="SINGLE" label="FLAG1" name="FLAG1" type="string"/>
+<Field __index="385" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/FLAG2" containerType="SINGLE" label="FLAG2" name="FLAG2" type="string"/>
+<Field __index="386" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/FLAG3" containerType="SINGLE" label="FLAG3" name="FLAG3" type="string"/>
+<Field __index="387" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/FLAG4" containerType="SINGLE" label="FLAG4" name="FLAG4" type="string"/>
+<Field __index="388" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/RESE1" containerType="SINGLE" label="RESE1" name="RESE1" type="string"/>
+<Field __index="389" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/RESE2" containerType="SINGLE" label="RESE2" name="RESE2" type="string"/>
+<Field __index="390" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/USRTY" containerType="SINGLE" label="USRTY" name="USRTY" type="string"/>
+<Field __index="391" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/USRID" containerType="SINGLE" label="USRID" name="USRID" type="string"/>
+<Field __index="392" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/USRID_LONG" containerType="SINGLE" label="USRID_LONG" name="USRID_LONG" type="string"/>
+<Field __index="393" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/GRPVL" containerType="SINGLE" label="GRPVL" name="GRPVL" type="string"/>
+<Field __index="394" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P0105/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="395" __referenceCounter="1" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="fd8bdbdc-c886-406d-ae7a-9663948bbe82">
+<Record fieldDelimiter="," name="E1P1000" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="395" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="396" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="397" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="398" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="399" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="400" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="401" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="402" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="403" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="404" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="405" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/LANGU" containerType="SINGLE" label="LANGU" name="LANGU" type="string"/>
+<Field __index="406" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/DUMMY" containerType="SINGLE" label="DUMMY" name="DUMMY" type="string"/>
+<Field __index="407" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="408" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="409" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="410" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="411" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="412" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="413" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/SHORT" containerType="SINGLE" label="SHORT" name="SHORT" type="string"/>
+<Field __index="414" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/STEXT" containerType="SINGLE" label="STEXT" name="STEXT" type="string"/>
+<Field __index="415" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/GDATE" containerType="SINGLE" label="GDATE" name="GDATE" type="string"/>
+<Field __index="416" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/LANGU_ISO" containerType="SINGLE" label="LANGU_ISO" name="LANGU_ISO" type="string"/>
+<Field __index="417" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1000/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="418" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="f3ab4410-c820-4e90-8b08-b3b375a7e4fb">
+<Record fieldDelimiter="," name="E1P1001" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="418" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="419" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="420" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="421" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="422" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="423" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/RSIGN" containerType="SINGLE" label="RSIGN" name="RSIGN" type="string"/>
+<Field __index="424" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/RELAT" containerType="SINGLE" label="RELAT" name="RELAT" type="string"/>
+<Field __index="425" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="426" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="427" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="428" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="429" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="430" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="431" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="432" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="433" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="434" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="435" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="436" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/SCLAS" containerType="SINGLE" label="SCLAS" name="SCLAS" type="string"/>
+<Field __index="437" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/SOBID" containerType="SINGLE" label="SOBID" name="SOBID" type="string"/>
+<Field __index="438" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/PROZT" containerType="SINGLE" label="PROZT" name="PROZT" type="string"/>
+<Field __index="439" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/ADATA" containerType="SINGLE" label="ADATA" name="ADATA" type="string"/>
+<Field __index="440" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/ADATA_40" containerType="SINGLE" label="ADATA_40" name="ADATA_40" type="string"/>
+<Field __index="441" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1001/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="490" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="4e28c5a1-69fb-4fff-9d5c-a1bec6c9f096">
+<Record fieldDelimiter="," name="E1P1002" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="490" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="491" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="492" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="493" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="494" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="495" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="496" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="497" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="498" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="499" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="500" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/LANGU" containerType="SINGLE" label="LANGU" name="LANGU" type="string"/>
+<Field __index="501" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/DUMMY" containerType="SINGLE" label="DUMMY" name="DUMMY" type="string"/>
+<Field __index="502" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="503" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="504" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="505" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="506" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="507" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="508" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/TABNR" containerType="SINGLE" label="TABNR" name="TABNR" type="string"/>
+<Field __index="509" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/TABSEQNR" containerType="SINGLE" label="TABSEQNR" name="TABSEQNR" type="string"/>
+<Field __index="510" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/TLINE" containerType="SINGLE" label="TLINE" name="TLINE" type="string"/>
+<Field __index="511" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/TFORMAT" containerType="SINGLE" label="TFORMAT" name="TFORMAT" type="string"/>
+<Field __index="512" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/LANGU_ISO" containerType="SINGLE" label="LANGU_ISO" name="LANGU_ISO" type="string"/>
+<Field __index="513" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1002/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="514" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="d9513515-fa16-41de-b90a-949590968aca">
+<Record fieldDelimiter="," name="E1P1016" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="514" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="515" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="516" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="517" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="518" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="519" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="520" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="521" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="522" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="523" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="524" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="525" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="526" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="527" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="528" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="529" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="530" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="531" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/GTIME" containerType="SINGLE" label="GTIME" name="GTIME" type="string"/>
+<Field __index="532" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/SAPRL" containerType="SINGLE" label="SAPRL" name="SAPRL" type="string"/>
+<Field __index="533" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/ACTIV_PROF" containerType="SINGLE" label="ACTIV_PROF" name="ACTIV_PROF" type="string"/>
+<Field __index="534" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/TABNR" containerType="SINGLE" label="TABNR" name="TABNR" type="string"/>
+<Field __index="535" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/TABSEQNR" containerType="SINGLE" label="TABSEQNR" name="TABSEQNR" type="string"/>
+<Field __index="536" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/PROFILE" containerType="SINGLE" label="PROFILE" name="PROFILE" type="string"/>
+<Field __index="537" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/VARIANT" containerType="SINGLE" label="VARIANT" name="VARIANT" type="string"/>
+<Field __index="538" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/GENERATED" containerType="SINGLE" label="GENERATED" name="GENERATED" type="string"/>
+<Field __index="539" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/PSTATE" containerType="SINGLE" label="PSTATE" name="PSTATE" type="string"/>
+<Field __index="540" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1016/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="541" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="dfc54241-b760-44ad-a360-b83e0df32a8f">
+<Record fieldDelimiter="," name="E1P1017" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="541" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="542" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="543" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="544" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="545" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="546" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="547" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="548" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="549" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="550" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="551" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="552" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="553" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="554" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="555" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="556" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="557" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="558" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/TABNR" containerType="SINGLE" label="TABNR" name="TABNR" type="string"/>
+<Field __index="559" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/TABSEQNR" containerType="SINGLE" label="TABSEQNR" name="TABSEQNR" type="string"/>
+<Field __index="560" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/PROFL" containerType="SINGLE" label="PROFL" name="PROFL" type="string"/>
+<Field __index="561" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/EXCLUDED" containerType="SINGLE" label="EXCLUDED" name="EXCLUDED" type="string"/>
+<Field __index="562" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1017/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="563" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="0b04896a-ae4b-41bc-854a-ba00da9c460d">
+<Record fieldDelimiter="," name="E1P1028" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="563" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="564" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="565" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="566" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="567" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="568" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="569" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="570" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="571" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="572" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="573" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="574" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="575" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="576" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="577" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="578" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="579" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="580" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/CNAME" containerType="SINGLE" label="CNAME" name="CNAME" type="string"/>
+<Field __index="581" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/STRAS" containerType="SINGLE" label="STRAS" name="STRAS" type="string"/>
+<Field __index="582" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ORT01" containerType="SINGLE" label="ORT01" name="ORT01" type="string"/>
+<Field __index="583" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/PSTLZ" containerType="SINGLE" label="PSTLZ" name="PSTLZ" type="string"/>
+<Field __index="584" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/LAND1" containerType="SINGLE" label="LAND1" name="LAND1" type="string"/>
+<Field __index="585" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/TELNR" containerType="SINGLE" label="TELNR" name="TELNR" type="string"/>
+<Field __index="586" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/FAXNR" containerType="SINGLE" label="FAXNR" name="FAXNR" type="string"/>
+<Field __index="587" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ENTKM" containerType="SINGLE" label="ENTKM" name="ENTKM" type="string"/>
+<Field __index="588" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/BUILD" containerType="SINGLE" label="BUILD" name="BUILD" type="string"/>
+<Field __index="589" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ROOM1" containerType="SINGLE" label="ROOM1" name="ROOM1" type="string"/>
+<Field __index="590" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ADRNR" containerType="SINGLE" label="ADRNR" name="ADRNR" type="string"/>
+<Field __index="591" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/REGIO" containerType="SINGLE" label="REGIO" name="REGIO" type="string"/>
+<Field __index="592" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/STRS2" containerType="SINGLE" label="STRS2" name="STRS2" type="string"/>
+<Field __index="593" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/HAUSN" containerType="SINGLE" label="HAUSN" name="HAUSN" type="string"/>
+<Field __index="594" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/ORT01_630" containerType="SINGLE" label="ORT01_630" name="ORT01_630" type="string"/>
+<Field __index="595" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1028/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="596" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="26594530-5272-47a6-a2ac-f85c0d00e8aa">
+<Record fieldDelimiter="," name="E1P1032" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="596" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="597" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="598" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="599" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="600" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="601" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="602" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="603" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="604" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="605" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="606" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="607" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="608" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="609" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="610" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="611" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="612" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="613" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/NAME1" containerType="SINGLE" label="NAME1" name="NAME1" type="string"/>
+<Field __index="614" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/NAME2" containerType="SINGLE" label="NAME2" name="NAME2" type="string"/>
+<Field __index="615" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/NAME3" containerType="SINGLE" label="NAME3" name="NAME3" type="string"/>
+<Field __index="616" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/NAME4" containerType="SINGLE" label="NAME4" name="NAME4" type="string"/>
+<Field __index="617" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/NAME5" containerType="SINGLE" label="NAME5" name="NAME5" type="string"/>
+<Field __index="618" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/SMTPADR" containerType="SINGLE" label="SMTPADR" name="SMTPADR" type="string"/>
+<Field __index="619" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1P1032/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="442" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="984d124b-c41c-4a3a-9e15-5b1b72b988c7">
+<Record fieldDelimiter="," name="E1PADD2" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="442" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="443" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="444" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="445" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="446" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="447" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/RSIGN" containerType="SINGLE" label="RSIGN" name="RSIGN" type="string"/>
+<Field __index="448" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/RELAT" containerType="SINGLE" label="RELAT" name="RELAT" type="string"/>
+<Field __index="449" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="450" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="451" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="452" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="453" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="454" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="455" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="456" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="457" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="458" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="459" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="460" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/SCLAS" containerType="SINGLE" label="SCLAS" name="SCLAS" type="string"/>
+<Field __index="461" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/SOBID" containerType="SINGLE" label="SOBID" name="SOBID" type="string"/>
+<Field __index="462" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/PROZT" containerType="SINGLE" label="PROZT" name="PROZT" type="string"/>
+<Field __index="463" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/REPPR" containerType="SINGLE" label="REPPR" name="REPPR" type="string"/>
+<Field __index="464" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/ACTIVE" containerType="SINGLE" label="ACTIVE" name="ACTIVE" type="string"/>
+<Field __index="465" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADD2/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="466" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="960e8614-f99d-49d2-b5d9-e8ccb6655b1d" _parent_id="__parent_id" _type="Input" id="adc9088b-568c-4159-a3b9-f50229c67dfb">
+<Record fieldDelimiter="," name="E1PADXN" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="466" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="467" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="468" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="469" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="470" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="471" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/RSIGN" containerType="SINGLE" label="RSIGN" name="RSIGN" type="string"/>
+<Field __index="472" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/RELAT" containerType="SINGLE" label="RELAT" name="RELAT" type="string"/>
+<Field __index="473" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/ISTAT" containerType="SINGLE" label="ISTAT" name="ISTAT" type="string"/>
+<Field __index="474" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/PRIOX" containerType="SINGLE" label="PRIOX" name="PRIOX" type="string"/>
+<Field __index="475" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="476" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="477" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/VARYF" containerType="SINGLE" label="VARYF" name="VARYF" type="string"/>
+<Field __index="478" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/SEQNR" containerType="SINGLE" label="SEQNR" name="SEQNR" type="string"/>
+<Field __index="479" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/AEDTM" containerType="SINGLE" label="AEDTM" name="AEDTM" type="string"/>
+<Field __index="480" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/UNAME" containerType="SINGLE" label="UNAME" name="UNAME" type="string"/>
+<Field __index="481" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/REASN" containerType="SINGLE" label="REASN" name="REASN" type="string"/>
+<Field __index="482" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/HISTO" containerType="SINGLE" label="HISTO" name="HISTO" type="string"/>
+<Field __index="483" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/ITXNR" containerType="SINGLE" label="ITXNR" name="ITXNR" type="string"/>
+<Field __index="484" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/SCLAS" containerType="SINGLE" label="SCLAS" name="SCLAS" type="string"/>
+<Field __index="485" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/SOBID" containerType="SINGLE" label="SOBID" name="SOBID" type="string"/>
+<Field __index="486" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/PROZT" containerType="SINGLE" label="PROZT" name="PROZT" type="string"/>
+<Field __index="487" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/MESTYP" containerType="SINGLE" label="MESTYP" name="MESTYP" type="string"/>
+<Field __index="488" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/MESTYP_40" containerType="SINGLE" label="MESTYP_40" name="MESTYP_40" type="string"/>
+<Field __index="489" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/E1PADXN/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="53" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="5052f747-7f28-4ac6-b96d-6c578615b5f6" _parent_id="__parent_id" _type="Input" id="960e8614-f99d-49d2-b5d9-e8ccb6655b1d">
+<Record fieldDelimiter="," name="E1PITYP" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="53" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="54" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="55" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="56" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/INFTY" containerType="SINGLE" label="INFTY" name="INFTY" type="string"/>
+<Field __index="57" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/SUBTY" containerType="SINGLE" label="SUBTY" name="SUBTY" type="string"/>
+<Field __index="58" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/BEGDA" containerType="SINGLE" label="BEGDA" name="BEGDA" type="string"/>
+<Field __index="59" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/ENDDA" containerType="SINGLE" label="ENDDA" name="ENDDA" type="string"/>
+<Field __index="60" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/LONG_INFTY" containerType="SINGLE" label="LONG_INFTY" name="LONG_INFTY" type="string"/>
+<Field __index="620" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PITYP/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="37" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="d1a65acc-8179-4320-9678-4fa695f670d1" _parent_id="__parent_id" _type="Input" id="5052f747-7f28-4ac6-b96d-6c578615b5f6">
+<Record fieldDelimiter="," name="E1PLOGI" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="37" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="38" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="39" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="40" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/PROOF" containerType="SINGLE" label="PROOF" name="PROOF" type="string"/>
+<Field __index="41" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/OPERA" containerType="SINGLE" label="OPERA" name="OPERA" type="string"/>
+<Field __index="42" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/SERIAL_COUNTER" containerType="SINGLE" label="SERIAL_COUNTER" name="SERIAL_COUNTER" type="string"/>
+<Field __index="43" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/FILTER1" containerType="SINGLE" label="FILTER1" name="FILTER1" type="string"/>
+<Field __index="44" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/FILTER2" containerType="SINGLE" label="FILTER2" name="FILTER2" type="string"/>
+<Field __index="621" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="45" __referenceCounter="0" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="5052f747-7f28-4ac6-b96d-6c578615b5f6" _parent_id="__parent_id" _type="Input" id="9b181305-f591-44dc-8c1a-58aed8812c75">
+<Record fieldDelimiter="," name="E1PORIG" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="45" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/PLVAR" containerType="SINGLE" label="PLVAR" name="PLVAR" type="string"/>
+<Field __index="46" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/OTYPE" containerType="SINGLE" label="OTYPE" name="OTYPE" type="string"/>
+<Field __index="47" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/OBJID" containerType="SINGLE" label="OBJID" name="OBJID" type="string"/>
+<Field __index="48" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/END_DATE" containerType="SINGLE" label="END_DATE" name="END_DATE" type="string"/>
+<Field __index="49" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/END_TIME" containerType="SINGLE" label="END_TIME" name="END_TIME" type="string"/>
+<Field __index="50" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/CHNG_USER" containerType="SINGLE" label="CHNG_USER" name="CHNG_USER" type="string"/>
+<Field __index="51" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/ORIGSYSTEM" containerType="SINGLE" label="ORIGSYSTEM" name="ORIGSYSTEM" type="string"/>
+<Field __index="52" __sourcePath="{}/HRMD_ABA01/IDOC/E1PLOGI/E1PORIG/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="2" __sourcePath="{}/hrCollectionOfMaps" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Output" id="32244c97-ea83-4607-8d32-92d1098f686b">
+<Record fieldDelimiter="," name="hrCollectionOfMaps" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="3" __sourcePath="{}/hrCollectionOfMaps/type" containerType="SINGLE" label="type" name="field_3" type="string"/>
+<Field __index="0" __sourcePath="{}/hrCollectionOfMaps/language" containerType="SINGLE" label="language" name="language" type="string"/>
+<Field __index="2" __sourcePath="{}/hrCollectionOfMaps/organizationName" containerType="SINGLE" label="organizationName" name="longText" type="string"/>
+<Field __index="1" __sourcePath="{}/hrCollectionOfMaps/organizationCode" containerType="SINGLE" label="organizationCode" name="shortText" type="string"/>
+<Field __sourcePath="{}/hrCollectionOfMaps/endDate" containerType="SINGLE" label="endDate" name="endDate" type="string"/>
+<Field __sourcePath="{}/hrCollectionOfMaps/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __sourcePath="{}/hrCollectionOfMaps/organizationTypeName" containerType="SINGLE" label="organizationTypeName" name="organizationTypeName" type="string"/>
+<Field __sourcePath="{}/hrCollectionOfMaps/organizationVisibilityName" containerType="SINGLE" label="organizationVisibilityName" name="organizationVisibilityName" type="string"/>
+<Field __sourcePath="{}/hrCollectionOfMaps/organizationSubtypeName" containerType="SINGLE" label="organizationSubtypeName" name="organizationSubtypeName" type="string"/>
+</Record>
+</Metadata>
+<Metadata __filteredMetadata="false" __index="0" __referenceCounter="1" __sourcePath="{}/HRMD_ABA01" _dataStructure="OBJECT" _id="__id" _type="Input" id="d1a65acc-8179-4320-9678-4fa695f670d1">
+<Record fieldDelimiter="," name="HRMDmyag" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/TABNAM" containerType="SINGLE" label="TABNAM" name="TABNAM" type="string"/>
+<Field __index="1" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/MANDT" containerType="SINGLE" label="MANDT" name="MANDT" type="string"/>
+<Field __index="2" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/DOCNUM" containerType="SINGLE" label="DOCNUM" name="DOCNUM" type="string"/>
+<Field __index="3" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/DOCREL" containerType="SINGLE" label="DOCREL" name="DOCREL" type="string"/>
+<Field __index="4" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/STATUS" containerType="SINGLE" label="STATUS" name="STATUS" type="string"/>
+<Field __index="5" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/DIRECT" containerType="SINGLE" label="DIRECT" name="DIRECT" type="string"/>
+<Field __index="6" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/OUTMOD" containerType="SINGLE" label="OUTMOD" name="OUTMOD" type="string"/>
+<Field __index="7" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/EXPRSS" containerType="SINGLE" label="EXPRSS" name="EXPRSS" type="string"/>
+<Field __index="8" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/TEST" containerType="SINGLE" label="TEST" name="TEST" type="string"/>
+<Field __index="9" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/IDOCTYP" containerType="SINGLE" label="IDOCTYP" name="IDOCTYP" type="string"/>
+<Field __index="10" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/CIMTYP" containerType="SINGLE" label="CIMTYP" name="CIMTYP" type="string"/>
+<Field __index="11" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/MESTYP" containerType="SINGLE" label="MESTYP" name="MESTYP" type="string"/>
+<Field __index="12" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/MESCOD" containerType="SINGLE" label="MESCOD" name="MESCOD" type="string"/>
+<Field __index="13" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/MESFCT" containerType="SINGLE" label="MESFCT" name="MESFCT" type="string"/>
+<Field __index="14" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/STD" containerType="SINGLE" label="STD" name="STD" type="string"/>
+<Field __index="15" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/STDVRS" containerType="SINGLE" label="STDVRS" name="STDVRS" type="string"/>
+<Field __index="16" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/STDMES" containerType="SINGLE" label="STDMES" name="STDMES" type="string"/>
+<Field __index="17" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDPOR" containerType="SINGLE" label="SNDPOR" name="SNDPOR" type="string"/>
+<Field __index="18" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDPRT" containerType="SINGLE" label="SNDPRT" name="SNDPRT" type="string"/>
+<Field __index="19" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDPFC" containerType="SINGLE" label="SNDPFC" name="SNDPFC" type="string"/>
+<Field __index="20" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDPRN" containerType="SINGLE" label="SNDPRN" name="SNDPRN" type="string"/>
+<Field __index="21" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDSAD" containerType="SINGLE" label="SNDSAD" name="SNDSAD" type="string"/>
+<Field __index="22" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SNDLAD" containerType="SINGLE" label="SNDLAD" name="SNDLAD" type="string"/>
+<Field __index="23" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVPOR" containerType="SINGLE" label="RCVPOR" name="RCVPOR" type="string"/>
+<Field __index="24" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVPRT" containerType="SINGLE" label="RCVPRT" name="RCVPRT" type="string"/>
+<Field __index="25" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVPFC" containerType="SINGLE" label="RCVPFC" name="RCVPFC" type="string"/>
+<Field __index="26" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVPRN" containerType="SINGLE" label="RCVPRN" name="RCVPRN" type="string"/>
+<Field __index="27" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVSAD" containerType="SINGLE" label="RCVSAD" name="RCVSAD" type="string"/>
+<Field __index="28" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/RCVLAD" containerType="SINGLE" label="RCVLAD" name="RCVLAD" type="string"/>
+<Field __index="29" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/CREDAT" containerType="SINGLE" label="CREDAT" name="CREDAT" type="string"/>
+<Field __index="30" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/CRETIM" containerType="SINGLE" label="CRETIM" name="CRETIM" type="string"/>
+<Field __index="31" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/REFINT" containerType="SINGLE" label="REFINT" name="REFINT" type="string"/>
+<Field __index="32" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/REFGRP" containerType="SINGLE" label="REFGRP" name="REFGRP" type="string"/>
+<Field __index="33" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/REFMES" containerType="SINGLE" label="REFMES" name="REFMES" type="string"/>
+<Field __index="34" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/ARCKEY" containerType="SINGLE" label="ARCKEY" name="ARCKEY" type="string"/>
+<Field __index="35" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/SERIAL" containerType="SINGLE" label="SERIAL" name="SERIAL" type="string"/>
+<Field __index="36" __sourcePath="{}/HRMD_ABA01/IDOC/EDI_DC40/@SEGMENT" containerType="SINGLE" label="SEGMENT" name="SEGMENT" type="string"/>
+<Field __index="622" __sourcePath="{}/HRMD_ABA01/IDOC/@BEGIN" containerType="SINGLE" label="BEGIN" name="BEGIN" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Foreach 'E1P1000' -&gt; 'hrCollectionOfMaps'" guiX="460" guiY="120" id="FOREACH_E1P1000_HR_COLLECTION_OF_MAPS" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.field_3 = input.OTYPE;
+output.longText = input.STEXT;
+output.shortText = input.SHORT;
+output.language = input.LANGU_ISO;
+output.endDate = input.ENDDA;
+output.id = input.OBJID;
+output.organizationSubtypeName = "Company";
+output.organizationVisibilityName = "Everyone";
+output.organizationTypeName = "Company";]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'HRMD_ABA01' -&gt; 'hrCollectionOfMaps'" guiX="460" guiY="20" id="FOREACH_HRMD_ABA01_HR_COLLECTION_OF_MAPS" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+]]></attr>
+</Node>
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Map&lt;k,v&gt; WRITER" guiX="900" guiY="20" id="MAP_WRITER0" type="MAP_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:collection clover:name="hrCollectionOfMaps" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping">
+  <item clover:inPort="1">
+    <language>$1.language</language>
+    <organizationCode>$1.shortText</organizationCode>
+    <organizationName>$1.longText</organizationName>
+    <type>$1.field_3</type>
+    <endDate>$1.endDate</endDate>
+    <id>$1.id</id>
+    <organizationTypeName>$1.organizationTypeName</organizationTypeName>
+    <organizationVisibilityName>$1.organizationVisibilityName</organizationVisibilityName>
+    <organizationSubtypeName>$1.organizationSubtypeName</organizationSubtypeName>
+  </item>
+  <item clover:inPort="0">
+    <language>$0.language</language>
+    <organizationCode>$0.shortText</organizationCode>
+    <organizationName>$0.longText</organizationName>
+    <type>$0.field_3</type>
+    <endDate>$0.endDate</endDate>
+    <id>$0.id</id>
+    <organizationTypeName>$0.organizationTypeName</organizationTypeName>
+    <organizationVisibilityName>$0.organizationVisibilityName</organizationVisibilityName>
+    <organizationSubtypeName>$0.organizationSubtypeName</organizationSubtypeName>
+  </item>
+</clover:collection>]]></attr>
+<attr name="_data_format"><![CDATA[MAP]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="xmlSchemaURL"><![CDATA[./src/main/resources/HRMD_ABA01.xsd]]></attr>
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath="/HRMD_ABA01">
+  <Mapping cloverField="TABNAM" trim="true" xpath="IDOC/EDI_DC40/TABNAM"/>
+  <Mapping cloverField="MANDT" trim="true" xpath="IDOC/EDI_DC40/MANDT"/>
+  <Mapping cloverField="DOCNUM" trim="true" xpath="IDOC/EDI_DC40/DOCNUM"/>
+  <Mapping cloverField="DOCREL" trim="true" xpath="IDOC/EDI_DC40/DOCREL"/>
+  <Mapping cloverField="STATUS" trim="true" xpath="IDOC/EDI_DC40/STATUS"/>
+  <Mapping cloverField="DIRECT" trim="true" xpath="IDOC/EDI_DC40/DIRECT"/>
+  <Mapping cloverField="OUTMOD" trim="true" xpath="IDOC/EDI_DC40/OUTMOD"/>
+  <Mapping cloverField="EXPRSS" trim="true" xpath="IDOC/EDI_DC40/EXPRSS"/>
+  <Mapping cloverField="TEST" trim="true" xpath="IDOC/EDI_DC40/TEST"/>
+  <Mapping cloverField="IDOCTYP" trim="true" xpath="IDOC/EDI_DC40/IDOCTYP"/>
+  <Mapping cloverField="CIMTYP" trim="true" xpath="IDOC/EDI_DC40/CIMTYP"/>
+  <Mapping cloverField="MESTYP" trim="true" xpath="IDOC/EDI_DC40/MESTYP"/>
+  <Mapping cloverField="MESCOD" trim="true" xpath="IDOC/EDI_DC40/MESCOD"/>
+  <Mapping cloverField="MESFCT" trim="true" xpath="IDOC/EDI_DC40/MESFCT"/>
+  <Mapping cloverField="STD" trim="true" xpath="IDOC/EDI_DC40/STD"/>
+  <Mapping cloverField="STDVRS" trim="true" xpath="IDOC/EDI_DC40/STDVRS"/>
+  <Mapping cloverField="STDMES" trim="true" xpath="IDOC/EDI_DC40/STDMES"/>
+  <Mapping cloverField="SNDPOR" trim="true" xpath="IDOC/EDI_DC40/SNDPOR"/>
+  <Mapping cloverField="SNDPRT" trim="true" xpath="IDOC/EDI_DC40/SNDPRT"/>
+  <Mapping cloverField="SNDPFC" trim="true" xpath="IDOC/EDI_DC40/SNDPFC"/>
+  <Mapping cloverField="SNDPRN" trim="true" xpath="IDOC/EDI_DC40/SNDPRN"/>
+  <Mapping cloverField="SNDSAD" trim="true" xpath="IDOC/EDI_DC40/SNDSAD"/>
+  <Mapping cloverField="SNDLAD" trim="true" xpath="IDOC/EDI_DC40/SNDLAD"/>
+  <Mapping cloverField="RCVPOR" trim="true" xpath="IDOC/EDI_DC40/RCVPOR"/>
+  <Mapping cloverField="RCVPRT" trim="true" xpath="IDOC/EDI_DC40/RCVPRT"/>
+  <Mapping cloverField="RCVPFC" trim="true" xpath="IDOC/EDI_DC40/RCVPFC"/>
+  <Mapping cloverField="RCVPRN" trim="true" xpath="IDOC/EDI_DC40/RCVPRN"/>
+  <Mapping cloverField="RCVSAD" trim="true" xpath="IDOC/EDI_DC40/RCVSAD"/>
+  <Mapping cloverField="RCVLAD" trim="true" xpath="IDOC/EDI_DC40/RCVLAD"/>
+  <Mapping cloverField="CREDAT" trim="true" xpath="IDOC/EDI_DC40/CREDAT"/>
+  <Mapping cloverField="CRETIM" trim="true" xpath="IDOC/EDI_DC40/CRETIM"/>
+  <Mapping cloverField="REFINT" trim="true" xpath="IDOC/EDI_DC40/REFINT"/>
+  <Mapping cloverField="REFGRP" trim="true" xpath="IDOC/EDI_DC40/REFGRP"/>
+  <Mapping cloverField="REFMES" trim="true" xpath="IDOC/EDI_DC40/REFMES"/>
+  <Mapping cloverField="ARCKEY" trim="true" xpath="IDOC/EDI_DC40/ARCKEY"/>
+  <Mapping cloverField="SERIAL" trim="true" xpath="IDOC/EDI_DC40/SERIAL"/>
+  <Mapping cloverField="SEGMENT" trim="true" xpath="IDOC/EDI_DC40/@SEGMENT"/>
+  <Mapping cloverField="BEGIN" trim="true" xpath="IDOC/@BEGIN"/>
+  <Context generatedKey="__parent_id" outPort="1" parentKey="__id" sequenceField="__id" xpath="IDOC/E1PLOGI/E1PITYP/E1P1000">
+    <Mapping cloverField="MANDT" trim="true" xpath="MANDT"/>
+    <Mapping cloverField="PLVAR" trim="true" xpath="PLVAR"/>
+    <Mapping cloverField="OTYPE" trim="true" xpath="OTYPE"/>
+    <Mapping cloverField="OBJID" trim="true" xpath="OBJID"/>
+    <Mapping cloverField="INFTY" trim="true" xpath="INFTY"/>
+    <Mapping cloverField="SUBTY" trim="true" xpath="SUBTY"/>
+    <Mapping cloverField="ISTAT" trim="true" xpath="ISTAT"/>
+    <Mapping cloverField="PRIOX" trim="true" xpath="PRIOX"/>
+    <Mapping cloverField="BEGDA" trim="true" xpath="BEGDA"/>
+    <Mapping cloverField="ENDDA" trim="true" xpath="ENDDA"/>
+    <Mapping cloverField="LANGU" trim="true" xpath="LANGU"/>
+    <Mapping cloverField="DUMMY" trim="true" xpath="DUMMY"/>
+    <Mapping cloverField="SEQNR" trim="true" xpath="SEQNR"/>
+    <Mapping cloverField="AEDTM" trim="true" xpath="AEDTM"/>
+    <Mapping cloverField="UNAME" trim="true" xpath="UNAME"/>
+    <Mapping cloverField="REASN" trim="true" xpath="REASN"/>
+    <Mapping cloverField="HISTO" trim="true" xpath="HISTO"/>
+    <Mapping cloverField="ITXNR" trim="true" xpath="ITXNR"/>
+    <Mapping cloverField="SHORT" trim="true" xpath="SHORT"/>
+    <Mapping cloverField="STEXT" trim="true" xpath="STEXT"/>
+    <Mapping cloverField="GDATE" trim="true" xpath="GDATE"/>
+    <Mapping cloverField="LANGU_ISO" trim="true" xpath="LANGU_ISO"/>
+    <Mapping cloverField="SEGMENT" trim="true" xpath="@SEGMENT"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[HRMD_ABA01]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_E1P1000_HR_COLLECTION_OF_MAPS:0" guiBendpoints="" id="Edge3" inPort="Port 1 (in)" metadata="32244c97-ea83-4607-8d32-92d1098f686b" outPort="Port 0 (out)" toNode="MAP_WRITER0:1"/>
+<Edge debugMode="true" fromNode="FOREACH_HRMD_ABA01_HR_COLLECTION_OF_MAPS:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="32244c97-ea83-4607-8d32-92d1098f686b" outPort="Port 0 (out)" toNode="MAP_WRITER0:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="d1a65acc-8179-4320-9678-4fa695f670d1" outPort="Port 0 (out)" toNode="FOREACH_HRMD_ABA01_HR_COLLECTION_OF_MAPS:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:1" guiBendpoints="" id="Edge2" inPort="Port 0 (in)" metadata="fd8bdbdc-c886-406d-ae7a-9663948bbe82" outPort="Port 1 (out)" toNode="FOREACH_E1P1000_HR_COLLECTION_OF_MAPS:0"/>
+</Phase>
+</Graph>

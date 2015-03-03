@@ -32,16 +32,16 @@ import com.mulesoft.module.batch.api.BatchManager;
 public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 	private static final String TEST_MAT_MASTER_FILE = "./src/test/resources/mat_master_new.xml";
 
-	private SubflowInterceptingChainLifecycleWrapper retrieveProductFromSFDCFlow;
+	private SubflowInterceptingChainLifecycleWrapper retieveOrganizationFromWdayFlow;
 
-	private List<Map<String, Object>> productsToDeleteFromSFDC = new ArrayList<Map<String, Object>>();
+	private List<Map<String, Object>> organizationsToDeleteFromWDAY = new ArrayList<Map<String, Object>>();
 
 	@Before
 	public void setUp() throws Exception {
 		muleContext.getRegistry().lookupObject(BatchManager.class).cancelAllRunningInstances();
 
-		retrieveProductFromSFDCFlow = getSubFlow("retrieveProductFromSFDCFlow");
-		retrieveProductFromSFDCFlow.initialise();
+		retieveOrganizationFromWdayFlow = getSubFlow("retieveOrganizationFromWdayFlow");
+		retieveOrganizationFromWdayFlow.initialise();
 	}
 
 	@After
@@ -53,22 +53,19 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 	public void testMainFlow() throws Exception {
 		String originalXML = getFileString(TEST_MAT_MASTER_FILE);
 		SapPayloadGenerator generator = new SapPayloadGenerator(originalXML);
-		generator.setTemplateName(TEMPLATE_NAME);
 		String xmlPayload = generator.generateXML();
 
 		runFlow("callBatchFlow", xmlPayload);
 
-		generator.getUniqueIdList();
 		System.out.println("DONE");
 		Thread.sleep(5000);
-		for (String id : generator.getUniqueIdList()) {
+		for (String name : generator.getUniqueOrgNameList()) {
 			Map<String, Object> payload = new HashMap<String, Object>();
-			payload.put("sap_external_id__c", id);
-			Map<String, Object> result = invokeRetrieveFlow(retrieveProductFromSFDCFlow, payload);
-			Assert.assertNotNull("The SAP Material with id " + id + " should have been sync", result);
-			productsToDeleteFromSFDC.add(result);
+			payload.put("orgName", name);
+			Map<String, Object> result = invokeRetrieveFlow(retieveOrganizationFromWdayFlow, payload);
+			Assert.assertNotNull("The SAP Organization with name " + name + " should have been sync", result);
+			organizationsToDeleteFromWDAY.add(result);
 		}
-
 	}
 
 	@SuppressWarnings("unchecked")
@@ -85,24 +82,23 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 	}
 
 	private void deleteTestDataFromSandBox() throws MuleException, Exception {
-		deleteTestProductsFromSFDC(productsToDeleteFromSFDC);
+		deleteTestOrganizationsFromWDAY(organizationsToDeleteFromWDAY);
 	}
 
-	protected void deleteTestProductsFromSFDC(List<Map<String, Object>> createdProductsInSFDC) throws InitialisationException,
+	protected void deleteTestOrganizationsFromWDAY(List<Map<String, Object>> createdOrganizationsInWDAY) throws InitialisationException,
 			MuleException, Exception {
 
-		SubflowInterceptingChainLifecycleWrapper deleteProductFromSFDCFlow = getSubFlow("deleteProductFromSFDCFlow");
-		deleteProductFromSFDCFlow.initialise();
+		SubflowInterceptingChainLifecycleWrapper dissolveOrganizationFromWdayFlow = getSubFlow("dissolveOrganizationFromWdayFlow");
+		dissolveOrganizationFromWdayFlow.initialise();
 
-		deleteTestEntityFromSandBox(deleteProductFromSFDCFlow, createdProductsInSFDC);
+		disolveTestEntityFromSandBox(dissolveOrganizationFromWdayFlow, createdOrganizationsInWDAY);
 	}
 
-	protected void deleteTestEntityFromSandBox(SubflowInterceptingChainLifecycleWrapper deleteFlow, List<Map<String, Object>> entitities)
+	protected void disolveTestEntityFromSandBox(SubflowInterceptingChainLifecycleWrapper discardFlow, List<Map<String, Object>> entitities)
 			throws MuleException, Exception {
-		List<String> idList = new ArrayList<String>();
-		for (Map<String, Object> c : entitities) {
-			idList.add(c.get("Id").toString());
-		}
-		deleteFlow.process(getTestEvent(idList, MessageExchangePattern.REQUEST_RESPONSE));
+		
+		for (Map<String, Object> e : entitities) {
+			discardFlow.process(getTestEvent(e, MessageExchangePattern.REQUEST_RESPONSE));
+		}		
 	}
 }

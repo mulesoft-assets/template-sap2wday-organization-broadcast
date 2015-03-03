@@ -29,7 +29,7 @@ public class AbstractTemplateTestCase extends FunctionalTestCase {
 	private static final String TEST_FLOWS_FOLDER_PATH = "./src/test/resources/flows/";
 	private static final String MULE_DEPLOY_PROPERTIES_PATH = "./src/main/app/mule-deploy.properties";
 
-	protected static final String TEMPLATE_NAME = "sap2sfdc-product-broadcast";
+	protected static final String TEMPLATE_NAME = "sap2wday-organization-broadcast";
 
 	@Rule
 	public DynamicPort port = new DynamicPort("http.port");

@@ -36,20 +36,23 @@ import org.xml.sax.SAXException;
 
 public class SapPayloadGenerator {
 	private static final String DEFAULT_TEMPLATE_NAME = "SAP_TEMPLATE";
-	private static final String MATERIAL_ID_XPATH = "//E1MARAM/MATNR";
-
+	private static final String ORG_ID_XPATH = "//E1PLOGI/E1PITYP/E1P1000/OBJID";
+	private static final String ORG_NAME_XPATH = "//E1PLOGI/E1PITYP/E1P1000/STEXT";
+	private static final String ORG_CODE_XPATH = "//E1PLOGI/E1PITYP/E1P1000/SHORT";
+	
 	private XPath xpath;
 	private Document doc;
-	private String templateName;
 
-	private List<String> uniqueIdList = new ArrayList<String>();
+	private List<String> uniqueOrgNameList = new ArrayList<String>();
+	private List<String> uniqueOrgCodeList = new ArrayList<String>();
+	private List<String> idList = new ArrayList<String>();
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException {
 		String xml = loadFile("./src/test/resources/mat_master_new.xml");
 		SapPayloadGenerator generator = new SapPayloadGenerator(xml);
 		System.out.println(generator.generateXML());
 
-		System.out.println(generator.getUniqueIdList());
+		System.out.println(generator.getUniqueOrgNameList());
 	}
 
 	private static String loadFile(String filePath) throws IOException {
@@ -79,7 +82,7 @@ public class SapPayloadGenerator {
 	 * @return
 	 */
 	public String generateXML() {
-		uniqueIdList.clear();
+		uniqueOrgNameList.clear();
 
 		try {
 			return generateUniqueIds();
@@ -88,27 +91,28 @@ public class SapPayloadGenerator {
 		}
 	}
 
-	public void setTemplateName(String templateName) {
-		this.templateName = templateName;
+	public List<String> getUniqueOrgNameList() {
+		return uniqueOrgNameList;
 	}
 
-	public String getTemlateName() {
-		if (StringUtils.isEmpty(templateName)) {
-			return DEFAULT_TEMPLATE_NAME;
-		}
-		return templateName;
+	public List<String> getUniqueOrgCodeList() {
+		return uniqueOrgCodeList;
 	}
 
-	public List<String> getUniqueIdList() {
-		return uniqueIdList;
+	public List<String> getIdList() {
+		return idList;
 	}
 
 	private String generateUniqueIds() throws ParserConfigurationException, SAXException, IOException, XPathExpressionException,
 			TransformerException {
 
 		ByteArrayOutputStream os = new ByteArrayOutputStream();
-		NodeList nodeList = (NodeList) xpath.compile(MATERIAL_ID_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
-		makeIdsUnique(nodeList);
+		NodeList nodeList = (NodeList) xpath.compile(ORG_NAME_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
+		makeNamesUnique(nodeList);
+		nodeList = (NodeList) xpath.compile(ORG_CODE_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
+		makeCodesUnique(nodeList);
+		nodeList = (NodeList) xpath.compile(ORG_ID_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
+		getIds(nodeList);
 
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();
 		Transformer transformer = transformerFactory.newTransformer();
@@ -118,10 +122,10 @@ public class SapPayloadGenerator {
 
 	}
 
-	private void makeIdsUnique(NodeList nodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+	private void makeNamesUnique(NodeList nodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
 
 		String timeStamp = Long.valueOf(new Date().getTime()).toString();
-		String waterMark = "_" + getTemlateName() + timeStamp;
+		String waterMark = "_" + timeStamp;
 
 		int index = 0;
 		while (index < nodeList.getLength()) {
@@ -130,7 +134,33 @@ public class SapPayloadGenerator {
 			node.setTextContent(uniqueId);
 			index++;
 
-			uniqueIdList.add(uniqueId);
+			uniqueOrgNameList.add(uniqueId);
+		}
+	}
+	
+	private void getIds(NodeList nodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+
+		int index = 0;
+		while (index < nodeList.getLength()) {
+			Node node = nodeList.item(index++);
+			String id = node.getTextContent();
+			idList.add(id);
+		}
+	}
+	
+	private void makeCodesUnique(NodeList nodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+
+		String timeStamp = Long.valueOf(new Date().getTime()).toString();
+		String waterMark = "_" + timeStamp;
+
+		int index = 0;
+		while (index < nodeList.getLength()) {
+			Node node = nodeList.item(index);
+			String uniqueId = node.getTextContent() + waterMark;
+			node.setTextContent(uniqueId);
+			index++;
+
+			uniqueOrgCodeList.add(uniqueId);
 		}
 	}
 }

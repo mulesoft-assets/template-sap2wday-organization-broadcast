@@ -15,11 +15,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/sfdc http://www.mulesoft.org/schema/mule/sfdc/current/mule-sfdc.xsd
 http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9090" doc:name="HTTP Listener Configuration"/>
-    <flow name="endpointsFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/a" doc:name="HTTP"/>
-        <wd-hr:add-update-organization config-ref="Workday_Human_Resource" organization-ref="#[org.mule.templates.WorkersRequest.createAddUpdateOrganizationRequest(&quot;27644&quot;,  '${wday.system.id}' )]" doc:name="Workday Human Resource"/>
-                <logger level="INFO" doc:name="Logger"/>
-            </flow>
+
 
 	<!-- 	In this file you should declare all your inbound endpoints in order to control the access to your application -->
 
@@ -30,7 +26,7 @@ Here you should:
 Here you should not:
 	* Run validations against external systems
 	* Choose flow of your application based on input parameters">
-		<sap:inbound-endpoint type="idoc" rfcType="qrfc" xmlVersion="1" responseTimeout="10000" doc:name="SAP" jcoConnectionCount="${sap.jco.connectioncount}" jcoGwHost="${sap.jco.gwhost}" jcoGwService="${sap.jco.gwservice}" jcoProgramId="${sap.jco.idoc.programid}" outputXml="true" connector-ref="SAP" functionName="BAPI_PDOTYPES_GETDETAILEDLIST">
+		<sap:inbound-endpoint type="idoc" rfcType="qrfc" xmlVersion="1" responseTimeout="10000" doc:name="SAP" jcoConnectionCount="${sap.jco.connectioncount}" jcoGwHost="${sap.jco.gwhost}" jcoGwService="${sap.jco.gwservice}" jcoProgramId="${sap.jco.idoc.programid}" outputXml="true" connector-ref="SAP" functionName="HRMD_ABA01">
 	    	<sap:default-in-memory-tid-store/>
 		</sap:inbound-endpoint>
 		
@@ -38,9 +34,8 @@ Here you should not:
     </flow>
     <flow name="endpointsFlow1">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/b" doc:name="HTTP"/>
-        <wd-hr:find-organization config-ref="Workday_Human_Resource" organizationFind-ref="#[org.mule.templates.WorkersRequest.findOrganization(&quot;org name-changed-again&quot; )]" doc:name="Workday Human Resource"/>
-        <wd-hr:dissolve-organization-structure config-ref="Workday_Human_Resource" organizationStructureDissolve-ref="#[org.mule.templates.WorkersRequest.dissolveOrganization(payload.get(0).integrationIDReference)]" doc:name="Workday Human Resource"/>
+        <wd-hr:find-organization config-ref="Workday_Human_Resource" organizationFind-ref="#[org.mule.templates.OrganizationRequest.findOrganization(&quot;BestRun Korea23&quot; )]" doc:name="Workday Human Resource"/>
+        <wd-hr:dissolve-organization-structure config-ref="Workday_Human_Resource" organizationStructureDissolve-ref="#[org.mule.templates.OrganizationRequest.dissolveOrganization(payload.get(0).integrationIDReference)]" doc:name="Workday Human Resource"/>
         <logger level="INFO" doc:name="Logger"/>
     </flow>
-
 </mule>

@@ -17,16 +17,21 @@ http://www.mulesoft.org/schema/mule/sfdc http://www.mulesoft.org/schema/mule/sfd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
 http://www.mulesoft.org/schema/mule/servicenow http://www.mulesoft.org/schema/mule/servicenow/current/mule-servicenow.xsd
 http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
-    <data-mapper:config name="XML_To_List_Product2_" transformationGraphPath="xml_to_list_product2__1.grf" doc:name="XML_To_List_Product2_"/>
+    <data-mapper:config name="XML_To_Map" transformationGraphPath="xml_to_map.grf" doc:name="XML_To_Map"/>
+
     
     <batch:job name="businessLogicBatch">
         <batch:threading-profile poolExhaustedAction="WAIT"/>
         <batch:input>
-            <data-mapper:transform config-ref="XML_To_List_Product2_" doc:name="SAP XML To List&lt;Product2&gt;"/>
+            <data-mapper:transform config-ref="XML_To_Map" doc:name="XML To Map"/>
+
         </batch:input>
         <batch:process-records>
-            <batch:step name="add_or_update_wd_organization_step">
-                <wd-hr:add-update-organization config-ref="Workday_Human_Resource" doc:name="Add or update Workday organization" organization-ref="#[org.mule.templates.WorkersRequest.createAddUpdateOrganizationRequest(&quot;27644&quot;,  '${wday.system.id}' )]"/>
+            <batch:step name="add_or_update_wd_organization_step" accept-expression="payload['language'].equals(&quot;EN&quot;)">
+                <logger level="INFO" doc:name="Logger"/>
+<!--                 <batch:commit size="200" doc:name="Batch Commit"> -->
+                    <wd-hr:add-update-organization config-ref="Workday_Human_Resource" organization-ref="#[org.mule.templates.OrganizationRequest.createAddUpdateOrganizationRequest( payload )]" doc:name="Add or update Workday organization"/>
+<!--                 </batch:commit> -->
             </batch:step>
 
         </batch:process-records>

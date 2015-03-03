@@ -6,86 +6,75 @@
 
 package org.mule.templates;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.xml.datatype.DatatypeFactory;
 
-import com.arjuna.ats.internal.jdbc.drivers.modifiers.list;
-import com.workday.hr.BusinessSiteReferenceDataType;
-import com.workday.hr.EmployeeGetType;
-import com.workday.hr.EmployeeReferenceType;
 import com.workday.hr.ExternalIntegrationIDDataType;
 import com.workday.hr.ExternalIntegrationIDReferenceDataType;
 import com.workday.hr.IDType;
 import com.workday.hr.OrganizationAddUpdateType;
 import com.workday.hr.OrganizationDataType;
 import com.workday.hr.OrganizationFindType;
-import com.workday.hr.OrganizationGetType;
 import com.workday.hr.OrganizationReferenceType;
 import com.workday.hr.OrganizationStructureDissolveDataType;
 import com.workday.hr.OrganizationStructureDissolveType;
-import com.workday.hr.OrganizationSubtypeObjectIDType;
-import com.workday.hr.OrganizationSubtypeObjectType;
 import com.workday.hr.OrganizationSubtypeReferenceDataType;
 import com.workday.hr.OrganizationTypeReferenceDataType;
 import com.workday.hr.OrganizationVisibilityReferenceDataType;
-import com.workday.hr.OrganizationWWSType;
-import com.workday.hr.PrimaryBusinessSiteReferenceDataType;
 
 /**
- * Represents the workday request for employee by external reference ID.
+ * Represents the Workday  request for Organization by external reference ID.
  * 
  */
-public class WorkersRequest {
+public class OrganizationRequest {
 	
-	public static OrganizationAddUpdateType createAddUpdateOrganizationRequest(String value, String systemId) throws Exception{
+	public static OrganizationAddUpdateType createAddUpdateOrganizationRequest(HashMap<String, String> data) throws Exception{
 		final GregorianCalendar gcalendar = new GregorianCalendar();
 		gcalendar.setTime(new Date());
 			
 		final OrganizationAddUpdateType orgAddUpdateType = new OrganizationAddUpdateType();
-		final OrganizationReferenceType orgReferenceType = new OrganizationReferenceType();
 		final ExternalIntegrationIDDataType extIdReference = new ExternalIntegrationIDDataType();
-		final OrganizationDataType orgDataType = new OrganizationDataType();
-		
-//		final EmployeeGetType employeeGetType = new EmployeeGetType();
-//		final EmployeeReferenceType employeeReferenceType = new EmployeeReferenceType();
-//		final ExternalIntegrationIDReferenceDataType extIdReference = new ExternalIntegrationIDReferenceDataType();
+		final OrganizationDataType orgDataType = new OrganizationDataType();	
 		
 		final IDType idType = new IDType();
-		idType.setSystemID(systemId);
-		idType.setValue(value);
+		idType.setSystemID(data.get(System.getProperty("wday.system.id")));
+		idType.setValue(data.get("id"));
 		
 		List<IDType> listOfIDs = new ArrayList<>();
 		listOfIDs.add(idType);
 		extIdReference.setID(listOfIDs);
-//		employeeReferenceType.setIntegrationIDReference(extIdReference);
-		//orgDataType.set //TODO .......
+		
 		orgDataType.setEffectiveDate(DatatypeFactory.newInstance().newXMLGregorianCalendar(gcalendar));
+		
+		SimpleDateFormat sdFormat = new SimpleDateFormat("yyyyMMdd");
+		Date endDate = sdFormat.parse(data.get("endDate"));
+		gcalendar.setTime(endDate);		
 		orgDataType.setAvailabilityDate(DatatypeFactory.newInstance().newXMLGregorianCalendar(gcalendar));
-		orgDataType.setOrganizationName("org name-changed-again");
-		orgDataType.setOrganizationCode("ORG CODE");
+		
+		orgDataType.setOrganizationName(data.get("organizationName"));
+		orgDataType.setOrganizationCode(data.get("organizationCode"));
+		
 		OrganizationTypeReferenceDataType orgTypeRefDataType = new OrganizationTypeReferenceDataType();
-		orgTypeRefDataType.setOrganizationTypeName("Company");
+		orgTypeRefDataType.setOrganizationTypeName(data.get("organizationTypeName"));
 		orgDataType.setOrganizationTypeReference(orgTypeRefDataType );
+		
 		OrganizationVisibilityReferenceDataType orgVisibilityRefDataType = new OrganizationVisibilityReferenceDataType();
-		orgVisibilityRefDataType.setOrganizationVisibilityName("Everyone");
+		orgVisibilityRefDataType.setOrganizationVisibilityName(data.get("organizationVisibilityName"));
 		orgDataType.setOrganizationVisibilityReference(orgVisibilityRefDataType);
+		
 		OrganizationSubtypeReferenceDataType orgSubtypeReferenceDataType = new OrganizationSubtypeReferenceDataType();
-		orgSubtypeReferenceDataType.setOrganizationSubtypeName("Company");
+		orgSubtypeReferenceDataType.setOrganizationSubtypeName(data.get("organizationSubtypeName"));
 		orgDataType.setOrganizationSubtypeReference(orgSubtypeReferenceDataType);
-//		OrganizationSubtypeObjectType orgSubtype = new OrganizationSubtypeObjectType();
-//		List<OrganizationSubtypeObjectIDType> list = new ArrayList<>();
-//		OrganizationSubtypeObjectIDType orgSubtypeObjIDType = new OrganizationSubtypeObjectIDType();
-//		orgSubtypeObjIDType.setType("Supervisory");
-//		list.add(orgSubtypeObjIDType );
-//		orgSubtype.setID(list);
 		
 		orgDataType.setIntegrationIDData(extIdReference);
 		orgAddUpdateType.setOrganizationData(orgDataType);	
-//		employeeGetType.setEmployeeReference(employeeReferenceType);
+		
 		return orgAddUpdateType;
 	}
 	

@@ -1,0 +1,2560 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+<xsd:element name="HRMD_ABA01"><xsd:annotation><xsd:documentation>HRMD_ABA01</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="IDOC">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="EDI_DC40"><xsd:annotation><xsd:documentation>IDoc Control Record for Interface to External System</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="TABNAM" fixed="EDI_DC40"><xsd:annotation><xsd:documentation>Name of Table Structure</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DOCNUM" minOccurs="0"><xsd:annotation><xsd:documentation>IDoc number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DOCREL" minOccurs="0"><xsd:annotation><xsd:documentation>SAP Release for IDoc</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STATUS" minOccurs="0"><xsd:annotation><xsd:documentation>Status of IDoc</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DIRECT" minOccurs="0"><xsd:annotation><xsd:documentation>Direction</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OUTMOD" minOccurs="0"><xsd:annotation><xsd:documentation>Output mode</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="EXPRSS" minOccurs="0"><xsd:annotation><xsd:documentation>Overriding in inbound processing</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TEST" minOccurs="0"><xsd:annotation><xsd:documentation>Test flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="IDOCTYP" fixed="HRMD_ABA01"><xsd:annotation><xsd:documentation>Name of basic type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CIMTYP" minOccurs="0"><xsd:annotation><xsd:documentation>Extension (defined by customer)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MESTYP" minOccurs="0"><xsd:annotation><xsd:documentation>Message type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MESCOD" minOccurs="0"><xsd:annotation><xsd:documentation>Message code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MESFCT" minOccurs="0"><xsd:annotation><xsd:documentation>Message Function</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STD" minOccurs="0"><xsd:annotation><xsd:documentation>EDI standard, flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STDVRS" minOccurs="0"><xsd:annotation><xsd:documentation>EDI standard, version and release</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STDMES" minOccurs="0"><xsd:annotation><xsd:documentation>EDI message type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDPOR" minOccurs="0"><xsd:annotation><xsd:documentation>Sender port (SAP System, external subsystem)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDPRT" minOccurs="0"><xsd:annotation><xsd:documentation>Partner type of sender</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDPFC" minOccurs="0"><xsd:annotation><xsd:documentation>Partner Function of Sender</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDPRN" minOccurs="0"><xsd:annotation><xsd:documentation>Partner Number of Sender</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDSAD" minOccurs="0"><xsd:annotation><xsd:documentation>Sender address (SADR)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="21"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNDLAD" minOccurs="0"><xsd:annotation><xsd:documentation>Logical address of sender</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="70"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVPOR" minOccurs="0"><xsd:annotation><xsd:documentation>Receiver port</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVPRT" minOccurs="0"><xsd:annotation><xsd:documentation>Partner Type of Receiver</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVPFC" minOccurs="0"><xsd:annotation><xsd:documentation>Partner function of recipient</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVPRN" minOccurs="0"><xsd:annotation><xsd:documentation>Partner Number of Receiver</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVSAD" minOccurs="0"><xsd:annotation><xsd:documentation>Recipient address (SADR)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="21"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCVLAD" minOccurs="0"><xsd:annotation><xsd:documentation>Logical address of recipient</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="70"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CREDAT" minOccurs="0"><xsd:annotation><xsd:documentation>Created on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CRETIM" minOccurs="0"><xsd:annotation><xsd:documentation>Created at</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFINT" minOccurs="0"><xsd:annotation><xsd:documentation>Transmission file (EDI Interchange)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFGRP" minOccurs="0"><xsd:annotation><xsd:documentation>Message group (EDI Message Group)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFMES" minOccurs="0"><xsd:annotation><xsd:documentation>Message (EDI Message)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ARCKEY" minOccurs="0"><xsd:annotation><xsd:documentation>Key for external message archive</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="70"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SERIAL" minOccurs="0"><xsd:annotation><xsd:documentation>Serialization</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1PLOGI" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>Header for an HR Object (Master Data or Organizational Data)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROOF" minOccurs="0"><xsd:annotation><xsd:documentation>Single-Character Indicator</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OPERA" minOccurs="0"><xsd:annotation><xsd:documentation>Operation Indicator</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SERIAL_COUNTER" minOccurs="0"><xsd:annotation><xsd:documentation>ALE: channel counter</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FILTER1" minOccurs="0"><xsd:annotation><xsd:documentation>Filter 1 for HR Master Data Distribution</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FILTER2" minOccurs="0"><xsd:annotation><xsd:documentation>Filter 2 for HR Master Data Distribution</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="E1PORIG" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Original System for an HR Object</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="END_DATE" minOccurs="0"><xsd:annotation><xsd:documentation>Valid to Date of Entry for Original System</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="END_TIME" minOccurs="0"><xsd:annotation><xsd:documentation>Valid to Time of Entry for Original System</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CHNG_USER" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORIGSYSTEM" minOccurs="0"><xsd:annotation><xsd:documentation>Logical system</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1PITYP" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Transported Infotypes and Subtypes for an Object</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LONG_INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Indicator for Infotype Segment Longer Than 1000 Bytes</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="E1P0000" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0000 (Actions)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MASSN" minOccurs="0"><xsd:annotation><xsd:documentation>Action Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MASSG" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Action</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STAT1" minOccurs="0"><xsd:annotation><xsd:documentation>Customer-Specific Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STAT2" minOccurs="0"><xsd:annotation><xsd:documentation>Employment Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STAT3" minOccurs="0"><xsd:annotation><xsd:documentation>Special Payment Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P0001" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0001 (Org. Assignment)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BUKRS" minOccurs="0"><xsd:annotation><xsd:documentation>Company Code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="WERKS" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PERSG" minOccurs="0"><xsd:annotation><xsd:documentation>Employee Group</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PERSK" minOccurs="0"><xsd:annotation><xsd:documentation>Employee Subgroup</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VDSK1" minOccurs="0"><xsd:annotation><xsd:documentation>Organizational Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GSBER" minOccurs="0"><xsd:annotation><xsd:documentation>Business Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BTRTL" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Subarea</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="JUPER" minOccurs="0"><xsd:annotation><xsd:documentation>Legal Person</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ABKRS" minOccurs="0"><xsd:annotation><xsd:documentation>Payroll Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ANSVH" minOccurs="0"><xsd:annotation><xsd:documentation>Work Contract</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="KOSTL" minOccurs="0"><xsd:annotation><xsd:documentation>Cost Center</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORGEH" minOccurs="0"><xsd:annotation><xsd:documentation>Organizational Unit</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLANS" minOccurs="0"><xsd:annotation><xsd:documentation>Position</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STELL" minOccurs="0"><xsd:annotation><xsd:documentation>Job</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MSTBR" minOccurs="0"><xsd:annotation><xsd:documentation>Supervisor Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SACHA" minOccurs="0"><xsd:annotation><xsd:documentation>Payroll Administrator</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SACHP" minOccurs="0"><xsd:annotation><xsd:documentation>Administrator for HR Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SACHZ" minOccurs="0"><xsd:annotation><xsd:documentation>Administrator for Time Recording</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Employee's Name (Sortable by LAST NAME FIRST NAME)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENAME" minOccurs="0"><xsd:annotation><xsd:documentation>Formatted Name of Employee or Applicant</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SBMOD" minOccurs="0"><xsd:annotation><xsd:documentation>Administrator Group</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="KOKRS" minOccurs="0"><xsd:annotation><xsd:documentation>Controlling Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FISTL" minOccurs="0"><xsd:annotation><xsd:documentation>Funds Center</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GEBER" minOccurs="0"><xsd:annotation><xsd:documentation>Fund</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FKBER" minOccurs="0"><xsd:annotation><xsd:documentation>Functional Area</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRANT_NBR" minOccurs="0"><xsd:annotation><xsd:documentation>Grant</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SGMNT" minOccurs="0"><xsd:annotation><xsd:documentation>Segment for Segmental Reporting</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P0002" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0002 (Personal Data)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INITS" minOccurs="0"><xsd:annotation><xsd:documentation>Initials</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NACHN" minOccurs="0"><xsd:annotation><xsd:documentation>Last Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME2" minOccurs="0"><xsd:annotation><xsd:documentation>Second Name / Name at Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VORNA" minOccurs="0"><xsd:annotation><xsd:documentation>First Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TITEL" minOccurs="0"><xsd:annotation><xsd:documentation>Title</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TITL2" minOccurs="0"><xsd:annotation><xsd:documentation>Second Title</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAMZU" minOccurs="0"><xsd:annotation><xsd:documentation>Other Title</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VORSW" minOccurs="0"><xsd:annotation><xsd:documentation>Name Prefix</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VORS2" minOccurs="0"><xsd:annotation><xsd:documentation>Second Name Prefix</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RUFNM" minOccurs="0"><xsd:annotation><xsd:documentation>Nickname</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="KNZNM" minOccurs="0"><xsd:annotation><xsd:documentation>Name Format Indicator for Employee in a List</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ANRED" minOccurs="0"><xsd:annotation><xsd:documentation>Form-of-Address Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GESCH" minOccurs="0"><xsd:annotation><xsd:documentation>Gender Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBDAT" minOccurs="0"><xsd:annotation><xsd:documentation>Date of Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBLND" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBDEP" minOccurs="0"><xsd:annotation><xsd:documentation>State</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBORT" minOccurs="0"><xsd:annotation><xsd:documentation>Birthplace</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NATIO" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NATI2" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NATI3" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRSL" minOccurs="0"><xsd:annotation><xsd:documentation>Language Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="KONFE" minOccurs="0"><xsd:annotation><xsd:documentation>Religious Denomination Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FAMST" minOccurs="0"><xsd:annotation><xsd:documentation>Marital Status Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FAMDT" minOccurs="0"><xsd:annotation><xsd:documentation>Valid From Date of Current Marital Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ANZKD" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Children</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NACON" minOccurs="0"><xsd:annotation><xsd:documentation>Name Connection</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PERMO" minOccurs="0"><xsd:annotation><xsd:documentation>Modifier for Personnel Identifier</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PERID" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel ID Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBPAS" minOccurs="0"><xsd:annotation><xsd:documentation>Date of Birth According to Passport</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FNAMK" minOccurs="0"><xsd:annotation><xsd:documentation>First name (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LNAMK" minOccurs="0"><xsd:annotation><xsd:documentation>Last Name (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FNAMR" minOccurs="0"><xsd:annotation><xsd:documentation>First name (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LNAMR" minOccurs="0"><xsd:annotation><xsd:documentation>Last name (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NABIK" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Birth (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NABIR" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Birth (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NICKK" minOccurs="0"><xsd:annotation><xsd:documentation>Nickname (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NICKR" minOccurs="0"><xsd:annotation><xsd:documentation>Nickname (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBJHR" minOccurs="0"><xsd:annotation><xsd:documentation>Year of Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBMON" minOccurs="0"><xsd:annotation><xsd:documentation>Month of Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBTAG" minOccurs="0"><xsd:annotation><xsd:documentation>Birth Date (to Month/Year)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NCHMC" minOccurs="0"><xsd:annotation><xsd:documentation>Last Name (Field for Search Help)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VNAMC" minOccurs="0"><xsd:annotation><xsd:documentation>First Name (Field for Search Help)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRSL_ISO" minOccurs="0"><xsd:annotation><xsd:documentation>Language according to ISO 639</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NACHN_40" minOccurs="0"><xsd:annotation><xsd:documentation>Last Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME2_40" minOccurs="0"><xsd:annotation><xsd:documentation>Name at Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NACH2" minOccurs="0"><xsd:annotation><xsd:documentation>Second Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VORNA_40" minOccurs="0"><xsd:annotation><xsd:documentation>First Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CNAME_40" minOccurs="0"><xsd:annotation><xsd:documentation>Complete Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="80"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RUFNM_40" minOccurs="0"><xsd:annotation><xsd:documentation>Nickname</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MIDNM" minOccurs="0"><xsd:annotation><xsd:documentation>Middle Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GBORT_40" minOccurs="0"><xsd:annotation><xsd:documentation>Birthplace</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="E1Q0002" minOccurs="1" maxOccurs="1"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0002 (Personal Data)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FNAMK_45" minOccurs="0"><xsd:annotation><xsd:documentation>First name (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LNAMK_45" minOccurs="0"><xsd:annotation><xsd:documentation>Last name (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FNAMR_45" minOccurs="0"><xsd:annotation><xsd:documentation>First Name (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LNAMR_45" minOccurs="0"><xsd:annotation><xsd:documentation>Last Name (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NABIK_45" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Birth (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NABIR_45" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Birth (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NICKK_45" minOccurs="0"><xsd:annotation><xsd:documentation>Koseki (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NICKR_45" minOccurs="0"><xsd:annotation><xsd:documentation>Koseki (Romaji)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAMZ2" minOccurs="0"><xsd:annotation><xsd:documentation>Name Affix for Name at Birth</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P0006" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0006 (Addresses)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ANSSA" minOccurs="0"><xsd:annotation><xsd:documentation>Address Record Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME2" minOccurs="0"><xsd:annotation><xsd:documentation>C/O Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRAS" minOccurs="0"><xsd:annotation><xsd:documentation>House number and street</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT01" minOccurs="0"><xsd:annotation><xsd:documentation>City</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT02" minOccurs="0"><xsd:annotation><xsd:documentation>District</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PSTLZ" minOccurs="0"><xsd:annotation><xsd:documentation>Postal Code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LAND1" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TELNR" minOccurs="0"><xsd:annotation><xsd:documentation>Telephone Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENTKM" minOccurs="0"><xsd:annotation><xsd:documentation>Distance in Kilometers (5 Characters for IDoc)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="WKWNG" minOccurs="0"><xsd:annotation><xsd:documentation>Company Housing</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BUSRT" minOccurs="0"><xsd:annotation><xsd:documentation>Bus Route</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LOCAT" minOccurs="0"><xsd:annotation><xsd:documentation>2nd Address Line</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STATE" minOccurs="0"><xsd:annotation><xsd:documentation>Region (State, Province, County)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HSNMR" minOccurs="0"><xsd:annotation><xsd:documentation>House Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="POSTA" minOccurs="0"><xsd:annotation><xsd:documentation>Identification of an Apartment in a Building</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRDS" minOccurs="0"><xsd:annotation><xsd:documentation>Street Abbreviation</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENTK2" minOccurs="0"><xsd:annotation><xsd:documentation>Distance in Kilometers</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM01" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM01" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM02" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM02" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM03" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM03" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM04" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM04" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM05" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM05" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COM06" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NUM06" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INDRL" minOccurs="0"><xsd:annotation><xsd:documentation>Indicator for relationship (specification code)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="COUNC" minOccurs="0"><xsd:annotation><xsd:documentation>County Code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RCTVC" minOccurs="0"><xsd:annotation><xsd:documentation>Municipal city code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OR2KK" minOccurs="0"><xsd:annotation><xsd:documentation>City/District (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CONKK" minOccurs="0"><xsd:annotation><xsd:documentation>Contact Person (Katakana) (Japan)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OR1KK" minOccurs="0"><xsd:annotation><xsd:documentation>City Katakana (Japan)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RAILW" minOccurs="0"><xsd:annotation><xsd:documentation>Social Subscription Railway</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME2_40" minOccurs="0"><xsd:annotation><xsd:documentation>Contact Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRAS_40" minOccurs="0"><xsd:annotation><xsd:documentation>Street and House Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="60"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT01_40" minOccurs="0"><xsd:annotation><xsd:documentation>City</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT02_40" minOccurs="0"><xsd:annotation><xsd:documentation>District</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LOCAT_40" minOccurs="0"><xsd:annotation><xsd:documentation>2nd Address Line</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ADR03" minOccurs="0"><xsd:annotation><xsd:documentation>Street 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ADR04" minOccurs="0"><xsd:annotation><xsd:documentation>Street 3</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HSNMR_40" minOccurs="0"><xsd:annotation><xsd:documentation>House Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="POSTA_40" minOccurs="0"><xsd:annotation><xsd:documentation>Identification of an apartment in a building</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BLDNG" minOccurs="0"><xsd:annotation><xsd:documentation>Building (number or code)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLOOR" minOccurs="0"><xsd:annotation><xsd:documentation>Floor in building</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OR2KK_45" minOccurs="0"><xsd:annotation><xsd:documentation>Second address line (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CONKK_45" minOccurs="0"><xsd:annotation><xsd:documentation>Contact Person (Katakana) (Japan)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OR1KK_45" minOccurs="0"><xsd:annotation><xsd:documentation>First address line (Katakana)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P0009" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0009 (Bank Details)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OPKEN" minOccurs="0"><xsd:annotation><xsd:documentation>Operation Indicator for Wage Types</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BETRG" minOccurs="0"><xsd:annotation><xsd:documentation>Standard Value (Do Not Change Length Because of E3P0009)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="11"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="WAERS" minOccurs="0"><xsd:annotation><xsd:documentation>Currency Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ANZHL" minOccurs="0"><xsd:annotation><xsd:documentation>Standard Percentage</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="7"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ZEINH" minOccurs="0"><xsd:annotation><xsd:documentation>Time/Measurement Unit</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BNKSA" minOccurs="0"><xsd:annotation><xsd:documentation>Type of Bank Details Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ZLSCH" minOccurs="0"><xsd:annotation><xsd:documentation>Payment Method</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="EMFTX" minOccurs="0"><xsd:annotation><xsd:documentation>Payee Text</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BKPLZ" minOccurs="0"><xsd:annotation><xsd:documentation>Postal Code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BKORT" minOccurs="0"><xsd:annotation><xsd:documentation>City</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BANKS" minOccurs="0"><xsd:annotation><xsd:documentation>Country ISO code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BANKL" minOccurs="0"><xsd:annotation><xsd:documentation>Bank Keys</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BANKN" minOccurs="0"><xsd:annotation><xsd:documentation>Bank account number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="18"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BANKP" minOccurs="0"><xsd:annotation><xsd:documentation>Check Digit for Bank No./Account</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BKONT" minOccurs="0"><xsd:annotation><xsd:documentation>Bank Control Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SWIFT" minOccurs="0"><xsd:annotation><xsd:documentation>SWIFT Code for International Payments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="11"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DTAWS" minOccurs="0"><xsd:annotation><xsd:documentation>Instruction key for data medium exchange</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DTAMS" minOccurs="0"><xsd:annotation><xsd:documentation>Indicator for Data Medium Exchange</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STCD1" minOccurs="0"><xsd:annotation><xsd:documentation>Tax Number 1</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STCD2" minOccurs="0"><xsd:annotation><xsd:documentation>Tax Number 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="11"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PSKTO" minOccurs="0"><xsd:annotation><xsd:documentation>Account Number of Bank Account At Post Office</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ESRNR" minOccurs="0"><xsd:annotation><xsd:documentation>ISR Subscriber Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="11"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ESRRE" minOccurs="0"><xsd:annotation><xsd:documentation>ISR Reference Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="27"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ESRPZ" minOccurs="0"><xsd:annotation><xsd:documentation>ISR Check Digit</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="EMFSL" minOccurs="0"><xsd:annotation><xsd:documentation>Payee key for bank transfers</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ZWECK" minOccurs="0"><xsd:annotation><xsd:documentation>Purpose of Bank Transfers</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BTTYP" minOccurs="0"><xsd:annotation><xsd:documentation>PBS Transfer Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BETRG_40" minOccurs="0"><xsd:annotation><xsd:documentation>Standard value</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PAYTY" minOccurs="0"><xsd:annotation><xsd:documentation>Payroll type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PAYID" minOccurs="0"><xsd:annotation><xsd:documentation>Payroll Identifier</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OCRSN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Off-Cycle Payroll</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BONDT" minOccurs="0"><xsd:annotation><xsd:documentation>Off-cycle payroll payment date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BKREF" minOccurs="0"><xsd:annotation><xsd:documentation>Reference specifications for bank details</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRAS" minOccurs="0"><xsd:annotation><xsd:documentation>House number and street</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STATE" minOccurs="0"><xsd:annotation><xsd:documentation>Region (State, Province, County)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P0105" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: HR Master Record Infotype 0105 (Communications)</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PERNR" minOccurs="0"><xsd:annotation><xsd:documentation>Personnel Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJPS" minOccurs="0"><xsd:annotation><xsd:documentation>Object Identification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SPRPS" minOccurs="0"><xsd:annotation><xsd:documentation>Lock Indicator for HR Master Data Record</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed On</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Name of Person Who Changed Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXEX" minOccurs="0"><xsd:annotation><xsd:documentation>Text Exists for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REFEX" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Fields Exist (Primary/Secondary Costs)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORDEX" minOccurs="0"><xsd:annotation><xsd:documentation>Confirmation Fields Exist</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITBLD" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype Screen Control</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PREAS" minOccurs="0"><xsd:annotation><xsd:documentation>Reason for Changing Master Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG3" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FLAG4" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE1" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RESE2" minOccurs="0"><xsd:annotation><xsd:documentation>Reserved Field/Unused Field of Length 2</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="USRTY" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="USRID" minOccurs="0"><xsd:annotation><xsd:documentation>Communication Identification/Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="USRID_LONG" minOccurs="0"><xsd:annotation><xsd:documentation>Communication: Long Identification/Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="241"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GRPVL" minOccurs="0"><xsd:annotation><xsd:documentation>Grouping Value for Personnel Assignments</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1000" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1000 Object/Description</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LANGU" minOccurs="0"><xsd:annotation><xsd:documentation>Language Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DUMMY" minOccurs="0"><xsd:annotation><xsd:documentation>Dummy Function With Length 9</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="9"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SHORT" minOccurs="0"><xsd:annotation><xsd:documentation>Object Abbreviation</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STEXT" minOccurs="0"><xsd:annotation><xsd:documentation>Object Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GDATE" minOccurs="0"><xsd:annotation><xsd:documentation>Delimitation date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LANGU_ISO" minOccurs="0"><xsd:annotation><xsd:documentation>Language according to ISO 639</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1001" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1001 Relationships</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RSIGN" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Specification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RELAT" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Between Objects</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SCLAS" minOccurs="0"><xsd:annotation><xsd:documentation>Type of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SOBID" minOccurs="0"><xsd:annotation><xsd:documentation>ID of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="45"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROZT" minOccurs="0"><xsd:annotation><xsd:documentation>Weighting Percentage (6 Characters for IDoc)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ADATA" minOccurs="0"><xsd:annotation><xsd:documentation>ADATA Old Length (Rel. 2.2/3.0/3.1)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="180"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ADATA_40" minOccurs="0"><xsd:annotation><xsd:documentation>Additional Relationship Data</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="600"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1PADD2" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1001 with Additional Data PADD2</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RSIGN" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Specification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RELAT" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Between Objects</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SCLAS" minOccurs="0"><xsd:annotation><xsd:documentation>Type of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SOBID" minOccurs="0"><xsd:annotation><xsd:documentation>ID of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="45"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROZT" minOccurs="0"><xsd:annotation><xsd:documentation>Weighting Percentage (6 Characters for IDoc)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REPPR" minOccurs="0"><xsd:annotation><xsd:documentation>Substitute Profile</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ACTIVE" minOccurs="0"><xsd:annotation><xsd:documentation>Indicator: Substitution Active</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1PADXN" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1001 with Additional Data PADXN</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RSIGN" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Specification</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="RELAT" minOccurs="0"><xsd:annotation><xsd:documentation>Relationship Between Objects</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SCLAS" minOccurs="0"><xsd:annotation><xsd:documentation>Type of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SOBID" minOccurs="0"><xsd:annotation><xsd:documentation>ID of Related Object</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="45"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROZT" minOccurs="0"><xsd:annotation><xsd:documentation>Weighting Percentage (6 Characters for IDoc)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MESTYP" minOccurs="0"><xsd:annotation><xsd:documentation>Character field of length 6</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="MESTYP_40" minOccurs="0"><xsd:annotation><xsd:documentation>Message Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1002" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1002 Description</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LANGU" minOccurs="0"><xsd:annotation><xsd:documentation>Language Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="DUMMY" minOccurs="0"><xsd:annotation><xsd:documentation>Dummy Function With Length 9</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="9"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABNR" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Number to Table Part</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABSEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Sequence Number in Table Part of Table Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TLINE" minOccurs="0"><xsd:annotation><xsd:documentation>Line With Length 79 for Infotype 1002</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="79"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TFORMAT" minOccurs="0"><xsd:annotation><xsd:documentation>Tag column</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LANGU_ISO" minOccurs="0"><xsd:annotation><xsd:documentation>Language according to ISO 639</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1016" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1016 Standard Profiles</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GTIME" minOccurs="0"><xsd:annotation><xsd:documentation>Generation Time</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SAPRL" minOccurs="0"><xsd:annotation><xsd:documentation>Release Status of SAP System</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ACTIV_PROF" minOccurs="0"><xsd:annotation><xsd:documentation>Profile Flagged for Activation</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABNR" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Number to Table Part</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABSEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Sequence Number in Table Part of Table Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROFILE" minOccurs="0"><xsd:annotation><xsd:documentation>Profile name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARIANT" minOccurs="0"><xsd:annotation><xsd:documentation>Variants for Profile Generator</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="GENERATED" minOccurs="0"><xsd:annotation><xsd:documentation>Indicator: Entry Generated</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PSTATE" minOccurs="0"><xsd:annotation><xsd:documentation>Active or maintenance version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1017" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1017 PD Profiles</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABNR" minOccurs="0"><xsd:annotation><xsd:documentation>Reference Number to Table Part</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TABSEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Sequence Number in Table Part of Table Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PROFL" minOccurs="0"><xsd:annotation><xsd:documentation>Authorization Profile</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="EXCLUDED" minOccurs="0"><xsd:annotation><xsd:documentation>Flag for Excluded Structural Profiles</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1028" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1028 Address</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="CNAME" minOccurs="0"><xsd:annotation><xsd:documentation>Address Supplement (c/o)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRAS" minOccurs="0"><xsd:annotation><xsd:documentation>House Number and Street</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT01" minOccurs="0"><xsd:annotation><xsd:documentation>Location</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PSTLZ" minOccurs="0"><xsd:annotation><xsd:documentation>Postal Code</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="LAND1" minOccurs="0"><xsd:annotation><xsd:documentation>Version Number Component</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="TELNR" minOccurs="0"><xsd:annotation><xsd:documentation>Telephone Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="FAXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Fax Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENTKM" minOccurs="0"><xsd:annotation><xsd:documentation>Distance in Kilometers (5 Characters for IDoc)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BUILD" minOccurs="0"><xsd:annotation><xsd:documentation>Building</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ROOM1" minOccurs="0"><xsd:annotation><xsd:documentation>Physical Room Number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ADRNR" minOccurs="0"><xsd:annotation><xsd:documentation>Address</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REGIO" minOccurs="0"><xsd:annotation><xsd:documentation>Region (State, Province, County)</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="STRS2" minOccurs="0"><xsd:annotation><xsd:documentation>House number and street</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="35"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HAUSN" minOccurs="0"><xsd:annotation><xsd:documentation>House number</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ORT01_630" minOccurs="0"><xsd:annotation><xsd:documentation>City</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element>
+<xsd:element name="E1P1032" minOccurs="1" maxOccurs="unbounded"><xsd:annotation><xsd:documentation>HR: Infotype 1032 Mail Address</xsd:documentation></xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="MANDT" minOccurs="0"><xsd:annotation><xsd:documentation>Client</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PLVAR" minOccurs="0"><xsd:annotation><xsd:documentation>Plan Version</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OTYPE" minOccurs="0"><xsd:annotation><xsd:documentation>Object Type</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="OBJID" minOccurs="0"><xsd:annotation><xsd:documentation>Object ID</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="INFTY" minOccurs="0"><xsd:annotation><xsd:documentation>Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SUBTY" minOccurs="0"><xsd:annotation><xsd:documentation>Subtype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ISTAT" minOccurs="0"><xsd:annotation><xsd:documentation>Planning Status</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="PRIOX" minOccurs="0"><xsd:annotation><xsd:documentation>Priority</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="BEGDA" minOccurs="0"><xsd:annotation><xsd:documentation>Start Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ENDDA" minOccurs="0"><xsd:annotation><xsd:documentation>End Date</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="VARYF" minOccurs="0"><xsd:annotation><xsd:documentation>Variation Field for File PLOG</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SEQNR" minOccurs="0"><xsd:annotation><xsd:documentation>Number of Infotype Record with Same Key</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="AEDTM" minOccurs="0"><xsd:annotation><xsd:documentation>Changed on</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="UNAME" minOccurs="0"><xsd:annotation><xsd:documentation>User Name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="REASN" minOccurs="0"><xsd:annotation><xsd:documentation>Reason</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="HISTO" minOccurs="0"><xsd:annotation><xsd:documentation>Historical Record Flag</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="ITXNR" minOccurs="0"><xsd:annotation><xsd:documentation>Text Module for Infotype</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME1" minOccurs="0"><xsd:annotation><xsd:documentation>SAPoffice user name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME2" minOccurs="0"><xsd:annotation><xsd:documentation>SAPoffice user name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME3" minOccurs="0"><xsd:annotation><xsd:documentation>SAPoffice user name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME4" minOccurs="0"><xsd:annotation><xsd:documentation>SAPoffice user name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="NAME5" minOccurs="0"><xsd:annotation><xsd:documentation>SAPoffice user name</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/></xsd:restriction></xsd:simpleType></xsd:element>
+<xsd:element name="SMTPADR" minOccurs="0"><xsd:annotation><xsd:documentation>E-Mail Address</xsd:documentation></xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="241"/></xsd:restriction></xsd:simpleType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element></xsd:sequence>
+<xsd:attribute name="SEGMENT" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element></xsd:sequence>
+<xsd:attribute name="BEGIN" use="required">
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="1"/></xsd:restriction></xsd:simpleType></xsd:attribute></xsd:complexType></xsd:element></xsd:sequence></xsd:complexType></xsd:element></xsd:schema>
