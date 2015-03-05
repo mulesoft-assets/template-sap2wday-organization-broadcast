@@ -10,7 +10,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>template-sap2wday-organization-broadcast</artifactId>
 	<packaging>mule</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<name>sap2wday-organization-broadcast Mule Anypoint Template Project</name>
 
 	<properties>
@@ -27,18 +27,6 @@
 				<configuration>
 					<copyToAppsDirectory>true</copyToAppsDirectory>
 					<inclusions>
-						<inclusion>
-							<groupId>org.mule.modules</groupId>
-							<artifactId>mule-module-sfdc</artifactId>
-						</inclusion>
-					<inclusion>
-                            <groupId>com.mulesoft.munit.modules</groupId>
-                            <artifactId>mule-module-synchronize</artifactId>
-                        </inclusion>
-                    <inclusion>
-                            <groupId>org.mule.modules</groupId>
-                            <artifactId>mule-module-servicenow</artifactId>
-                        </inclusion>
                     <inclusion>
                             <groupId>org.mule.modules</groupId>
                             <artifactId>mule-module-workday-humanresources</artifactId>
@@ -99,20 +87,12 @@
 		</plugins>
 	</build>
 
-	<dependencies>
-		
-		<dependency>
-			<groupId>org.mule.modules</groupId>
-			<artifactId>mule-module-sfdc</artifactId>
-			<version>${sfdc.version}</version>
-		</dependency>
+	<dependencies>		
 		<dependency>
 			<groupId>com.mulesoft.muleesb.transports</groupId>
 			<artifactId>mule-transport-sap</artifactId>
 			<version>${sap.version}</version>
-		</dependency>
-
-		
+		</dependency>		
 		<dependency>
 			<groupId>com.sap.conn.jco</groupId>
 			<artifactId>sapjco3</artifactId>
@@ -132,22 +112,6 @@
 			<version>${sap.idoc.version}</version>
 			<scope>test</scope>
 		</dependency>
-	<dependency>
-            <groupId>com.mulesoft.munit.modules</groupId>
-            <artifactId>mule-module-synchronize</artifactId>
-            <version>1.0</version>
-        </dependency>
-    <dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-spring-config</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    <dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-servicenow</artifactId>
-            <version>4.0.0</version>
-        </dependency>
     <dependency>
             <groupId>org.mule.modules</groupId>
             <artifactId>mule-module-workday-humanresources</artifactId>
@@ -156,12 +120,6 @@
     <dependency>
             <groupId>com.mulesoft.muleesb.modules</groupId>
             <artifactId>mule-module-batch-ee</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    <dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-http</artifactId>
             <version>${mule.version}</version>
             <scope>provided</scope>
         </dependency>

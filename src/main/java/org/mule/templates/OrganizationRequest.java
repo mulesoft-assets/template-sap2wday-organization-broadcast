@@ -29,7 +29,7 @@ import com.workday.hr.OrganizationTypeReferenceDataType;
 import com.workday.hr.OrganizationVisibilityReferenceDataType;
 
 /**
- * Represents the Workday  request for Organization by external reference ID.
+ * Represents the Workday  requests for Organizations.
  * 
  */
 public class OrganizationRequest {

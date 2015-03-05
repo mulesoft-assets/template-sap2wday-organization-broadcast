@@ -1,11 +1,11 @@
 
-# Anypoint Template: SAP to Salesforce Product Broadcast
+# Anypoint Template: SAP to Workday Organization Broadcast
 
 + [License Agreement](#licenseagreement)
 + [Use Case](#usecase)
 + [Considerations](#considerations)
 	* [SAP Considerations](#sapconsiderations)
-	* [Salesforce Considerations](#salesforceconsiderations)
+	* [Workday Considerations](#workdayconsiderations)
 + [Run it!](#runit)
 	* [Running on premise](#runonopremise)
 	* [Running on Studio](#runonstudio)
@@ -26,21 +26,28 @@ Note that using this template is subject to the conditions of this [License Agre
 Please review the terms of the license before downloading and using this template. In short, you are allowed to use the template for free with Mule ESB Enterprise Edition, CloudHub, or as a trial in Anypoint Studio.
 
 # Use Case <a name="usecase"/>
-This Anypoint Template should serve as a foundation for setting an online sync of materials from SAP to Salesforce.
-Every time there is a new material (SFDC product) or a change in an already existing one, SAP will send the IDoc with it to the running template which will update/create a product in Salesforce target instance.
+This Anypoint Template should serve as a foundation for setting an online
+			sync of materials from SAP to Workday.
+			Every time there is a new organization or a change in an already existing
+			one, SAP will send the IDoc with it to the running template which
+			will create/update an organization in Workday target instance.
 
-Requirements have been set not only to be used as examples, but also to establish a starting point to adapt your integration to your requirements.
+			Requirements have been set not only to be used as examples, but also
+			to establish a starting point to adapt your integration to your
+			requirements.
 
-As implemented, this Anypoint Template leverages the [Batch Module](http://www.mulesoft.org/documentation/display/current/Batch+Processing). The batch job is divided in Input, Process and On Complete stages.
+			As implemented, this Anypoint Template leverages the [Batch
+			Module](http://www.mulesoft.org/documentation/display/current/Batch+Processing).
+			The batch job is divided in Input, Process and On Complete stages.
 
-The integration is triggered by a SAP Endpoint that receives the SAP Material as IDoc XML. This XML is passed to the batch process.
-In the Batch Input stage the SAP Material is transformed to a Salesforce Product and it is upserted in the Batch Step to Salesforce using a Batch Commit.
-Finally during the On Complete stage the Anypoint Template will log output statistics data into the console.
+			The integration is triggered by a SAP Endpoint that receives the SAP
+			Organization as IDoc XML. This XML is passed to the batch process.
+			The batch process handle the migration to Workday.
 
 # Considerations <a name="considerations"/>
 
 To make this Anypoint Template run, there are certain preconditions that must be considered.
-All of them deal with the preparations in both source (SAP) and destination (SFDC) systems, that must be made in order for all to run smoothly.
+All of them deal with the preparations in both source (SAP) and destination (WDAY) systems, that must be made in order for all to run smoothly.
 **Failling to do so could lead to unexpected behavior of the template.**
 
 Before continue with the use of this Anypoint Template, you may want to check out this [Documentation Page](http://www.mulesoft.org/documentation/display/current/SAP+Connector#SAPConnector-EnablingYourStudioProjectforSAP), that will teach you how to work 
@@ -64,50 +71,20 @@ There may be a few things that you need to know regarding SAP, in order for this
 SAP backend system is used as source of data. SAP Connector is used to send and receive the data from the SAP backend. 
 The connector can either use RFC calls of BAPI functions and/or IDoc messages for data exchange and needs to be properly customized as per chapter: [Properties to be configured](#propertiestobeconfigured)
 
-The Partner profile needs to have a customized type of logical system set as partner type. An outbound parameter of message type MATMAS should be defined in the partner profile. A RFC destination created earlier should be defined as Receiver Port. Idoc Type base type should be set as MATMAS01.
-
-## Salesforce Considerations <a name="salesforceconsiderations"/>
-
-There may be a few things that you need to know regarding Salesforce, in order for this template to work.
-
-In order to have this template working as expected, you should be aware of your own Salesforce field configuration.
-
-###FAQ
-
- - Where can I check that the field configuration for my Salesforce instance is the right one?
-
-    [Salesforce: Checking Field Accessibility for a Particular Field][1]
-
-- Can I modify the Field Access Settings? How?
-
-    [Salesforce: Modifying Field Access Settings][2]
+The Partner profile needs to have a customized type of logical system set as partner type. An outbound parameter of message type HRMD_ABA should be defined in the partner profile. A RFC destination created earlier should be defined as Receiver Port. Idoc Type base type should be set as HRMD_ABA01.
 
 
-[1]: https://help.salesforce.com/HTViewHelpDoc?id=checking_field_accessibility_for_a_particular_field.htm&language=en_US
-[2]: https://help.salesforce.com/HTViewHelpDoc?id=modifying_field_access_settings.htm&language=en_US
+
+
+## Workday Considerations <a name="workdayconsiderations"/>
 
 
 ### As destination of data
 
-This template makes use of the `External ID` field offered by Salesforce. Here is a short description on how SFDC define external ID's 
-
-+ [What is an external ID?](http://help.salesforce.com/apex/HTViewHelpDoc?id=faq_import_general_what_is_an_external.htm)
-
-The templates uses the External ID in order to do xRef between the entities in both systems. The idea is, once an entity is created in SFDC it's decorated with an ID from the source system which will be used afteward for the template to reference it.
-
-You will need to create a new custom field in your **Product** entity in SFDC with the following name: 
-
-+ `sap_external_id`
-
-For instructions on how to create a custom field in SFDC plase check this link:
-
-+ [Create Custom Fields](https://help.salesforce.com/HTViewHelpDoc?id=adding_fields.htm)
-
-
-
+There are no particular considerations for this Anypoint Template regarding Workday as data destination.
 
 # Run it! <a name="runit"/>
-Simple steps to get SAP to Salesforce Product Broadcast running.
+Simple steps to get SAP to Workday Organization Broadcast running.
 
 
 ## Running on premise <a name="runonopremise"/>
@@ -176,29 +153,15 @@ In order to use this Mule Anypoint Template you need to configure properties (Cr
 + sap.jco.gwservice=sapgw14
 + sap.jco.idoc.programid=PROGRAM_ID
 
-**SalesForce Connector configuration**
+**Workday Connector configuration**
 
-+ sfdc.username=bob.dylan@sfdc
-+ sfdc.password=DylanPassword123
-+ sfdc.securityToken=avsfwCUl7apQs56Xq2AKi3X
-+ sfdc.url=https://test.salesforce.com/services/Soap/u/28.0
++ wday.user=user
++ wday.password=secret
++ wday.endpoint=https://impl-cc.workday.com/ccx/service/mulesoft_pt1/Human_Resources/v23.2
++ wday.system.id=System id
 
 # API Calls <a name="apicalls"/>
-SalesForce imposes limits on the number of API Calls that can be made.
-Therefore calculating this amount may be an important factor to
-consider. Product Broadcast Template calls to the API can be
-calculated using the formula:
-
-**X / 200**
-
-Being X the number of Products to be synchronized on each run.
-
-The division by 200 is because, by default, Users are gathered in groups
-of 200 for each Upsert API Call in the commit step. Also consider
-that this calls are executed repeatedly every polling cycle.
-
-For instance if 10 records are fetched from origin instance, then 1 api
-calls to SFDC will be made ( 1).
+There are no special considerations regarding API calls.
 
 
 # Customize It!<a name="customizeit"/>
@@ -221,12 +184,15 @@ In the visual editor they can be found on the *Global Element* tab.
 
 
 ## businessLogic.xml<a name="businesslogicxml"/>
-A functional aspect of this Anypoint Template implemented in this XML is to create or update objects in the destination system for a represented use case. You can customize and extend the logic of this Anypoint Template in this XML to more specifically meet your needs.
+This file holds the functional aspect of the template. Its main component is a [*Batch job*][8], and it includes *steps* for executing the broadcast operation from SAP to Workday.
+In the Batch Input stage the SAP Organization is transformed to a collection of maps. The Input stage filter Employees structures from SAP which are using the same IDoc listener structure. Maps contain data which are used to create or update Workday Organization. This template migrate just organization in **English language**, others organizations are ignored.
+Finally during the On Complete stage the Anypoint Template will log output statistics data into the console.
 
 
 
 ## endpoints.xml<a name="endpointsxml"/>
-This is file is conformed by a Flow containing the endpoints for triggering the template and retrieving the objects that meet the defined criteria in the query. And then executing the batch job process with the query results.
+This file should contain every inbound endpoint of your integration app. It is intended to contain the application API.
+In this particular template, this file contains an IDoc SAP inbound endpoint that listening SAP for updates on Organization units.
 
 
 

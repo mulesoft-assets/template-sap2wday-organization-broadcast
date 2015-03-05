@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr" 
-	xmlns:sfdc="http://www.mulesoft.org/schema/mule/sfdc" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:synchronize="http://www.mulesoft.org/schema/mule/synchronize" xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.6.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+<mule xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
+xmlns:batch="http://www.mulesoft.org/schema/mule/batch" 
+xmlns="http://www.mulesoft.org/schema/mule/core" 
+xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+version="EE-3.6.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
-http://www.mulesoft.org/schema/mule/synchronize http://www.mulesoft.org/schema/mule/synchronize/current/mule-synchronize.xsd
-http://www.mulesoft.org/schema/mule/sfdc http://www.mulesoft.org/schema/mule/sfdc/current/mule-sfdc.xsd
 http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
+    
     <flow name="callBatchFlow" >
         <logger level="ERROR" message="++++++ BEFORE CALL BATCH" doc:name="Logger"></logger>
         <batch:execute name="businessLogicBatch" doc:name="Batch Execute"/>
 
         <logger level="ERROR" message="++++++ AFTER CALL BATCH" doc:name="Logger"></logger>
     </flow>
-     
-<!--     <sub-flow name="retrieveProductFromSFDCFlow" doc:name="retrieveProductFromSFDCFlow"> -->
-<!--         <sfdc:query-single config-ref="Salesforce" query="SELECT Id FROM Product2  WHERE sap_external_id__c = '#[payload['sap_external_id__c']]'" doc:name="Salesforce"/> -->
-<!--         <logger level="INFO" message="Retrieve Contacts result: #[payload]" doc:name="Logger"/> -->
-<!--     </sub-flow> -->
-<!--     <sub-flow name="deleteProductFromSFDCFlow" doc:name="deleteProductFromSFDCFlow"> -->
-<!--         <sfdc:delete config-ref="Salesforce" doc:name="Salesforce"> -->
-<!--             <sfdc:ids ref="#[payload]"/> -->
-<!--         </sfdc:delete> -->
-<!--         <logger level="INFO" message="Remove Contacts from A result: #[payload]" doc:name="Logger"/> -->
-<!--     </sub-flow> -->
 
 <sub-flow name="retieveOrganizationFromWdayFlow">
         <wd-hr:find-organization config-ref="Workday_Human_Resource" organizationFind-ref="#[org.mule.templates.OrganizationRequest.findOrganization( payload['orgName'] )]" doc:name="Find organization"/>
         <expression-component doc:name="Check if the organization was found"><![CDATA[if(payload.size()>0) {
 	payload = payload.get(0);
-}]]></expression-component>
+} else payload = new NullPayload();]]></expression-component>
 
     </sub-flow>
     <sub-flow name="dissolveOrganizationFromWdayFlow">
-
         <wd-hr:dissolve-organization-structure config-ref="Workday_Human_Resource" organizationStructureDissolve-ref="#[org.mule.templates.OrganizationRequest.dissolveOrganization(payload.integrationIDReference)]" doc:name="Dissolve organization structure"/>
-
     </sub-flow>
 </mule>

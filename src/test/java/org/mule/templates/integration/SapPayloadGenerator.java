@@ -28,17 +28,16 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class SapPayloadGenerator {
-	private static final String DEFAULT_TEMPLATE_NAME = "SAP_TEMPLATE";
 	private static final String ORG_ID_XPATH = "//E1PLOGI/E1PITYP/E1P1000/OBJID";
 	private static final String ORG_NAME_XPATH = "//E1PLOGI/E1PITYP/E1P1000/STEXT";
 	private static final String ORG_CODE_XPATH = "//E1PLOGI/E1PITYP/E1P1000/SHORT";
+	private static final String ORG_LANG_XPATH = "//E1PLOGI/E1PITYP/E1P1000/LANGU_ISO";
 	
 	private XPath xpath;
 	private Document doc;
@@ -48,11 +47,9 @@ public class SapPayloadGenerator {
 	private List<String> idList = new ArrayList<String>();
 
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, XPathExpressionException {
-		String xml = loadFile("./src/test/resources/mat_master_new.xml");
+		String xml = loadFile("./src/test/resources/hrmd_aba01_new_org.xml");
 		SapPayloadGenerator generator = new SapPayloadGenerator(xml);
 		System.out.println(generator.generateXML());
-
-		System.out.println(generator.getUniqueOrgNameList());
 	}
 
 	private static String loadFile(String filePath) throws IOException {
@@ -85,7 +82,7 @@ public class SapPayloadGenerator {
 		uniqueOrgNameList.clear();
 
 		try {
-			return generateUniqueIds();
+			return generateUniqueFields();
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -103,12 +100,12 @@ public class SapPayloadGenerator {
 		return idList;
 	}
 
-	private String generateUniqueIds() throws ParserConfigurationException, SAXException, IOException, XPathExpressionException,
-			TransformerException {
+	private String generateUniqueFields() throws ParserConfigurationException, SAXException, IOException, XPathExpressionException,	TransformerException {
 
 		ByteArrayOutputStream os = new ByteArrayOutputStream();
 		NodeList nodeList = (NodeList) xpath.compile(ORG_NAME_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
-		makeNamesUnique(nodeList);
+		NodeList langNodeList = (NodeList) xpath.compile(ORG_LANG_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);		
+		makeNamesUnique(nodeList,langNodeList);
 		nodeList = (NodeList) xpath.compile(ORG_CODE_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
 		makeCodesUnique(nodeList);
 		nodeList = (NodeList) xpath.compile(ORG_ID_XPATH).evaluate(doc, javax.xml.xpath.XPathConstants.NODESET);
@@ -122,19 +119,21 @@ public class SapPayloadGenerator {
 
 	}
 
-	private void makeNamesUnique(NodeList nodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
+	private void makeNamesUnique(NodeList nodeList, NodeList langNodeList) throws ParserConfigurationException, SAXException, IOException, XPathExpressionException {
 
 		String timeStamp = Long.valueOf(new Date().getTime()).toString();
 		String waterMark = "_" + timeStamp;
 
 		int index = 0;
 		while (index < nodeList.getLength()) {
-			Node node = nodeList.item(index);
-			String uniqueId = node.getTextContent() + waterMark;
-			node.setTextContent(uniqueId);
+			//In this template, we are migrating just organizations in EN language
+			if (langNodeList.item(index).getTextContent().equals("EN")) {
+				Node node = nodeList.item(index);
+				String uniqueName = node.getTextContent() + waterMark;
+				node.setTextContent(uniqueName);
+				uniqueOrgNameList.add(uniqueName);
+			}
 			index++;
-
-			uniqueOrgNameList.add(uniqueId);
 		}
 	}
 	
@@ -156,11 +155,11 @@ public class SapPayloadGenerator {
 		int index = 0;
 		while (index < nodeList.getLength()) {
 			Node node = nodeList.item(index);
-			String uniqueId = node.getTextContent() + waterMark;
-			node.setTextContent(uniqueId);
+			String uniqueCode = node.getTextContent() + waterMark;
+			node.setTextContent(uniqueCode);
 			index++;
 
-			uniqueOrgCodeList.add(uniqueId);
+			uniqueOrgCodeList.add(uniqueCode);
 		}
 	}
 }

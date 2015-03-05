@@ -18,11 +18,11 @@ import org.junit.Test;
 import org.mule.MessageExchangePattern;
 import org.mule.api.MuleEvent;
 import org.mule.api.MuleException;
-import org.mule.api.lifecycle.InitialisationException;
 import org.mule.processor.chain.SubflowInterceptingChainLifecycleWrapper;
 import org.mule.transport.NullPayload;
 
 import com.mulesoft.module.batch.api.BatchManager;
+import com.workday.hr.OrganizationReferenceWWSType;
 
 /**
  * The objective of this class is to validate the correct behavior of the flows
@@ -30,15 +30,19 @@ import com.mulesoft.module.batch.api.BatchManager;
  * 
  */
 public class BusinessLogicTestIT extends AbstractTemplateTestCase {
-	private static final String TEST_MAT_MASTER_FILE = "./src/test/resources/mat_master_new.xml";
+	private static final String TEST_MAT_MASTER_FILE = "./src/test/resources/hrmd_aba01_new_org.xml";
 
 	private SubflowInterceptingChainLifecycleWrapper retieveOrganizationFromWdayFlow;
+	private SubflowInterceptingChainLifecycleWrapper dissolveOrganizationFromWdayFlow;
 
-	private List<Map<String, Object>> organizationsToDeleteFromWDAY = new ArrayList<Map<String, Object>>();
+	private List<OrganizationReferenceWWSType> organizationsToDeleteFromWDAY = new ArrayList<OrganizationReferenceWWSType>();
 
 	@Before
 	public void setUp() throws Exception {
 		muleContext.getRegistry().lookupObject(BatchManager.class).cancelAllRunningInstances();
+
+		dissolveOrganizationFromWdayFlow = getSubFlow("dissolveOrganizationFromWdayFlow");
+		dissolveOrganizationFromWdayFlow.initialise();
 
 		retieveOrganizationFromWdayFlow = getSubFlow("retieveOrganizationFromWdayFlow");
 		retieveOrganizationFromWdayFlow.initialise();
@@ -58,47 +62,38 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 		runFlow("callBatchFlow", xmlPayload);
 
 		System.out.println("DONE");
-		Thread.sleep(5000);
+		Thread.sleep(15000);
+
 		for (String name : generator.getUniqueOrgNameList()) {
 			Map<String, Object> payload = new HashMap<String, Object>();
 			payload.put("orgName", name);
-			Map<String, Object> result = invokeRetrieveFlow(retieveOrganizationFromWdayFlow, payload);
+			OrganizationReferenceWWSType result = invokeRetrieveFlow(retieveOrganizationFromWdayFlow, payload);
 			Assert.assertNotNull("The SAP Organization with name " + name + " should have been sync", result);
+			Assert.assertTrue("The name should be the same.", name.equals(result.getIntegrationIDReference().getDescriptor()));
 			organizationsToDeleteFromWDAY.add(result);
 		}
 	}
 
-	@SuppressWarnings("unchecked")
-	protected Map<String, Object> invokeRetrieveFlow(SubflowInterceptingChainLifecycleWrapper flow, Map<String, Object> payload)
-			throws Exception {
-		MuleEvent event = flow.process(getTestEvent(payload, MessageExchangePattern.REQUEST_RESPONSE));
+	protected OrganizationReferenceWWSType invokeRetrieveFlow(SubflowInterceptingChainLifecycleWrapper flow,Map<String, Object> payload) throws Exception {
+		
+		MuleEvent event = flow.process(getTestEvent(payload,MessageExchangePattern.REQUEST_RESPONSE));
 		Object resultPayload = event.getMessage().getPayload();
 
 		if (resultPayload instanceof NullPayload) {
 			return null;
 		} else {
-			return (Map<String, Object>) resultPayload;
+			return (OrganizationReferenceWWSType) resultPayload;
 		}
 	}
 
 	private void deleteTestDataFromSandBox() throws MuleException, Exception {
-		deleteTestOrganizationsFromWDAY(organizationsToDeleteFromWDAY);
+		disolveTestEntitiesFromSandBox(organizationsToDeleteFromWDAY);
 	}
 
-	protected void deleteTestOrganizationsFromWDAY(List<Map<String, Object>> createdOrganizationsInWDAY) throws InitialisationException,
-			MuleException, Exception {
+	protected void disolveTestEntitiesFromSandBox(List<OrganizationReferenceWWSType> entitities) throws MuleException, Exception {
 
-		SubflowInterceptingChainLifecycleWrapper dissolveOrganizationFromWdayFlow = getSubFlow("dissolveOrganizationFromWdayFlow");
-		dissolveOrganizationFromWdayFlow.initialise();
-
-		disolveTestEntityFromSandBox(dissolveOrganizationFromWdayFlow, createdOrganizationsInWDAY);
-	}
-
-	protected void disolveTestEntityFromSandBox(SubflowInterceptingChainLifecycleWrapper discardFlow, List<Map<String, Object>> entitities)
-			throws MuleException, Exception {
-		
-		for (Map<String, Object> e : entitities) {
-			discardFlow.process(getTestEvent(e, MessageExchangePattern.REQUEST_RESPONSE));
-		}		
+		for (OrganizationReferenceWWSType e : entitities) {
+			dissolveOrganizationFromWdayFlow.process(getTestEvent(e,MessageExchangePattern.REQUEST_RESPONSE));
+		}
 	}
 }
