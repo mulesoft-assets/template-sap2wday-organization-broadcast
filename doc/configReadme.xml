@@ -10,16 +10,16 @@
 			Every time there is a new organization or a change in an already existing
 			one, SAP will send the IDoc with it to the running template which
 			will create/update an organization in Workday target instance.
-
-			Requirements have been set not only to be used as examples, but also
+			
+Requirements have been set not only to be used as examples, but also
 			to establish a starting point to adapt your integration to your
 			requirements.
-
-			As implemented, this Anypoint Template leverages the [Batch
+			
+As implemented, this Anypoint Template leverages the [Batch
 			Module](http://www.mulesoft.org/documentation/display/current/Batch+Processing).
 			The batch job is divided in Input, Process and On Complete stages.
-
-			The integration is triggered by a SAP Endpoint that receives the SAP
+			
+The integration is triggered by a SAP Endpoint that receives the SAP
 			Organization as IDoc XML. This XML is passed to the batch process.
 			The batch process handle the migration to Workday.
 		</section>
@@ -46,21 +46,12 @@ These dependencies are private for Mulesoft and will cause you application not t
 The Partner profile needs to have a customized type of logical system set as partner type. An outbound parameter of message type HRMD_ABA should be defined in the partner profile. A RFC destination created earlier should be defined as Receiver Port. Idoc Type base type should be set as HRMD_ABA01.
 ]]>
 		</section>
-		<section id="sfdc_dst">
+		<section id="wday_dst">
 		<![CDATA[
-This template makes use of the `External ID` field offered by Salesforce. Here is a short description on how SFDC define external ID's 
-
-+ [What is an external ID?](http://help.salesforce.com/apex/HTViewHelpDoc?id=faq_import_general_what_is_an_external.htm)
+		
+This template makes use of the `External ID` by Workday.
 
 The templates uses the External ID in order to do xRef between the entities in both systems. The idea is, once an entity is created in WDAY it's decorated with an ID from the source system which will be used afteward for the template to reference it.
-
-You will need to create a new custom field in your **Organization** entity in WDAY with the following name: 
-
-+ `sap_external_id`
-
-For instructions on how to create a custom field in SFDC plase check this link:
-
-+ [Create Custom Fields](https://help.salesforce.com/HTViewHelpDoc?id=adding_fields.htm)
 ]]>
 		</section>
 		<section id="running_on_studio">
