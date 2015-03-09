@@ -27,7 +27,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 				<wd-hr:add-update-organization
 					config-ref="Workday_Human_Resource"
 					organization-ref="#[org.mule.templates.OrganizationRequest.createAddUpdateOrganizationRequest( payload )]"
-					doc:name="Add or update Workday organization with EN language" />
+					doc:name="Add or update Workday organization with specified language" />
 			</batch:step>
 		</batch:process-records>
 		<batch:on-complete>
