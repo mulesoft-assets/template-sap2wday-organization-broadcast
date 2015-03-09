@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
+<mule xmlns:spring="http://www.springframework.org/schema/beans" xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
 	xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
 	xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper"
 	xmlns:sap="http://www.mulesoft.org/schema/mule/sap" xmlns="http://www.mulesoft.org/schema/mule/core"
@@ -11,7 +11,8 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
 http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd
 http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
-http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
+http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd">
 	<data-mapper:config name="XML_To_Map"
 		transformationGraphPath="xml_to_map.grf" doc:name="XML_To_Map" />
 	<batch:job name="businessLogicBatch">
@@ -22,7 +23,7 @@ http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd
 		</batch:input>
 		<batch:process-records>
 			<batch:step name="add_or_update_wd_organization_step"
-				accept-expression="payload['language'].equals(&quot;EN&quot;)">
+				accept-expression="payload['language'].equals(&quot;${sap.jco.lang}&quot;)">
 				<wd-hr:add-update-organization
 					config-ref="Workday_Human_Resource"
 					organization-ref="#[org.mule.templates.OrganizationRequest.createAddUpdateOrganizationRequest( payload )]"

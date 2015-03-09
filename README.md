@@ -187,7 +187,7 @@ In the visual editor they can be found on the *Global Element* tab.
 
 ## businessLogic.xml<a name="businesslogicxml"/>
 This file holds the functional aspect of the template. Its main component is a [*Batch job*][8], and it includes *steps* for executing the broadcast operation from SAP to Workday.
-In the Batch Input stage the SAP Organization is transformed to a collection of maps. The Input stage filter Employees structures from SAP which are using the same IDoc listener structure. Maps contain data which are used to create or update Workday Organization. This template migrate just organization in **English language**, others organizations are ignored.
+In the Batch Input stage the SAP Organization is transformed to a collection of maps. The Input stage filter Employees structures from SAP which are using the same IDoc listener structure. Maps contain data which are used to create or update Workday Organization. This template migrate just organization in language, which is configured in **sap.jco.lang** property. Others organizations are ignored.
 Finally during the On Complete stage the Anypoint Template will log output statistics data into the console.
 
 
