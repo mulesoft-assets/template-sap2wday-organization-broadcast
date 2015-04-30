@@ -26,23 +26,7 @@ Note that using this template is subject to the conditions of this [License Agre
 Please review the terms of the license before downloading and using this template. In short, you are allowed to use the template for free with Mule ESB Enterprise Edition, CloudHub, or as a trial in Anypoint Studio.
 
 # Use Case <a name="usecase"/>
-This Anypoint Template should serve as a foundation for setting an online
-			sync of Organizations from SAP to Workday.
-			Every time there is a new organization or a change in an already existing
-			one, SAP will send the IDoc with it to the running template which
-			will create/update an organization in Workday target instance.
-			
-Requirements have been set not only to be used as examples, but also
-			to establish a starting point to adapt your integration to your
-			requirements.
-			
-As implemented, this Anypoint Template leverages the [Batch
-			Module](http://www.mulesoft.org/documentation/display/current/Batch+Processing).
-			The batch job is divided in Input, Process and On Complete stages.
-			
-The integration is triggered by a SAP Endpoint that receives the SAP
-			Organization as IDoc XML. This XML is passed to the batch process.
-			The batch process handle the migration to Workday.
+This Anypoint Template should serve as a foundation for setting an online sync of Organizations from SAP to Workday. Every time there is a new organization or a change in an already existing one, SAP will send the IDoc with it to the running template which will create/update an organization in Workday target instance. Requirements have been set not only to be used as examples, but also to establish a starting point to adapt your integration to your requirements. As implemented, this Anypoint Template leverages the [Batch Module](http://www.mulesoft.org/documentation/display/current/Batch+Processing).	The batch job is divided in Input, Process and On Complete stages. The integration is triggered by a SAP Endpoint that receives the SAP	Organization as IDoc XML. This XML is passed to the batch process. The batch process handle the migration to Workday.
 
 # Considerations <a name="considerations"/>
 
@@ -84,6 +68,10 @@ The Partner profile needs to have a customized type of logical system set as par
 This template makes use of the `External ID` by Workday.
 
 The templates uses the External ID in order to do xRef between the entities in both systems. The idea is, once an entity is created in WDAY it's decorated with an ID from the source system which will be used afteward for the template to reference it.
+
+
+
+
 
 # Run it! <a name="runit"/>
 Simple steps to get SAP to Workday Organization Broadcast running.

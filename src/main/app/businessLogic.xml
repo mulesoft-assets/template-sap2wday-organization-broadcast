@@ -4,7 +4,7 @@
 	xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
 	xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper"
 	xmlns:sap="http://www.mulesoft.org/schema/mule/sap" xmlns="http://www.mulesoft.org/schema/mule/core"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" version="EE-3.6.0"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" version="EE-3.6.1"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
@@ -22,7 +22,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 				doc:name="XML To Map" />
 		</batch:input>
 		<batch:process-records>
-			<batch:step name="add_or_update_wd_organization_step"
+			<batch:step name="addOrUpdateOrganizationStep"
 				accept-expression="payload['language'].equals(&quot;${sap.jco.lang}&quot;)">
 				<wd-hr:add-update-organization
 					config-ref="Workday_Human_Resource"

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr" 
+<mule xmlns:spring="http://www.springframework.org/schema/beans" xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr" 
 	  xmlns:batch="http://www.mulesoft.org/schema/mule/batch" 
 	  xmlns:sap="http://www.mulesoft.org/schema/mule/sap"
       xmlns="http://www.mulesoft.org/schema/mule/core"
       xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-      version="EE-3.6.0"
+      version="EE-3.6.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
 http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd
-http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
+http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd">
 
-	<!-- 	In this file you should declare all your inbound endpoints in order to control the access to your application -->
+	<!-- In this file you should declare all your inbound endpoints in order to control the access to your application -->
 
 	<flow name="triggerFlow" processingStrategy="synchronous"  doc:description="This is the simpliest entry point to start the excecution of your Template
 Here you should:
@@ -21,7 +22,7 @@ Here you should:
 Here you should not:
 	* Run validations against external systems
 	* Choose flow of your application based on input parameters">
-		<sap:inbound-endpoint type="idoc" rfcType="qrfc" xmlVersion="1" responseTimeout="10000" doc:name="SAP" jcoConnectionCount="${sap.jco.connectioncount}" jcoGwHost="${sap.jco.gwhost}" jcoGwService="${sap.jco.gwservice}" jcoProgramId="${sap.jco.idoc.programid}" outputXml="true" connector-ref="SAP" functionName="HRMD_ABA01">
+		<sap:inbound-endpoint type="idoc" rfcType="qrfc" xmlVersion="1" responseTimeout="10000" doc:name="SAP IDoc Listener" jcoConnectionCount="${sap.jco.connectioncount}" jcoGwHost="${sap.jco.gwhost}" jcoGwService="${sap.jco.gwservice}" jcoProgramId="${sap.jco.idoc.programid}" outputXml="true" connector-ref="SAP" functionName="HRMD_ABA01">
 	    	<sap:default-in-memory-tid-store/>
 		</sap:inbound-endpoint>
 		
