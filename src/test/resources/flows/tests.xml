@@ -1,30 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+xmlns:spring="http://www.springframework.org/schema/beans"
+xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
 xmlns:batch="http://www.mulesoft.org/schema/mule/batch" 
 xmlns="http://www.mulesoft.org/schema/mule/core" 
 xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
-version="EE-3.6.1" 
+version="EE-3.7.2" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
-http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd">
+http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     
     <flow name="callBatchFlow" >
-        <logger level="ERROR" message="++++++ BEFORE CALL BATCH" doc:name="Logger"></logger>
         <batch:execute name="businessLogicBatch" doc:name="Batch Execute"/>
-
-        <logger level="ERROR" message="++++++ AFTER CALL BATCH" doc:name="Logger"></logger>
     </flow>
 
 <sub-flow name="retieveOrganizationFromWdayFlow">
-        <wd-hr:find-organization config-ref="Workday_Human_Resource" organizationFind-ref="#[org.mule.templates.OrganizationRequest.findOrganization( payload['orgName'] )]" doc:name="Find organization"/>
-        <expression-component doc:name="Check if the organization was found"><![CDATA[if(payload.size()>0) {
-	payload = payload.get(0);
-} else payload = new NullPayload();]]></expression-component>
+        <dw:transform-message doc:name="Create FindOrganization Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	organizationName: payload.orgName
+} as :object {
+	class : "com.workday.hr.OrganizationFindType"
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <wd-hr:find-organization config-ref="Workday_Human_Resource"  doc:name="Find organization"/>
 
     </sub-flow>
     <sub-flow name="dissolveOrganizationFromWdayFlow">
-        <wd-hr:dissolve-organization-structure config-ref="Workday_Human_Resource" organizationStructureDissolve-ref="#[org.mule.templates.OrganizationRequest.dissolveOrganization(payload.integrationIDReference)]" doc:name="Dissolve organization structure"/>
+        <dw:transform-message doc:name="Create DissolveOrganization Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	organizationReferenceData: {
+		integrationIDReference: payload.integrationIDReference
+	},
+	organizationStructureDissolveData: {
+		effectiveDate: now
+	}
+} as :object {
+	class : "com.workday.hr.OrganizationStructureDissolveType"
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <wd-hr:dissolve-organization-structure config-ref="Workday_Human_Resource"  doc:name="Dissolve organization structure"/>
     </sub-flow>
 </mule>

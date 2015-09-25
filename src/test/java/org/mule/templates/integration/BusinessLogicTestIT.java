@@ -6,6 +6,7 @@
 
 package org.mule.templates.integration;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,8 +19,9 @@ import org.junit.Test;
 import org.mule.MessageExchangePattern;
 import org.mule.api.MuleEvent;
 import org.mule.api.MuleException;
+import org.mule.construct.Flow;
 import org.mule.processor.chain.SubflowInterceptingChainLifecycleWrapper;
-import org.mule.transport.NullPayload;
+import org.mule.transformer.types.DataTypeFactory;
 
 import com.mulesoft.module.batch.api.BatchManager;
 import com.workday.hr.OrganizationReferenceWWSType;
@@ -34,6 +36,7 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 
 	private SubflowInterceptingChainLifecycleWrapper retieveOrganizationFromWdayFlow;
 	private SubflowInterceptingChainLifecycleWrapper dissolveOrganizationFromWdayFlow;
+	private Flow mainFlow;
 
 	private List<OrganizationReferenceWWSType> organizationsToDeleteFromWDAY = new ArrayList<OrganizationReferenceWWSType>();
 
@@ -46,6 +49,8 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 
 		retieveOrganizationFromWdayFlow = getSubFlow("retieveOrganizationFromWdayFlow");
 		retieveOrganizationFromWdayFlow.initialise();
+		
+		mainFlow =  (Flow) muleContext.getRegistry().lookupObject("callBatchFlow");
 	}
 
 	@After
@@ -59,9 +64,10 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 		SapPayloadGenerator generator = new SapPayloadGenerator(originalXML);
 		String xmlPayload = generator.generateXML();
 
-		runFlow("callBatchFlow", xmlPayload);
-
-		System.out.println("DONE");
+		final MuleEvent testEvent = getTestEvent(null, mainFlow);
+		testEvent.getMessage().setPayload(xmlPayload, DataTypeFactory.create(InputStream.class, "application/xml"));
+		mainFlow.process(testEvent);
+		
 		Thread.sleep(15000);
 
 		for (String name : generator.getUniqueOrgNameList()) {
@@ -74,15 +80,16 @@ public class BusinessLogicTestIT extends AbstractTemplateTestCase {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	protected OrganizationReferenceWWSType invokeRetrieveFlow(SubflowInterceptingChainLifecycleWrapper flow,Map<String, Object> payload) throws Exception {
 		
 		MuleEvent event = flow.process(getTestEvent(payload,MessageExchangePattern.REQUEST_RESPONSE));
-		Object resultPayload = event.getMessage().getPayload();
+		List<Object> resultList = (List<Object>) event.getMessage().getPayload();
 
-		if (resultPayload instanceof NullPayload) {
-			return null;
+		if (resultList.size() > 0) {
+			return (OrganizationReferenceWWSType) resultList.get(0);
 		} else {
-			return (OrganizationReferenceWWSType) resultPayload;
+			return null;
 		}
 	}
 
