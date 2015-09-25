@@ -55,7 +55,7 @@ There may be a few things that you need to know regarding SAP, in order for this
 SAP backend system is used as source of data. SAP Connector is used to send and receive the data from the SAP backend. 
 The connector can either use RFC calls of BAPI functions and/or IDoc messages for data exchange and needs to be properly customized as per chapter: [Properties to be configured](#propertiestobeconfigured)
 
-The Partner profile needs to have a customized type of logical system set as partner type. An outbound parameter of message type HRMD_ABA should be defined in the partner profile. A RFC destination created earlier should be defined as Receiver Port. Idoc Type base type should be set as HRMD_ABA01.
+The Partner profile needs to have a customized type of logical system set as partner type. An outbound parameter of message type HRMD\_ABA should be defined in the partner profile. A RFC destination created earlier should be defined as Receiver Port. Idoc Type base type should be set as HRMD\_ABA01.
 
 
 
@@ -129,26 +129,28 @@ In order to use this Mule Anypoint Template you need to configure properties (Cr
 ### Application configuration
 **SAP Connector configuration**
 
-+ sap.jco.ashost=your.sap.address.com
-+ sap.jco.user=SAP_USER
-+ sap.jco.passwd=SAP_PASS
-+ sap.jco.sysnr=14
-+ sap.jco.client=800
-+ sap.jco.lang=EN
++ sap.jco.ashost `your.sap.address.com`
++ sap.jco.user `SAP_USER`
++ sap.jco.passwd `SAP_PASS`
++ sap.jco.sysnr `14`
++ sap.jco.client `800`
++ sap.jco.lang `EN`
 
 **SAP Endpoint configuration**
 
-+ sap.jco.connectioncount=2
-+ sap.jco.gwhost=your.sap.addres.com
-+ sap.jco.gwservice=sapgw14
-+ sap.jco.idoc.programid=PROGRAM_ID
++ sap.jco.connectioncount `2`
++ sap.jco.gwhost `your.sap.addres.com`
++ sap.jco.gwservice `sapgw14`
++ sap.jco.idoc.programid `PROGRAM_ID`
 
 **Workday Connector configuration**
 
-+ wday.user=user
-+ wday.password=secret
-+ wday.endpoint=https://impl-cc.workday.com/ccx/service/mulesoft_pt1/Human_Resources/v23.2
-+ wday.system.id=System id
++ wday.user `user`
++ wday.password `secret`
++ wday.endpoint `https://impl-cc.workday.com/ccx/service/mulesoft_pt1/Human_Resources/v23.1`
++ wday.system.id `System id`
++ wday.org.subtype `Company`
++ wday.org.visibility `Everyone`
 
 # API Calls <a name="apicalls"/>
 There are no special considerations regarding API calls.
@@ -174,8 +176,8 @@ In the visual editor they can be found on the *Global Element* tab.
 
 
 ## businessLogic.xml<a name="businesslogicxml"/>
-This file holds the functional aspect of the template. Its main component is a [*Batch job*][8], and it includes *steps* for executing the broadcast operation from SAP to Workday.
-In the Batch Input stage the SAP Organization is transformed to a collection of maps. The Input stage filter Employees structures from SAP which are using the same IDoc listener structure. Maps contain data which are used to create or update Workday Organization. This template migrate just organization in language, which is configured in **sap.jco.lang** property. Others organizations are ignored.
+This file holds the functional aspect of the template. Its main component is a *Batch job*, and it includes *steps* for executing the broadcast operation from SAP to Workday.
+In the Batch Input stage the SAP Organizations are transformed to a collection of maps. The Input stage filters out Employees structures from SAP which are using the same IDoc listener structure. Maps contain data which are used to create or update Workday Organization. This template migrate just organization in language, which is configured in **sap.jco.lang** property. Other organizations are ignored.
 Finally during the On Complete stage the Anypoint Template will log output statistics data into the console.
 
 

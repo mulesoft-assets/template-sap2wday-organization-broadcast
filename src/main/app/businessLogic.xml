@@ -1,32 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:spring="http://www.springframework.org/schema/beans" xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:wd-hr="http://www.mulesoft.org/schema/mule/wd-hr"
 	xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
-	xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper"
-	xmlns:sap="http://www.mulesoft.org/schema/mule/sap" xmlns="http://www.mulesoft.org/schema/mule/core"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" version="EE-3.6.1"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	version="EE-3.7.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd
-http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
 http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
 http://www.mulesoft.org/schema/mule/wd-hr http://www.mulesoft.org/schema/mule/wd-hr/current/mule-wd-hr.xsd
-http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd">
-	<data-mapper:config name="XML_To_Map"
-		transformationGraphPath="xml_to_map.grf" doc:name="XML_To_Map" />
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
 	<batch:job name="businessLogicBatch">
 		<batch:threading-profile poolExhaustedAction="WAIT" />
 		<batch:input>
-			<data-mapper:transform config-ref="XML_To_Map"
-				doc:name="XML To Map" />
+            <dw:transform-message doc:name="XML To Map">
+                <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload.HRMD_ABA01.IDOC.E1PLOGI.E1PITYP.*E1P1000 filter $.LANGU_ISO == p('sap.jco.lang') map
+{
+	name: $.STEXT,
+	code: $.SHORT,
+	id: $.OBJID
+} when payload."HRMD_ABA01"? and payload.HRMD_ABA01.IDOC.E1PLOGI.E1PITYP.*E1P1000? otherwise []]]></dw:set-payload>
+            </dw:transform-message>
+
 		</batch:input>
 		<batch:process-records>
 			<batch:step name="addOrUpdateOrganizationStep"
-				accept-expression="payload['language'].equals(&quot;${sap.jco.lang}&quot;)">
+				>
+                <logger level="INFO" doc:name="Log the organization" message="Organization to upsert: #[payload]"/>
+                <dw:transform-message doc:name="Create AddUpdateOrganization Request">
+                    <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	organizationData: {
+		availabilityDate: now,
+		integrationIDData: {
+			ID: [{
+				systemID: p('wday.system.id'),
+				value: payload.id
+			}]
+		},
+		organizationCode: payload.code,
+		organizationName: payload.name,
+		organizationSubtypeReference: {
+			organizationSubtypeName: p('wday.org.subtype')
+		},
+		organizationTypeReference: {
+			organizationTypeName: "Company"
+		},
+		organizationVisibilityReference: {
+			organizationVisibilityName: p('wday.org.visibility')
+		}
+	}
+} as :object {
+	class : "com.workday.hr.OrganizationAddUpdateType"
+}]]></dw:set-payload>
+                </dw:transform-message>
 				<wd-hr:add-update-organization
 					config-ref="Workday_Human_Resource"
-					organization-ref="#[org.mule.templates.OrganizationRequest.createAddUpdateOrganizationRequest( payload )]"
+					
 					doc:name="Add or update Workday organization with specified language" />
 			</batch:step>
 		</batch:process-records>
