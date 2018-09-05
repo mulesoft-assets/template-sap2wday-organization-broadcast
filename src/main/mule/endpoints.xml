@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:sap="http://www.mulesoft.org/schema/mule/sap" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+    xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd">
+
+    <flow name="triggerFlow" doc:id="aff4106d-d2f6-4366-940a-a380dcb1cf73">
+
+        <sap:document-source doc:name="Document source"
+            doc:id="abb68677-64e0-4677-bfe2-196aaf74e9cf" config-ref="SAP_Inbound"
+            gatewayHost="${sap.jco.gwhost}" gatewayService="${sap.jco.gwservice}"
+            programID="${sap.jco.idoc.programid}" connectionCount="${sap.jco.connectioncount}"
+            operationTimeout="${sap.jco.operationtimeout}" />
+
+        <flow-ref doc:name="businessLogicFlow"
+            doc:id="30e03e17-0d6f-42b0-b57b-dba22f5c5a6d" name="businessLogicFlow" />
+
+        <error-handler>
+            <on-error-propagate enableNotifications="true"
+                logException="true" doc:name="On Error Propagate"
+                doc:id="488b507d-e26c-4c56-8759-8bb4f6645d71" type="ANY">
+                <flow-ref doc:name="errorHandlingFlow"
+                    doc:id="afdaf73c-0137-4d60-84f6-5c41234771a3" name="errorHandlingFlow" />
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+</mule>
+
+
+        
