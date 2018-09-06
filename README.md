@@ -147,12 +147,13 @@ In order to use this Mule Anypoint Template you need to configure properties (Cr
 
 **Workday Connector configuration**
 
-+ wday.user `user`
++ wday.username `user`
++ wday.tenant `tenant_pt5t`
 + wday.password `secret`
-+ wday.endpoint `https://impl-cc.workday.com/ccx/service/mulesoft_pt1/Human_Resources/v23.1`
-+ wday.system.id `System id`
++ wday.host `services.wday.com`
 + wday.org.subtype `Company`
 + wday.org.visibility `Everyone`
++ wday.ext.systemID `systemID`
 
 # API Calls <a name="apicalls"/>
 There are no special considerations regarding API calls.

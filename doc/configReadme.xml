@@ -67,12 +67,13 @@ Please check this Documentation Page:
 
 **Workday Connector configuration**
 
-+ wday.user `user`
++ wday.username `user`
++ wday.tenant `tenant_pt5t`
 + wday.password `secret`
-+ wday.endpoint `https://impl-cc.workday.com/ccx/service/mulesoft_pt1/Human_Resources/v23.1`
-+ wday.system.id `System id`
++ wday.host `services.wday.com`
 + wday.org.subtype `Company`
 + wday.org.visibility `Everyone`
++ wday.ext.systemID `systemID`
 
 ]]>
 		</section>
