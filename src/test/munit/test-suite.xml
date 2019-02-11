@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
+	xmlns:workday="http://www.mulesoft.org/schema/mule/workday"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/workday http://www.mulesoft.org/schema/mule/workday/current/mule-workday.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd">
+	<munit:config name="test-suite.xml" />
+	<configuration-properties doc:name="Configuration properties" doc:id="a43b6c8a-6433-499c-a259-afa1fa652453" file="mule.test.properties" />
+	<munit:test name="test-suiteTest" description="MUnit Test" doc:id="df2b2c5f-3557-4f8a-8dae-743f7c082c5d" >
+		<munit:execution >
+			<set-variable value="#[MunitTools::getResourceAsString('idoc.xml')]" doc:name="Set iDoc message to variable" doc:id="b14c67ba-cbb9-47da-835b-eeffcaa4b44c" variableName="iDoc" mimeType="application/xml" />
+			<set-payload value="#[vars.iDoc]" doc:name="Set iDoc variable to Payload" doc:id="e5a46014-c26e-46b3-bf98-3abc15d7c1f4" mimeType="application/xml" />
+			<flow-ref doc:name="Reference to businessLogicFlow" doc:id="c0d8a9f0-0008-491f-a806-65d2deb2ebf3" name="businessLogicFlow"/>
+			<scripting:execute engine="groovy" doc:name="Sleep for 30s until the processing is completed" doc:id="a95ae757-dda5-47f8-a5ff-1787d4b228df">
+				<scripting:code>sleep(30000)</scripting:code>
+			</scripting:execute>
+			<ee:transform doc:name="Prepare request to Workday" doc:id="cc466e5b-e0ac-4266-9891-15bb18bc6395">
+				<ee:message>
+					<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+ns ns0 urn:com.workday/bsvc
+---
+{
+	ns0#Organization_Get: {
+		ns0#Organization_Reference: {
+			ns0#Integration_ID_Reference : {
+				ns0#ID @(ns0#System_ID : p('wday.ext.systemID')) : p('wday.testOrganization.id')
+			}
+		}
+	}
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+			<workday:human-resources operation="Get_Organization" doc:name="Execute request to Workday" doc:id="6c23ba7f-a40a-4f48-b4cf-39153b138b2e" config-ref="Workday_Config"/>
+			<ee:transform doc:name="Store data of organization" doc:id="c442678d-50f5-4426-936e-9cbe565f3822">
+				<ee:message />
+				<ee:variables>
+					<ee:set-variable variableName="testData" ><![CDATA[%dw 2.0
+output application/java
+---
+{
+	name : payload.Organization.Organization_Data.Organization_Name,
+	code : payload.Organization.Organization_Data.Organization_Code,
+	id : payload.Organization.Organization_Data.Integration_ID_Data.ID
+}
+]]></ee:set-variable>
+				</ee:variables>
+			</ee:transform>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that if name of organization has been updated" doc:id="5772be09-89b8-4a12-a2fe-c433f2339f26" expression="#[vars.testData.name]" is="#[MunitTools::equalTo(p('wday.testOrganization.name'))]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:after-test name="test-suiteAfter_Test" description="After tests actions" doc:id="575c69a4-a64e-47d8-bda5-2cf2bff8adb5">
+			<ee:transform doc:name="Create Upsert Organization Request" doc:id="4d6c0ee5-2c5d-4aee-847f-9fd6618fa254">
+				<ee:message>
+					<ee:set-payload><![CDATA[output application/xml
+ns ns0 urn:com.workday/bsvc
+---
+{
+	ns0#Organization_Add_Update: {
+		ns0#Organization_Data : {
+			ns0#Availability_Date : now() as DateTime,
+			ns0#Integration_ID_Data : {
+				ns0#ID @(ns0#"System_ID": p('wday.ext.systemID') ): vars.testData.id
+				},
+			ns0#Organization_Subtype_Reference : {
+				ns0#Organization_Subtype_Name : p('wday.org.subtype')
+			},
+			ns0#Organization_Code : vars.testData.code,
+			ns0#Organization_Name  : p('wday.testOrganization.original.name'),
+			ns0#Organization_Type_Reference   : {
+				ns0#Organization_Type_Name : "Company"
+			},
+			ns0#Organization_Visibility_Reference : {
+				ns0#Organization_Visibility_Name : p('wday.org.visibility')
+			}
+		}
+	}
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+		<workday:human-resources operation="Add_Update_Organization" doc:name="Upsert Workday organization" doc:id="3c97dae5-8075-46ba-8952-65c20c8d6f7d" config-ref="Workday_Config" />
+		</munit:after-test>
+</mule>

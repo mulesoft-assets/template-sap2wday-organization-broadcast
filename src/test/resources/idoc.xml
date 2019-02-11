@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<HRMD_ABA01>
+  <IDOC BEGIN="1">
+    <E1PLOGI SEGMENT="1">
+        <E1PITYP>
+            <E1P1000 SEGMENT="1">
+                <OBJID>30019891</OBJID>
+                <STEXT>TestOrganizationName</STEXT>
+                <SHORT>18 HR</SHORT>
+                <LANGU_ISO>EN</LANGU_ISO>
+            </E1P1000>
+            <E1P1000 SEGMENT="1">
+                <OBJID>30019891</OBJID>
+                <STEXT>17 Human Resources</STEXT>
+                <SHORT>17 HR</SHORT>
+                <LANGU_ISO>RU</LANGU_ISO>
+            </E1P1000>
+            <E1P1000 SEGMENT="1">
+                <OBJID>30019891</OBJID>
+                <STEXT>16 Human Resources</STEXT>
+                <SHORT>16 HR</SHORT>
+                <LANGU_ISO>UK</LANGU_ISO>
+            </E1P1000>
+        </E1PITYP>
+    </E1PLOGI>
+  </IDOC>
+</HRMD_ABA01>
