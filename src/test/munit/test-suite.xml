@@ -82,7 +82,7 @@ ns ns0 urn:com.workday/bsvc
 			<workday:human-resources operation="Add_Update_Organization" doc:name="Upsert Workday organization" doc:id="3c97dae5-8075-46ba-8952-65c20c8d6f7d" config-ref="Workday_Config" />
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that if name of organization has been updated" doc:id="5772be09-89b8-4a12-a2fe-c433f2339f26" expression="#[vars.testData.name]" is="#[MunitTools::equalTo(p('wday.testOrganization.name'))]"/>
+			<munit-tools:assert-that doc:name="Assert that if name of organization has been updated" doc:id="5772be09-89b8-4a12-a2fe-c433f2339f26" expression="#[vars.testData.name]" is="#[MunitTools::equalTo(p('wday.testOrganization.name'))]" message="The name of organization was not updated"/>
 		</munit:validation>
 	</munit:test>
 </mule>
