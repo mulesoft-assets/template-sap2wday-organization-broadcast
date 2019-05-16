@@ -80,6 +80,14 @@ output text/plain
         
     </batch:job>
 </flow>
+	<flow name="mainFlow" doc:id="6671af0c-b8b9-4be8-9e76-0ad5ded6a144" >
+		<flow-ref doc:name="Reference to businessLogicFlow" doc:id="cf027a70-5b09-406c-90bb-7bc8792e4106" name="businessLogicFlow"/>
+		<error-handler >
+			<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="7c859777-7bbb-4148-8134-ece68ab99689" type="ANY" >
+				<flow-ref doc:name="errorHandlingFlow" doc:id="51d74cd3-c5d9-4507-9cec-5a71f9faa02d" name="errorHandlingFlow" />
+			</on-error-propagate>
+		</error-handler>
+	</flow>
 
 </mule>
 

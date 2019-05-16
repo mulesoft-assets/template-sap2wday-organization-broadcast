@@ -15,8 +15,8 @@ http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/
             programID="${sap.jco.idoc.programid}" connectionCount="${sap.jco.connectioncount}"
             operationTimeout="${sap.jco.operationtimeout}" />
 
-        <flow-ref doc:name="Reference to businessLogicFlow"
-            doc:id="30e03e17-0d6f-42b0-b57b-dba22f5c5a6d" name="businessLogicFlow" />
+        <flow-ref doc:name="Reference to mainFlow"
+            doc:id="30e03e17-0d6f-42b0-b57b-dba22f5c5a6d" name="mainFlow" />
 
         <error-handler>
             <on-error-propagate enableNotifications="true"
