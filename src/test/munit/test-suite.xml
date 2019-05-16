@@ -15,7 +15,7 @@ http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mul
 		<munit:execution >
 			<set-variable value="#[MunitTools::getResourceAsString('idoc.xml')]" doc:name="Set iDoc message to variable" doc:id="b14c67ba-cbb9-47da-835b-eeffcaa4b44c" variableName="iDoc" mimeType="application/xml" />
 			<set-payload value="#[vars.iDoc]" doc:name="Set iDoc variable to Payload" doc:id="e5a46014-c26e-46b3-bf98-3abc15d7c1f4" mimeType="application/xml" />
-			<flow-ref doc:name="Reference to businessLogicFlow" doc:id="c0d8a9f0-0008-491f-a806-65d2deb2ebf3" name="businessLogicFlow"/>
+			<flow-ref doc:name="Reference to businessLogicFlow" doc:id="c0d8a9f0-0008-491f-a806-65d2deb2ebf3" name="businessLogicFlow" />
 			<scripting:execute engine="groovy" doc:name="Sleep for 30s until the processing is completed" doc:id="a95ae757-dda5-47f8-a5ff-1787d4b228df">
 				<scripting:code>sleep(30000)</scripting:code>
 			</scripting:execute>
@@ -51,12 +51,6 @@ output application/java
 ]]></ee:set-variable>
 				</ee:variables>
 			</ee:transform>
-		</munit:execution>
-		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that if name of organization has been updated" doc:id="5772be09-89b8-4a12-a2fe-c433f2339f26" expression="#[vars.testData.name]" is="#[MunitTools::equalTo(p('wday.testOrganization.name'))]"/>
-		</munit:validation>
-	</munit:test>
-	<munit:after-test name="test-suiteAfter_Test" description="After tests actions" doc:id="575c69a4-a64e-47d8-bda5-2cf2bff8adb5">
 			<ee:transform doc:name="Create Upsert Organization Request" doc:id="4d6c0ee5-2c5d-4aee-847f-9fd6618fa254">
 				<ee:message>
 					<ee:set-payload><![CDATA[output application/xml
@@ -85,6 +79,10 @@ ns ns0 urn:com.workday/bsvc
 }]]></ee:set-payload>
 				</ee:message>
 			</ee:transform>
-		<workday:human-resources operation="Add_Update_Organization" doc:name="Upsert Workday organization" doc:id="3c97dae5-8075-46ba-8952-65c20c8d6f7d" config-ref="Workday_Config" />
-		</munit:after-test>
+			<workday:human-resources operation="Add_Update_Organization" doc:name="Upsert Workday organization" doc:id="3c97dae5-8075-46ba-8952-65c20c8d6f7d" config-ref="Workday_Config" />
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that if name of organization has been updated" doc:id="5772be09-89b8-4a12-a2fe-c433f2339f26" expression="#[vars.testData.name]" is="#[MunitTools::equalTo(p('wday.testOrganization.name'))]"/>
+		</munit:validation>
+	</munit:test>
 </mule>
