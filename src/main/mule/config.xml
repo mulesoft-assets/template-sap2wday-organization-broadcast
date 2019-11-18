@@ -3,7 +3,6 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd http://www.mulesoft.org/schema/mule/workday http://www.mulesoft.org/schema/mule/workday/current/mule-workday.xsd">
 
     <global-property name="mule.env" value="dev" doc:id="2a7ba69a-4ac3-481c-a4e6-3aab587399bb" doc:name="Global Property" />
-
     <configuration-properties file="common.properties" doc:id="7584fb1d-2fa2-445a-b949-eed01f5785bd" doc:name="Configuration properties" />
     <configuration-properties file="mule.${mule.env}.properties" doc:id="86e0eb9d-cf2e-451a-9e09-b4afdf13e0e9" doc:name="Configuration properties" />
 
@@ -11,8 +10,7 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
         <sap:simple-connection-provider-connection applicationServerHost="${sap.jco.ashost}" client="${sap.jco.client}" language="${sap.jco.lang}" password="${sap.jco.passwd}" systemNumber="${sap.jco.sysnr}" username="${sap.jco.user}" />
     </sap:inbound-config>
 
-    <workday:config-version-30-config name="Workday_Config" doc:name="Workday Config version 30" doc:id="ff98538d-4fbc-4cd7-9577-c4e133d62643">
-        <workday:basic-authentication-api-v30-connection username="${wday.username}" password="${wday.password}" tenantName="${wday.tenant}" hostName="${wday.host}" responseTimeout="${wday.responseTimeout}"/>
-    </workday:config-version-30-config>
-
+    <workday:config-version-32-config name="Workday_Config" doc:name="Workday Config version 32" doc:id="ff98538d-4fbc-4cd7-9577-c4e133d62643">
+        <workday:basic-authentication-api-v32-connection userName="${wday.username}" password="${wday.password}" tenantName="${wday.tenant}" hostName="${wday.host}"/>
+    </workday:config-version-32-config>
 </mule>
