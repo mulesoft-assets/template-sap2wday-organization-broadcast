@@ -10,7 +10,7 @@
     
     <artifactId>template-sap2wday-organization-broadcast</artifactId>
     <packaging>mule-application</packaging>
-    <version>2.1.1-SNAPSHOT</version>
+    <version>2.1.1</version>
     <name>template-sap2wday-organization-broadcast</name>
     
     <build>
@@ -103,4 +103,4 @@
             <layout>default</layout>
         </repository>
     </repositories>
-<scm><connection>scm:git:git@github.com:mulesoft/template-sap2wday-organization-broadcast.git</connection><developerConnection>scm:git:git@github.com:mulesoft/template-sap2wday-organization-broadcast.git</developerConnection><url>https://github.com/mulesoft/template-sap2wday-organization-broadcast</url><tag>HEAD</tag></scm></project>
+<scm><connection>scm:git:git@github.com:mulesoft/template-sap2wday-organization-broadcast.git</connection><developerConnection>scm:git:git@github.com:mulesoft/template-sap2wday-organization-broadcast.git</developerConnection><url>https://github.com/mulesoft/template-sap2wday-organization-broadcast</url><tag>v2.1.1</tag></scm></project>
